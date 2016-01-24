@@ -19,6 +19,9 @@ class SignalsList extends React.Component {
     });
   }
   onSignalDoubleClick(signal, index) {
+    if (this.props.debugger.currentApp.isExecutingAsync) {
+      return;
+    }
     this.props.signals.debugger.signalDoubleClicked({
       index: index,
       path: signal.path
@@ -40,7 +43,8 @@ class SignalsList extends React.Component {
       [styles.item]: true,
       [styles.activeItem]: isActive,
       [styles.withinExecution]: signal.isWithinExecution,
-      [styles.grouped]: signal.isGrouped
+      [styles.grouped]: signal.isGrouped,
+      pulse: signal.isExecuting
     });
 
     if (signal.isGrouped && this.props.debugger.expandedSignalGroups.indexOf(signal.groupId) === -1) {

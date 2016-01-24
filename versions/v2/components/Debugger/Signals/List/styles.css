@@ -1,11 +1,14 @@
 .list {
   background-color: #FFF;
-  border-radius: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
   margin: 0;
   padding: 0;
   border: 1px solid #DDD;
   min-width: 200px;
   list-style-type: none;
+  height: calc(100vh - 90px);
+  overflow-y: scroll;
 }
 
 .item {
@@ -67,4 +70,7 @@
   margin-left: 5px;
   font-size: 10px;
   font-weight: bold;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
 }

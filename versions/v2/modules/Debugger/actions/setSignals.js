@@ -27,13 +27,13 @@ function setSignals({input, module, modules, state}) {
 
   const currentSignalIndex = module.state.get(['currentSignalIndex']);
   if (currentSignalIndex !== 0) {
-    module.state.set(['currentSignalIndex'], currentSignalIndex + 1);
+    module.state.set(['currentSignalIndex'], currentSignalIndex + (newSignals.length - existingSignals.length));
   }
 
   const debuggerSignals = createSignalsStructure(newSignals);
   module.state.set(['signals'], debuggerSignals);
 
-  module.state.set(['currentRememberedSignalPath'], debuggerSignals.length ? debuggerSignals[0].path : [0]);
+  module.state.set(['currentRememberedSignalPath'], debuggerSignals[currentSignalIndex] ? debuggerSignals[currentSignalIndex].path : [0]);
 
 }
 

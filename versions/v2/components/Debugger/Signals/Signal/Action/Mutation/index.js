@@ -1,13 +1,24 @@
 import React from 'react';
 import styles from './styles.css';
-import {intToRGB, hashCode} from 'common/utils';
 
 import Inspector from '../../../../Inspector';
 
+const colors = {
+  set: '#dc6428',
+  import: '',
+  unset: '#872841',
+  push: '#004b87',
+  splice: '#eb1e64',
+  merge: '#007355',
+  concat: '#1eaa6e',
+  pop: '#872841',
+  shift: '#4b2332',
+  unshift: '#28a0aa'
+};
+
 function Mutation({mutation}) {
-  const hex = '#' + intToRGB(hashCode(mutation.name));
   const mutationNameStyle = {
-    color: hex
+    color: colors[mutation.name]
   };
 
   return (

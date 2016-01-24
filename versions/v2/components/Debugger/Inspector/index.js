@@ -12,15 +12,15 @@ import {
 import JSONInput from './JSONInput';
 import connector from 'connector';
 
-function renderType(value, hasNext, path) {
+function renderType(value, hasNext, path, propertyKey) {
   if (isArray(value)) {
-    return <ArrayValue value={value} hasNext={hasNext} path={path}/>;
+    return <ArrayValue value={value} hasNext={hasNext} path={path} propertyKey={propertyKey}/>;
   }
   if (isObject(value)) {
-    return <ObjectValue value={value} hasNext={hasNext} path={path}/>;
+    return <ObjectValue value={value} hasNext={hasNext} path={path} propertyKey={propertyKey}/>;
   }
 
-  return <Value value={value} hasNext={hasNext} path={path}/>;
+  return <Value value={value} hasNext={hasNext} path={path} propertyKey={propertyKey}/>;
 
 }
 
@@ -30,28 +30,44 @@ class ObjectValue extends React.Component {
   }
   constructor(props, context) {
     super(props);
+    const numberOfKeys = Object.keys(props.value).length;
     this.state = {
-      isCollapsed: Object.keys(props.value).length > 3 ? true : context.options.expanded ? false : true
+      isCollapsed: numberOfKeys > 3 || numberOfKeys === 0 ? true : context.options.expanded ? false : true
     };
   }
   renderProperty(key, value, index, hasNext, path) {
     this.props.path.push(key);
     const property = (
       <div className={styles.objectProperty} key={index}>
-        <div className={styles.objectPropertyKey}>{key}:</div>
-        <div className={styles.objectPropertyValue}>{renderType(value, hasNext, path.slice())}</div>
+        <div className={styles.objectPropertyValue}>{renderType(value, hasNext, path.slice(), key)}</div>
       </div>
     );
     this.props.path.pop();
     return property;
+  }
+  renderKeys(keys) {
+    if (keys.length > 3) {
+      return keys.slice(0, 3).join(', ') + '...'
+    }
+    return keys.join(', ');
   }
   render() {
     const {value, hasNext} = this.props;
     if (this.state.isCollapsed) {
       return (
         <div className={styles.object} onClick={() => this.setState({isCollapsed: false})}>
-          <strong>{'{ '}</strong>{Object.keys(value).join(', ')}<strong>{' }'}</strong>
+          {this.props.propertyKey ? this.props.propertyKey + ': ' : null}
+          <strong>{'{ '}</strong>{this.renderKeys(Object.keys(value))}<strong>{' }'}</strong>
           {hasNext ? ',' : null}
+        </div>
+      );
+    } else if (this.props.propertyKey) {
+      const keys = Object.keys(value);
+      return (
+        <div className={styles.object}>
+          <div onClick={() => this.setState({isCollapsed: true})}>{this.props.propertyKey}: <strong>{'{ '}</strong></div>
+          {keys.map((key, index) => this.renderProperty(key, value[key], index, index < keys.length - 1, this.props.path))}
+          <div><strong>{' }'}</strong>{hasNext ? ',' : null}</div>
         </div>
       );
     } else {
@@ -73,8 +89,9 @@ class ArrayValue extends React.Component {
   }
   constructor(props, context) {
     super(props);
+    const numberOfItems = props.value.length;
     this.state = {
-      isCollapsed: !context.options.expanded || props.value.length > 20 ? true : false
+      isCollapsed: numberOfItems > 3 || numberOfItems === 0 ? true : context.options.expanded ? false : true
     };
   }
   renderItem(item, index, hasNext, path) {
@@ -92,8 +109,18 @@ class ArrayValue extends React.Component {
     if (this.state.isCollapsed) {
       return (
         <div className={styles.array} onClick={() => this.setState({isCollapsed: false})}>
+          {this.props.propertyKey ? this.props.propertyKey + ': ' : null}
           <strong>{'[ '}</strong>{value.length}<strong>{' ]'}</strong>
           {hasNext ? ',' : null}
+        </div>
+      );
+    } else if (this.props.propertyKey) {
+      const keys = Object.keys(value);
+      return (
+        <div className={styles.array}>
+          <div onClick={() => this.setState({isCollapsed: true})}>{this.props.propertyKey}: <strong>{'[ '}</strong></div>
+          {value.map((item, index) => this.renderItem(item, index, index < value.length - 1, this.props.path))}
+          <div><strong>{' ]'}</strong>{hasNext ? ',' : null}</div>
         </div>
       );
     } else {
@@ -145,7 +172,13 @@ class Value extends React.Component {
           onSubmit={(value) => this.onSubmit(value)}/>
         );
     } else {
-      return <div><span>{isString(value) ? '"' + value + '"' : String(value)}</span>{hasNext ? ',' : null}</div>;
+      return (
+        <div>
+          {this.props.propertyKey ? this.props.propertyKey + ': ' : <span/>}
+          <span>{isString(value) ? '"' + value + '"' : String(value)}</span>
+          {hasNext ? ',' : null}
+        </div>
+      );
     }
   }
   render() {

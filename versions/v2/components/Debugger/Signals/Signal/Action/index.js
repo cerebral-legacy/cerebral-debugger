@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './styles.css';
 import icons from 'common/icons.css';
+import classnames from 'classnames';
 
 import Inspector from '../../../Inspector';
 import Mutation from './Mutation';
@@ -17,10 +18,18 @@ function Action({action, children}) {
     );
   }
 
+  const className = classnames({
+    [icons.asyncAction]: action.isAsync,
+    [icons.action]: !action.isAsync && action.hasExecuted,
+    [icons.skippedOutput]: !action.hasExecuted,
+    spin: action.isExecuting,
+    [icons.runningAction]: action.isExecuting
+  });
+
   return (
     <div className={styles.action}>
       <div className={styles.actionHeader}>
-        <i className={action.hasExecuted ? icons.action : icons.pendingAction}/>
+        <i className={className}/>
         <div className={styles.actionTitle}>{action.name}</div>
       </div>
 

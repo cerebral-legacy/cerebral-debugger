@@ -23,6 +23,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.empty {
+  composes: icon;
+}
+.empty:before {
+  content: " "
+}
+
+
+.icon-radio_button_unchecked:before {
+    content: "\e836";
+}
+.icon-history:before {
+    content: "\e889";
+}
+
 .model {
   composes: icon;
 }
@@ -30,32 +45,39 @@
   content: "\e1db";
 }
 
-.async {
+.parallel {
   composes: icon;
 }
-.async:before {
-  content: "\e80d";
+.parallel:before {
+  content: "\e53b";
 }
 
 .action {
   composes: icon;
 }
 .action:before {
-  content: "\e834";
+  content: "\e876";
 }
 
-.pendingAction {
+.asyncAction {
   composes: icon;
 }
-.pendingAction:before {
-    content: "\e835";
+.asyncAction:before {
+  content: "\e889";
+}
+
+.skippedOutput {
+  composes: icon;
+}
+.skippedOutput:before {
+    content: "\e5cd";
 }
 
 .signals {
   composes: icon;
 }
 .signals:before {
-    content: "\e8ef";
+    content: "\e565";
 }
 
 .right {
@@ -63,6 +85,13 @@
 }
 .right:before {
     content: "\e5cc";
+}
+
+.runningAction {
+  composes: icon;
+}
+.runningAction:before {
+  content: "\e5d5";
 }
 
 .down {

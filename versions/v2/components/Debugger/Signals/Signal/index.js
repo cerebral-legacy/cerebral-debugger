@@ -14,10 +14,11 @@ import Action from './Action';
 class Signal extends React.Component {
   renderOutputs(action) {
     return Object.keys(action.outputs).map((output, index) => {
-      const style = output !== action.outputPath ? {opacity: 0.3} : null;
+      const isOutput = output === action.outputPath;
+      const style = isOutput ? null : {opacity: 0.3};
       return (
         <div className={styles.output} style={style} key={index}>
-          <i className={icons.right}/>
+          {isOutput ? <i className={icons.right}/> : <i className={icons.empty}/>}
           <div className={styles.outputPath}>
             <div className={styles.outputName}>{output}</div>
             {action.outputs[output].map(this.renderAction)}
@@ -30,7 +31,7 @@ class Signal extends React.Component {
     if (Array.isArray(action)) {
       return (
         <div className={styles.asyncHeader} key={index}>
-          <i className={icons.async}/>
+          <i className={icons.parallel}/>
           <div className={styles.async}>
             {action.map((action, index) => this.renderAction(action, index))}
           </div>

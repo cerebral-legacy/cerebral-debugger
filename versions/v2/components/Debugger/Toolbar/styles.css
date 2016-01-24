@@ -46,3 +46,10 @@
   font-weight: bold;
   background-color: #FAFAFA;
 }
+
+.rightItem {
+  float: right;
+  height: 39px;
+  line-height: 40px;
+  margin-right: 10px;
+}

@@ -2,6 +2,8 @@
   background-color: #FFF;
   border-radius: 3px;
   border: 1px solid #DDD;
+  height: calc(100vh - 65px);
+  overflow-y: scroll;
 }
 
 .chain {

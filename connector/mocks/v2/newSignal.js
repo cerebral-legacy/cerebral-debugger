@@ -8,7 +8,7 @@ module.exports = {
 			"start": 1453574393026,
 			"isSync": true,
 			"isRouted": true,
-			"isExecuting": false,
+			"isExecuting": true,
 			"isPrevented": false,
 			"branches": [{
 				"name": "unsetFilter",
@@ -19,7 +19,7 @@ module.exports = {
 					"path": ["app", "footer", "filter"],
 					"args": ["all"]
 				}],
-				"isAsync": false,
+				"isAsync": true,
 				"outputPath": null,
 				"isExecuting": false,
 				"hasExecuted": true,

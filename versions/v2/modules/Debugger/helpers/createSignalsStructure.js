@@ -9,7 +9,8 @@ function createSignalsStructure(initialSignals) {
       id: signal.start,
       isSync: !!signal.isSync,
       isRouted: !!signal.isRouted,
-      isWithinExecution: initialSignals.indexOf(signal) === -1
+      isWithinExecution: initialSignals.indexOf(signal) === -1,
+      isExecuting: signal.isExecuting
     };
   }
 

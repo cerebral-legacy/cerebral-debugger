@@ -19,7 +19,7 @@ function remember({input, module}) {
     const path = ['currentApp', 'model'].concat(mutation.path);
     module.state[mutation.name].apply(null, [path, ...mutation.args]);
   });
-  module.state.set(['currentRememberedSignalPath'], lastSignal.path);
+  module.state.set(['currentRememberedSignalPath'], lastSignal ? lastSignal.path : [appSignals.length - 1]);
 
 }
 

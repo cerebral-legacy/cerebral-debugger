@@ -2,13 +2,9 @@ module.exports = {
   "type": "init",
   "app": "1234",
   "data": {
-    "signalsCount": 4,
     "willKeepState": false,
     "disableDebugger": false,
-    "currentSignalIndex": 3,
     "isExecutingAsync": false,
-    "isRemembering": false,
-    "computedPaths": [],
     "initialModel": {
       "app": {
         "new": {
@@ -252,7 +248,7 @@ module.exports = {
               "isAsync": true,
               "outputPath": "success",
               "isExecuting": false,
-              "hasExecuted": true,
+              "hasExecuted": false,
               "path": [
                 2,
                 0
@@ -551,7 +547,7 @@ module.exports = {
                         "isAsync": true,
                         "outputPath": "success",
                         "isExecuting": false,
-                        "hasExecuted": true,
+                        "hasExecuted": false,
                         "path": [
                           2,
                           0

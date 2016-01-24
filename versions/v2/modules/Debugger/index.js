@@ -3,6 +3,7 @@ import signalClicked from './signals/signalClicked';
 import payloadReceived from './signals/payloadReceived';
 import modelChanged from './signals/modelChanged';
 import signalDoubleClicked from './signals/signalDoubleClicked';
+import rewriteClicked from './signals/rewriteClicked';
 
 export default (module) => {
 
@@ -21,7 +22,8 @@ export default (module) => {
     signalClicked,
     payloadReceived,
     modelChanged,
-    signalDoubleClicked
+    signalDoubleClicked,
+    rewriteClicked
   });
 
 };

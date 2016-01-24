@@ -1,17 +1,17 @@
-.string span:first-child {
-  color: orange;
+.string span:nth-of-type(2) {
+  color: #dc6428;
 }
 
-.number span:first-child {
-  color: blue;
+.number span:nth-of-type(2) {
+  color: #1e78c3;
 }
 
-.boolean span:first-child {
-  color: blue;
+.boolean span:nth-of-type(2) {
+  color: #1e78c3;
 }
 
-.null span:first-child {
-  color: blue;
+.null span:nth-of-type(2) {
+  color: #1e78c3;
 }
 
 .object {

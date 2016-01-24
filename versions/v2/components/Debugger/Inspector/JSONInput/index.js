@@ -1,10 +1,14 @@
 import React from 'react';
 import styles from './styles.css';
+import {Decorator as Cerebral} from 'cerebral-view-react';
 import {
   isObject,
   isArray
 } from 'common/utils';
 
+@Cerebral({
+  isExecutingAsync: ['debugger', 'currentApp', 'isExecutingAsync']
+})
 class JSONInput extends React.Component {
   constructor(props) {
     super(props);
@@ -55,7 +59,8 @@ class JSONInput extends React.Component {
           className={this.state.isValid ? styles.input : styles.invalidInput}
           value={String(this.state.value)}
           onChange={(event) => this.onChange(event.target.value)}
-          onBlur={() => this.onBlur()}/>
+          onBlur={() => this.onBlur()}
+          disabled={this.props.isExecutingAsync}/>
       </form>
     );
   }

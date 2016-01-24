@@ -119,7 +119,7 @@ module.exports = React.createClass({
         style: actionStyle
       },
       DOM.a({
-        onClick: this.inspect.bind(this),
+        onClick: this.inspect,
         style: {
           cursor: "pointer"
         }

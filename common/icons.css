@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('./icomoon.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  position: relative;
+  font-family: 'icomoon' !important;
+  font-size: 2em;
+  top: 5px;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.model {
+  composes: icon;
+}
+.model:before {
+  content: "\e1db";
+}
+
+.async {
+  composes: icon;
+}
+.async:before {
+  content: "\e80d";
+}
+
+.action {
+  composes: icon;
+}
+.action:before {
+  content: "\e834";
+}
+
+.pendingAction {
+  composes: icon;
+}
+.pendingAction:before {
+    content: "\e835";
+}
+
+.signals {
+  composes: icon;
+}
+.signals:before {
+    content: "\e8ef";
+}
+
+.right {
+  composes: icon;
+}
+.right:before {
+    content: "\e5cc";
+}
+
+.down {
+  composes: icon;
+}
+.down:before {
+    content: "\e5cf";
+}

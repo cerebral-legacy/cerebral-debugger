@@ -1,0 +1,44 @@
+.signal {
+  background-color: #FFF;
+  border-radius: 3px;
+  border: 1px solid #DDD;
+}
+
+.chain {
+  padding: 10px;
+}
+
+.asyncHeader {
+  display: flex;
+  align-items: flex-start;
+}
+
+.asyncHeader > i {
+  top: 0;
+  font-size: 20px;
+}
+
+.async {
+  flex: 1;
+  margin-left: 5px;
+}
+
+.output {
+  margin-top: 5px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.output > i {
+  top: 0;
+  flex: 0 0 20px;
+}
+
+.outputName {
+  height: 20px;
+  line-height: 20px;
+}
+
+.outputPath {
+  flex: 1;
+}

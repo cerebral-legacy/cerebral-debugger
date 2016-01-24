@@ -39,7 +39,8 @@ module.exports = {
   ],
   resolve: {
     alias: {
-      'connector': path.resolve(__dirname, 'connectors', 'simulated.js')
+      'connector': path.resolve(__dirname, 'connector', 'simulated.js'),
+      'common': path.resolve(__dirname, 'common')
     }
   },
   module: {
@@ -53,6 +54,9 @@ module.exports = {
     }, {
       test: /\.css$/,
       loader: 'style!css?modules&localIdentName=[name]---[local]---[hash:base64:5]'
+    }, {
+      test: /\.woff$/,
+      loader: 'url?limit=100000'
     }]
   }
 };

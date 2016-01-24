@@ -1,5 +1,6 @@
 var React = require('react');
 var DOM = React.DOM;
+var merge = require('./merge.js');
 
 var OutputStyle = {
   fontSize: 12
@@ -15,6 +16,13 @@ var OutputTitle = {
   fontSize: 12,
   display: 'inline-block',
   verticalAlign: 'top'
+};
+
+var OutputActionsStyle = {
+  listStyleType: 'none',
+  padding: '5px 5px 5px 0',
+  border: '1px solid #EEE',
+  margin: '0 0 5px 0'
 };
 
 

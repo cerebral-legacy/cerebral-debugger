@@ -7,6 +7,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var StatsPlugin = require('stats-webpack-plugin');
 
 module.exports = {
+  devtool: 'source-map',
   entry: [
     path.join(__dirname, 'index.js')
   ],
@@ -34,7 +35,8 @@ module.exports = {
   ],
   resolve: {
     alias: {
-      'connector': path.resolve(__dirname, 'connectors', 'extension.js')
+      'connector': path.resolve(__dirname, 'connector', 'extension.js'),
+      'common': path.resolve(__dirname, 'common')
     }
   },
   module: {
@@ -48,6 +50,9 @@ module.exports = {
     }, {
       test: /\.css$/,
       loader: ExtractTextPlugin.extract('style', 'css?modules&localIdentName=[name]---[local]---[hash:base64:5]!postcss')
+    }, {
+      test: /\.woff$/,
+      loader: 'url?limit=100000'
     }]
   },
   postcss: [

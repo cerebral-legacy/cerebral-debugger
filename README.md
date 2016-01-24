@@ -9,22 +9,16 @@ We want to build a new debugger with ideas from @delaneyj, as seen in this mocku
 There will be revisions to this mock, but you get the idea of the vision.
 
 ## How to start
-`npm start -- --v1`
+`npm start -- --v2`
 
-## Project structure
-We want to make it possible to use the debugger in different environments.
-We do this by pushing the state received from Cerebral down the top node
-of the component. This component can be React, snabbdom, Angular etc.
+### Sending fake data
+The debugger will receive a simulated INIT message when it fires up. To send more fake data use the console to:
 
-In this boilerplate there is mocked state which represents a pretty complex
-set of signals.
+`CONNECTOR.receiveEvent('v2/someMockData')`
 
-## Distribution
-When one version of the debugger is ready (probably React) we will create update
-it in the chrome extension repo and create a new one for the "in browser" version
-of the debugger. Other view layers will also get their own repo.
+The mocked data is put into the folder `connector\mocks\v2\someMockData`. Look at existing examples for more help.
 
-## How to contribute
-Fork this repo, team up with somebody else and build a prototype of the
-debugger based on the mock-data provided. Lets us know on the Discord chatroom
-when you have something to show :-)
+### Data used by debugger
+The debugger receives the raw signals from the client application. These signals are then converted to a data structure that
+makes it easier to create lists etc. The raw signals are at path `['debugger', 'currentApp', 'signals']` and the converted
+signals are at `['debugger', 'signals']`. The debugger signals just has a path reference to the actual signals inside the *currentApp.

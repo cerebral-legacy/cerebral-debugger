@@ -1,0 +1,43 @@
+.string span:first-child {
+  color: orange;
+}
+
+.number span:first-child {
+  color: blue;
+}
+
+.boolean span:first-child {
+  color: blue;
+}
+
+.null span:first-child {
+  color: blue;
+}
+
+.object {
+  cursor: pointer;
+  flex: 1;
+}
+
+.objectProperty {
+  display: flex;
+  padding-left: 10px;
+}
+
+.objectPropertyKey {
+  flex: 0 0 auto;
+  padding-right: 5px;
+}
+
+.objectPropertyValue {
+  flex: 4;
+}
+
+.array {
+  cursor: pointer;
+  flex: 1;
+}
+
+.arrayItem {
+  padding-left: 10px;
+}

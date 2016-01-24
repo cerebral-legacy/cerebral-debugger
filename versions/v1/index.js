@@ -52,6 +52,7 @@ var DebuggerComponent = React.createClass({
   },
   componentDidMount: function () {
     connector.onChange(this.update);
+    connector.sendEvent('requestUpdate');
   },
   onSignalClick: function (columnIndex, signalIndex, event) {
     this.setState({

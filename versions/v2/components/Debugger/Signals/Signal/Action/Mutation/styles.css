@@ -1,0 +1,23 @@
+.mutation {
+  margin-left: 2px;
+  margin: 3px 0;
+  font-size: 12px;
+  display: flex;
+}
+
+.mutationName {
+  font-weight: bold;
+  flex: 0 0 auto;
+}
+
+.mutationPath {
+  margin-left: 5px;
+  text-decoration: underline;
+  cursor: pointer;
+  flex: 0 0 auto;
+}
+
+.mutationArgs {
+  margin-left: 5px;
+  flex: 1;
+}

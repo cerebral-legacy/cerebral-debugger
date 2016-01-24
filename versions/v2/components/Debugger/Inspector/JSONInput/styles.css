@@ -1,0 +1,14 @@
+.input {
+  position: relative;
+  top: -2px;
+  border: 1px solid #999;
+  border-radius: 2px;
+  outline: none;
+  height: 18px;
+  font-size: 14px;
+}
+
+.invalidInput {
+  composes: input;
+  border: 1px solid red;
+}

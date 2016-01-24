@@ -18,13 +18,6 @@ var ActionsStyle = {
   margin: 0
 };
 
-var OutputActionsStyle = {
-  listStyleType: 'none',
-  padding: '5px 5px 5px 0',
-  border: '1px solid #EEE',
-  margin: '0 0 5px 0'
-};
-
 var OutputsStyle = {
   listStyleType: 'none',
   padding: 5,

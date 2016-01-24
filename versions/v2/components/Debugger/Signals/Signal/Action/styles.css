@@ -1,0 +1,70 @@
+.action {
+  margin-bottom: 10px;
+  font-size: 10px;
+}
+
+.actionHeader {
+  display: flex;
+  align-items: flex-start;
+}
+
+.actionHeader > i {
+  top: 0;
+  flex: 0 0 20px;
+}
+
+.actionTitle {
+  flex: 1;
+  display: inline-block;
+  font-size: 16px;
+  height: 20px;
+  line-height: 20px;
+  margin-left: 5px;
+}
+
+.actionInput {
+  display: flex;
+  align-items: flex-start;
+}
+
+.actionInput > i {
+  top: 0;
+  flex: 0 0 20px;
+}
+
+.inputValue {
+  font-size: 12px;
+  flex: 1;
+  padding-top: 2px;
+}
+
+.inputLabel {
+  font-size: 10px;
+  flex: 0 0 auto;
+  line-height: 20px;
+  padding-right: 5px;
+}
+
+
+.actionOutput {
+  display: flex;
+  align-items: flex-start;
+}
+
+.actionOutput > i {
+  top: 0;
+  flex: 0 0 20px;
+}
+
+.outputValue {
+  font-size: 12px;
+  flex: 1;
+  padding-top: 2px;
+}
+
+.outputLabel {
+  font-size: 10px;
+  flex: 0 0 auto;
+  line-height: 20px;
+  padding-right: 5px;
+}

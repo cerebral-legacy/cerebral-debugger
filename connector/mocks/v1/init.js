@@ -5,12 +5,6 @@ module.exports = {
   "isExecutingAsync": false,
   "isRemembering": false,
   "computedPaths": [],
-  "initialModel": {
-    "foo": "bar",
-    "array": [{
-      "mip": true
-    }]
-  },
   "signals": [
     {
       "name": "app.new.titleChanged",

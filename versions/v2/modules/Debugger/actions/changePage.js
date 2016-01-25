@@ -1,5 +1,8 @@
 function changePage({input, module}) {
-  module.state.set(['currentPage'], input.page);
+  module.state.merge({
+    currentPage: input.page,
+    currentMutationPath: null
+  });
 }
 
 export default changePage;

@@ -54,6 +54,54 @@ export function ColorLuminance(hex, lum) {
 	return rgb;
 }
 
+import Color from 'color'
+
+const FNV1_32A_INIT = 0x811c9dc5;
+function fnv32aHash(str) {
+  let hval = FNV1_32A_INIT;
+  for (var i = 0; i < str.length; ++i) {
+    hval ^= str.charCodeAt(i);
+    hval += (hval << 1) + (hval << 4) + (hval << 7) + (hval << 8) + (hval << 24);
+  }
+  return hval >>> 0;
+}
+
+export function nameToColors(moduleName, signalName, maxDarken=-0.4, maxLighten=0.8) {
+  const colors = [
+    '#F44336', //Red
+    '#E91E63', //Pink
+    '#9C27B0', //Purple
+    '#673AB7', //Deep Purple
+    '#3F51B5', //Indigo
+    '#2196F3', //Blue
+    '#03A9F4', //Light Blue
+    '#00BCD4', //Cyan
+    '#009688', //Teal
+    '#4CAF50', //Green
+    '#8BC34A', //Light Green
+    '#CDDC39', //Lime
+    '#FFEB3B', //Yellow
+    '#FFC107', //Amber
+    '#FF9800', //Orange
+    '#FF5722', //Deep Orange
+    '#795548', //Brown
+    '#607D8B' //Blue Grey
+  ];
+
+  const hashedModuleName = Math.abs(fnv32aHash(moduleName));
+  const baseColorIndex = hashedModuleName % colors.length;
+  const baseColor = Color(colors[baseColorIndex]);
+
+  const hashedSignalName = Math.abs(fnv32aHash(signalName));
+  const lightenByNormalized = hashedSignalName / Math.pow(2,32);
+  const interpolatedLighten = maxDarken + lightenByNormalized * (maxLighten - maxDarken);
+  const interpolatedColor = baseColor.lighten(interpolatedLighten);
+  const backgroundColor =  interpolatedColor.hexString();
+
+  const color = interpolatedColor.dark() ? 'white' : 'black';
+  return {backgroundColor, color};
+}
+
 export function isObject(obj) {
   return typeof obj === 'object' && !Array.isArray(obj) && obj !== null;
 }

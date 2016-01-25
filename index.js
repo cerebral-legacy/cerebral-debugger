@@ -8,7 +8,7 @@ connect((version) => {
     } catch (e) {
       document.querySelector('#root').style.visibility = 'hidden';
       document.querySelector('#error').style.display = 'block';
-      document.querySelector('#error').innerHTML = '<h1>Version ' + version + ' is required by current Cerebral version, please update Debugger in Chrome Store</h1><img src="http://www.cerebraljs.com/logo.png" width="200"/>';
+      document.querySelector('#error').innerHTML = '<h1>Version ' + version + ' is required by current Cerebral version, please update Debugger in Chrome Store</h1><img src="logo.png" width="200"/>';
       return;
     }
 
@@ -25,6 +25,6 @@ connect((version) => {
   } else {
     document.querySelector('#root').style.visibility = 'hidden';
     document.querySelector('#error').style.display = 'block';
-    document.querySelector('#error').innerHTML = '<h1>You changed to a different APP, please refresh the app to continue...</h1><img src="http://www.cerebraljs.com/logo.png" width="200"/>';
+    document.querySelector('#error').innerHTML = '<h1>You changed to a different APP, please refresh the app to continue...</h1><img src="logo.png" width="200"/>';
   }
 });

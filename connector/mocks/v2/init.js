@@ -687,6 +687,47 @@ module.exports = {
           }
         ],
         "duration": 0
+      },
+      {
+        "name": "app.new.titleChanged",
+        "start": 1452960398493,
+        "isSync": true,
+        "isExecuting": false,
+        "branches": [
+          {
+            "name": "setTitle",
+            "input": {
+              "title": "h"
+            },
+            "duration": 3,
+            "mutations": [
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "new",
+                  "title"
+                ],
+                "args": [
+                  "h"
+                ]
+              }
+            ],
+            "isAsync": false,
+            "outputPath": null,
+            "isExecuting": false,
+            "hasExecuted": true,
+            "path": [
+              0
+            ],
+            "outputs": null,
+            "actionIndex": 0
+          }
+        ],
+        "duration": 0,
+        "input": {
+          "title": "h"
+        }
       }
     ]
   }

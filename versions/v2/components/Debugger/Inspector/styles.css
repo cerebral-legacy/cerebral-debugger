@@ -14,9 +14,22 @@
   color: #1e78c3;
 }
 
+.highlight {
+  background-color: #FFF;
+  border: 1px solid #eb1e64;
+  padding: 3px;
+  margin: 3px;
+  border-radius: 3px;
+}
+
 .object {
   cursor: pointer;
   flex: 1;
+}
+
+.highlightObject {
+  composes: object;
+  composes: highlight;
 }
 
 .objectProperty {
@@ -38,6 +51,15 @@
   flex: 1;
 }
 
+.highlightArray {
+  composes: array;
+  composes: highlight;
+}
+
 .arrayItem {
   padding-left: 10px;
+}
+
+.highlightValue {
+  composes: highlight;
 }

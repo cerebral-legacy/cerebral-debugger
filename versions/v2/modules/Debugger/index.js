@@ -4,6 +4,7 @@ import payloadReceived from './signals/payloadReceived';
 import modelChanged from './signals/modelChanged';
 import signalDoubleClicked from './signals/signalDoubleClicked';
 import rewriteClicked from './signals/rewriteClicked';
+import mutationClicked from './signals/mutationClicked';
 
 export default (module) => {
 
@@ -14,7 +15,8 @@ export default (module) => {
     currentSignalIndex: 0,
     currentRememberedSignalPath: [0],
     signals: [],
-    expandedSignalGroups: []
+    expandedSignalGroups: [],
+    currentMutationPath: null
   });
 
   module.signals({
@@ -23,7 +25,8 @@ export default (module) => {
     payloadReceived,
     modelChanged,
     signalDoubleClicked,
-    rewriteClicked
+    rewriteClicked,
+    mutationClicked
   });
 
 };

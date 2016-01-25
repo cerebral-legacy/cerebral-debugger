@@ -50,7 +50,7 @@ class JSONInput extends React.Component {
   }
   render() {
     return (
-      <form onSubmit={(event) => {event.preventDefault();this.props.onSubmit(this.state.value)}}>
+      <form style={{display: 'inline'}} onSubmit={(event) => {event.preventDefault();this.props.onSubmit(this.state.value)}}>
         <input
           ref="input"
           type="Text"

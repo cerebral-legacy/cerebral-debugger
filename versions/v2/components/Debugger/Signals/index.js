@@ -19,7 +19,9 @@ class Signals extends React.Component {
   }
   render() {
     const currentSignal = this.props.debuggerSignals[this.props.currentSignalIndex];
+    const nextSignal = this.props.debuggerSignals[this.props.currentSignalIndex - 1];
     const isWithinExecution = currentSignal && currentSignal.isWithinExecution;
+    const nextWithinExecution = nextSignal && nextSignal.isWithinExecution;
     const lastAppSignalsIndex = this.props.appSignals.length - 1;
 
     return (
@@ -29,8 +31,13 @@ class Signals extends React.Component {
           <button
             onClick={() => this.onRewriteClick()}
             className={styles.rewrite}
-            disabled={!currentSignal || currentSignal.path[0] === lastAppSignalsIndex || isWithinExecution || this.props.isExecutingAsync}>
-          Clear from current signal
+            disabled={
+            !currentSignal ||
+            currentSignal.path[0] === lastAppSignalsIndex ||
+            isWithinExecution ||
+            nextWithinExecution ||
+            this.props.isExecutingAsync}>
+            Clear from current signal
           </button>
         </div>
         <div className={styles.signal}>

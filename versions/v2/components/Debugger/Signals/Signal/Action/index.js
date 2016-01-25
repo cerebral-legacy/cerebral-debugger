@@ -6,7 +6,7 @@ import classnames from 'classnames';
 import Inspector from '../../../Inspector';
 import Mutation from './Mutation';
 
-function Action({action, children}) {
+function Action({action, children, onMutationClick}) {
 
   function renderOutput() {
     return (
@@ -41,7 +41,7 @@ function Action({action, children}) {
           <div className={styles.inputValue}><Inspector value={action.input}/></div>
           </div>
           <div className={styles.mutations}>
-            {action.mutations.map((mutation, index) => <Mutation mutation={mutation} key={index}/>)}
+            {action.mutations.map((mutation, index) => <Mutation mutation={mutation} key={index} onMutationClick={onMutationClick}/>)}
           </div>
           {action.output ? renderOutput() : null}
           {children}

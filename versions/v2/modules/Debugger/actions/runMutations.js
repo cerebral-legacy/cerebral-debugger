@@ -6,8 +6,6 @@ function runMutations({input, module}) {
 
   const mutationsToRunCount = mutations.length - module.state.get(['lastMutationCount']);
 
-  console.log('mutations to run', mutationsToRunCount);
-
   mutations.splice(0, mutationsToRunCount).forEach((mutation) => {
     const path = ['currentApp', 'model'].concat(mutation.path);
     module.state[mutation.name].apply(null, [path, ...mutation.args]);

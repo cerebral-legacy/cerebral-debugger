@@ -12,6 +12,11 @@ import Action from './Action';
   signal: currentSignal
 })
 class Signal extends React.Component {
+  onMutationClick(path) {
+    this.props.signals.debugger.mutationClicked({
+      path
+    });
+  }
   renderOutputs(action) {
     return Object.keys(action.outputs).map((output, index) => {
       const isOutput = output === action.outputPath;
@@ -40,7 +45,7 @@ class Signal extends React.Component {
     }
 
     return (
-      <Action action={action} key={index}>
+      <Action action={action} key={index} onMutationClick={(path) => this.onMutationClick(path)}>
         {action.outputPath ? this.renderOutputs(action) : null}
       </Action>
     );
@@ -51,6 +56,7 @@ class Signal extends React.Component {
     }
     return (
       <div className={styles.signal}>
+        <h3 className={styles.title}>{this.props.signal.name}</h3>
         <div className={styles.chain}>
           {this.props.signal.branches.map((action, index) => this.renderAction(action, index))}
         </div>

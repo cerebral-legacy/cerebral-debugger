@@ -1,7 +1,7 @@
 import React from 'react';
 import {Decorator as Cerebral} from 'cerebral-view-react';
 import styles from './styles.css';
-import {intToRGB, hashCode} from 'common/utils';
+import {intToRGB, hashCode, nameToColors} from 'common/utils';
 import classnames from 'classnames';
 import connector from 'connector';
 
@@ -32,8 +32,9 @@ class SignalsList extends React.Component {
     const currentSignalIndex = this.props.debugger.currentSignalIndex;
 
     const namePath = signal.name.split('.');
-    const name = namePath[namePath.length - 1];
-    const hex = '#' + intToRGB(hashCode(signal.name));
+    const name = namePath.pop();
+    const colors = nameToColors(namePath.join('.'), name);
+    const hex = '#' + colors.backgroundColor;
     const signalStyle = {
       backgroundColor: hex
     };

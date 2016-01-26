@@ -68,7 +68,7 @@ const connector = {
           onChangeCallback(message);
         }
 
-      } else {
+      } else if ('app' in message && message.type === 'init' || !('app' in message)) {
         init();
       }
     });

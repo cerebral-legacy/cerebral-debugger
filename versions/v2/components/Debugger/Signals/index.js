@@ -17,11 +17,13 @@ class Signals extends React.Component {
     this.props.signals.debugger.rewriteClicked();
     connector.sendEvent('rewrite', this.props.debuggerSignals[this.props.currentSignalIndex].path[0]);
   }
+  onResetClick() {
+    this.props.signals.debugger.resetClicked();
+    connector.sendEvent('reset');
+  }
   render() {
     const currentSignal = this.props.debuggerSignals[this.props.currentSignalIndex];
-    const nextSignal = this.props.debuggerSignals[this.props.currentSignalIndex - 1];
     const isWithinExecution = currentSignal && currentSignal.isWithinExecution;
-    const nextWithinExecution = nextSignal && nextSignal.isWithinExecution;
     const lastAppSignalsIndex = this.props.appSignals.length - 1;
 
     return (
@@ -35,9 +37,16 @@ class Signals extends React.Component {
             !currentSignal ||
             currentSignal.path[0] === lastAppSignalsIndex ||
             isWithinExecution ||
-            nextWithinExecution ||
             this.props.isExecutingAsync}>
             Clear from current signal
+          </button>
+          <button
+            onClick={() => this.onResetClick()}
+            className={styles.reset}
+            disabled={
+            !currentSignal ||
+            this.props.isExecutingAsync}>
+            Reset all state
           </button>
         </div>
         <div className={styles.signal}>

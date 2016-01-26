@@ -21,7 +21,7 @@ module.exports = {
     },
     "signals": [
       {
-        "name": "app.new.titleChanged",
+        "name": "app.whatpha.heahe.eheheh",
         "start": 1452960398493,
         "isSync": true,
         "isExecuting": false,

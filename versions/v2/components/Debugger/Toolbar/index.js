@@ -38,11 +38,11 @@ class Toolbar extends React.Component {
                 disabled={currentApp.isExecutingAsync || !currentApp.disableDebugger}>{currentApp.disableDebugger ? 'enable' : 'disable'}</button>
             </li>
             <li className={styles.rightItem}>
-              <input
+              <label style={{cursor: 'pointer'}}><input
                 type="checkbox"
                 disabled={currentApp.isExecutingAsync}
                 onChange={() => this.onResetOnRefreshClick()}
-                checked={!currentApp.willKeepState}/> <small>reset on refresh</small>
+                checked={!currentApp.willKeepState}/> <small>reset on refresh</small></label>
             </li>
           </ul>
         </li>

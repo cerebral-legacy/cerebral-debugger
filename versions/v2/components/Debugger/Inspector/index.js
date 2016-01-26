@@ -65,10 +65,11 @@ class ObjectValue extends React.Component {
   constructor(props, context) {
     super(props);
     const numberOfKeys = Object.keys(props.value).length;
-    const isHighlightPath = this.props.highlightPath && isInPath(this.props.highlightPath, this.props.path);
+    const isHighlightPath = !!(this.props.highlightPath && isInPath(this.props.highlightPath, this.props.path));
+    const preventCollapse = this.props.path.length === 0 && context.options.expanded;
 
     this.state = {
-      isCollapsed: !isHighlightPath && (numberOfKeys > 3 || numberOfKeys === 0) ? true : context.options.expanded ? false : true
+      isCollapsed: !(preventCollapse || isHighlightPath || (numberOfKeys < 3 && numberOfKeys > 0)) ? true : context.options.expanded ? false : true
     };
   }
   renderProperty(key, value, index, hasNext, path) {

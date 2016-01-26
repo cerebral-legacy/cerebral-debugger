@@ -12,6 +12,10 @@ import Action from './Action';
   signal: currentSignal
 })
 class Signal extends React.Component {
+  constructor(props) {
+    super(props);
+    this.renderAction = this.renderAction.bind(this);
+  }
   onMutationClick(path) {
     this.props.signals.debugger.mutationClicked({
       path
@@ -38,7 +42,7 @@ class Signal extends React.Component {
         <div className={styles.asyncHeader} key={index}>
           <i className={icons.parallel}/>
           <div className={styles.async}>
-            {action.map((action, index) => this.renderAction(action, index))}
+            {action.map(this.renderAction)}
           </div>
         </div>
       );

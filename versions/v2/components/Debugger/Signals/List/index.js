@@ -34,11 +34,13 @@ class SignalsList extends React.Component {
     const namePath = signal.name.split('.');
     const name = namePath.pop();
     const colors = nameToColors(namePath.join('.'), name);
-    const hex = '#' + colors.backgroundColor;
+    const hex = colors.backgroundColor;
     const signalStyle = {
       backgroundColor: hex
     };
     const isActive = currentSignalIndex === index;
+
+    console.log(namePath.join('.'), name);
 
     const className = classnames({
       [styles.item]: true,

@@ -11,10 +11,12 @@ import Inspector from '../Inspector';
 class Model extends React.Component {
   render() {
     return (
-      <div className={styles.model}>
-        <Inspector value={this.props.currentApp.model} expanded canEdit path={this.props.path}/>
+      <div className={styles.wrapper}>
+        <div className={styles.model}>
+          <Inspector value={this.props.currentApp.model} expanded canEdit path={this.props.path}/>
+        </div>
       </div>
-    );
+      );
   }
 }
 

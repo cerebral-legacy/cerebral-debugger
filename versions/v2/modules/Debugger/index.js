@@ -5,6 +5,7 @@ import modelChanged from './signals/modelChanged';
 import signalDoubleClicked from './signals/signalDoubleClicked';
 import rewriteClicked from './signals/rewriteClicked';
 import mutationClicked from './signals/mutationClicked';
+import resetClicked from './signals/resetClicked';
 
 export default (module) => {
 
@@ -26,7 +27,8 @@ export default (module) => {
     modelChanged,
     signalDoubleClicked,
     rewriteClicked,
-    mutationClicked
+    mutationClicked,
+    resetClicked
   });
 
 };

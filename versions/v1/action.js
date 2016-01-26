@@ -73,7 +73,7 @@ module.exports = React.createClass({
     e.preventDefault();
 
     function inspectSignal(window, signalName, path) {
-      if (window.__CEREBRAL_DEVTOOLS_GLOBAL_HOOK__) {
+      if (window.__CEREBRAL_DEVTOOLS_GLOBAL_HOOK__ && window.__CEREBRAL_DEVTOOLS_GLOBAL_HOOK__.signals) {
         var signal = signalName.split('.').reduce(function (signals, key) {
           return signals[key];
         }, window.__CEREBRAL_DEVTOOLS_GLOBAL_HOOK__.signals);

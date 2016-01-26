@@ -56,7 +56,7 @@
   composes: icon;
 }
 .action:before {
-  content: "\e876";
+  content: "\e86c";
 }
 
 .asyncAction {

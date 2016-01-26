@@ -7,7 +7,8 @@ import {
 } from 'common/utils';
 
 @Cerebral({
-  isExecutingAsync: ['debugger', 'currentApp', 'isExecutingAsync']
+  isExecutingAsync: ['debugger', 'currentApp', 'isExecutingAsync'],
+  currentSignalIndex: ['debugger', 'currentSignalIndex']
 })
 class JSONInput extends React.Component {
   constructor(props) {
@@ -60,7 +61,7 @@ class JSONInput extends React.Component {
           value={String(this.state.value)}
           onChange={(event) => this.onChange(event.target.value)}
           onBlur={() => this.onBlur()}
-          disabled={this.props.isExecutingAsync}/>
+          disabled={this.props.isExecutingAsync || this.props.currentSignalIndex !== 0}/>
       </form>
     );
   }

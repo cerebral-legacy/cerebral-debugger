@@ -30,6 +30,19 @@
   content: " "
 }
 
+.mutation {
+  composes: icon;
+}
+.mutation:before {
+    content: "\e161";
+}
+
+.service {
+  composes: icon;
+}
+.service:before {
+    content: "\e8b8";
+}
 
 .icon-radio_button_unchecked:before {
     content: "\e836";
@@ -99,4 +112,11 @@
 }
 .down:before {
     content: "\e5cf";
+}
+
+.warning {
+  composes: icon;
+}
+.warning:before {
+    content: "\e002";
 }

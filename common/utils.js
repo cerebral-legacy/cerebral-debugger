@@ -68,7 +68,6 @@ function fnv32aHash(str) {
 
 export function nameToColors(moduleName, signalName, maxDarken=-0.4, maxLighten=0.8) {
   const colors = [
-    '#F44336', //Red
     '#E91E63', //Pink
     '#9C27B0', //Purple
     '#673AB7', //Deep Purple

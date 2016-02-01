@@ -13,7 +13,7 @@ if (!version || version.substr(0, 3) !== '--v') {
 version = version.replace('--', '');
 
 module.exports = {
-  devtool: 'eval-source-map',
+  devtool: 'eval',
   entry: [
     'webpack-hot-middleware/client?reload=true',
     path.join(__dirname, 'index.js')

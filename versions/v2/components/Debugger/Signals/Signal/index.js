@@ -2,6 +2,7 @@ import React from 'react';
 import {Decorator as Cerebral} from 'cerebral-view-react';
 import styles from './styles.css';
 import icons from 'common/icons.css';
+import connector from 'connector';
 
 import currentSignal from 'common/computed/currentSignal';
 
@@ -15,11 +16,22 @@ class Signal extends React.Component {
   constructor(props) {
     super(props);
     this.renderAction = this.renderAction.bind(this);
+    this.onMutationClick = this.onMutationClick.bind(this);
+    this.onActionClick = this.onActionClick.bind(this);
   }
   onMutationClick(path) {
     this.props.signals.debugger.mutationClicked({
       path
     });
+  }
+  onActionClick(action) {
+    connector.inspect(this.props.signal.name, action.path);
+  }
+  componentDidMount() {
+    Prism.highlightAll();
+  }
+  componentDidUpdate() {
+    Prism.highlightAll();
   }
   renderOutputs(action) {
     return Object.keys(action.outputs).map((output, index) => {
@@ -40,7 +52,6 @@ class Signal extends React.Component {
     if (Array.isArray(action)) {
       return (
         <div className={styles.asyncHeader} key={index}>
-          <i className={icons.parallel}/>
           <div className={styles.async}>
             {action.map(this.renderAction)}
           </div>
@@ -49,8 +60,12 @@ class Signal extends React.Component {
     }
 
     return (
-      <Action action={action} key={index} onMutationClick={(path) => this.onMutationClick(path)}>
-        {action.outputPath ? this.renderOutputs(action) : null}
+      <Action
+        action={action}
+        key={index}
+        onMutationClick={this.onMutationClick}
+        onActionClick={this.onActionClick}>
+      {action.outputPath ? this.renderOutputs(action) : null}
       </Action>
     );
   }

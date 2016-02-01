@@ -21,7 +21,7 @@ module.exports = {
     },
     "signals": [
       {
-        "name": "app.whatpha.heahe.eheheh",
+        "name": "app.whatpha.heahe.eheaehhaeheaheaaheaehaehaehaehaheaehaehaheheaheh",
         "start": 1452960398493,
         "isSync": true,
         "isExecuting": false,
@@ -86,6 +86,11 @@ module.exports = {
                 ]
               }
             ],
+            "services": [{
+              name: "ajax",
+              method: "get",
+              args: ["/api/user"]
+            }],
             "isAsync": false,
             "outputPath": null,
             "isExecuting": false,
@@ -695,7 +700,22 @@ module.exports = {
         "isExecuting": false,
         "branches": [
           {
-            "name": "setTitle",
+            "name": "setTitle(some, thing)",
+            /*
+            "error": {
+              name: "ReferenceError",
+              message: "gege is not defined",
+              stack: `
+function getFleets(_ref) {
+  var input = _ref.input;
+  var services = _ref.services;
+  var output = _ref.output;
+
+  gege.ge;
+  services.ajax.get('/api/fleets').then(output.success).catch(output.error);
+}
+              `
+            },*/
             "input": {
               "title": "h"
             },

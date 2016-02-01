@@ -1,25 +1,81 @@
 .action {
-  margin-bottom: 10px;
   font-size: 10px;
+}
+
+.actionError {
+  composes: action;
+  border: 1px solid #F44336;
+  border-radius: 2px;
+}
+
+.action:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .actionHeader {
   display: flex;
   align-items: flex-start;
+  white-space: nowrap;
 }
+
+.actionErrorHeader {
+  background-color: #F44336;
+  padding: 5px;
+  color: #FAFAFA;
+}
+
+.actionErrorHeader > i {
+  top: 0;
+  margin-right: 5px;
+}
+
+.error {
+  padding: 5px;
+  font-size: 12px;
+}
+
+.stack {
+  resize: none;
+  border: 0;
+  width: 100%;
+  outline: none;
+  height: 100px;
+}
+
+.firstStack {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.stackLine {
+  font-size: 12px;
+}
+
 
 .actionHeader > i {
   top: 0;
   flex: 0 0 20px;
+  margin-right: 5px;
 }
 
 .actionTitle {
-  flex: 1;
   display: inline-block;
   font-size: 16px;
   height: 20px;
   line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+.actionTitle:hover {
+  color: #1e78c3;
+}
+
+.actionNameParams {
+  font-size: 12px;
   margin-left: 5px;
+  opacity: 0.5;
 }
 
 .actionInput {

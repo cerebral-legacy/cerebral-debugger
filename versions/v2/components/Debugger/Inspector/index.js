@@ -71,6 +71,15 @@ class ObjectValue extends React.Component {
     this.state = {
       isCollapsed: !(preventCollapse || isHighlightPath || (numberOfKeys < 3 && numberOfKeys > 0)) ? true : context.options.expanded ? false : true
     };
+
+    this.onCollapseClick = this.onCollapseClick.bind(this);
+    this.onExpandClick = this.onExpandClick.bind(this);
+  }
+  onExpandClick() {
+    this.setState({isCollapsed: false})
+  }
+  onCollapseClick() {
+    this.setState({isCollapsed: true});
   }
   renderProperty(key, value, index, hasNext, path) {
     this.props.path.push(key);
@@ -94,7 +103,7 @@ class ObjectValue extends React.Component {
 
     if (this.state.isCollapsed) {
       return (
-        <div className={isExactHighlightPath ? styles.highlightObject : styles.object} onClick={() => this.setState({isCollapsed: false})}>
+        <div className={isExactHighlightPath ? styles.highlightObject : styles.object} onClick={this.onExpandClick}>
           {this.props.propertyKey ? this.props.propertyKey + ': ' : null}
           <strong>{'{ '}</strong>{this.renderKeys(Object.keys(value))}<strong>{' }'}</strong>
           {hasNext ? ',' : null}
@@ -104,7 +113,7 @@ class ObjectValue extends React.Component {
       const keys = Object.keys(value);
       return (
         <div className={isExactHighlightPath ? styles.highlightObject : styles.object}>
-          <div onClick={() => this.setState({isCollapsed: true})}>{this.props.propertyKey}: <strong>{'{ '}</strong></div>
+          <div onClick={this.onCollapseClick}>{this.props.propertyKey}: <strong>{'{ '}</strong></div>
           {keys.map((key, index) => this.renderProperty(key, value[key], index, index < keys.length - 1, this.props.path))}
           <div><strong>{' }'}</strong>{hasNext ? ',' : null}</div>
         </div>
@@ -113,7 +122,7 @@ class ObjectValue extends React.Component {
       const keys = Object.keys(value);
       return (
         <div className={isExactHighlightPath ? styles.highlightObject : styles.object}>
-          <div onClick={() => this.setState({isCollapsed: true})}><strong>{'{ '}</strong></div>
+          <div onClick={this.onCollapseClick}><strong>{'{ '}</strong></div>
           {keys.map((key, index) => this.renderProperty(key, value[key], index, index < keys.length - 1, this.props.path, this.props.highlightPath))}
           <div><strong>{' }'}</strong>{hasNext ? ',' : null}</div>
         </div>
@@ -133,6 +142,14 @@ class ArrayValue extends React.Component {
     this.state = {
       isCollapsed: !isHighlightPath && (numberOfItems > 3 || numberOfItems === 0) ? true : context.options.expanded ? false : true
     };
+    this.onCollapseClick = this.onCollapseClick.bind(this);
+    this.onExpandClick = this.onExpandClick.bind(this);
+  }
+  onExpandClick() {
+    this.setState({isCollapsed: false})
+  }
+  onCollapseClick() {
+    this.setState({isCollapsed: true});
   }
   renderItem(item, index, hasNext, path) {
     this.props.path.push(index);
@@ -150,7 +167,7 @@ class ArrayValue extends React.Component {
 
     if (this.state.isCollapsed) {
       return (
-        <div className={isExactHighlightPath ? styles.highlightArray : styles.array} onClick={() => this.setState({isCollapsed: false})}>
+        <div className={isExactHighlightPath ? styles.highlightArray : styles.array} onClick={this.onExpandClick}>
           {this.props.propertyKey ? this.props.propertyKey + ': ' : null}
           <strong>{'[ '}</strong>{value.length}<strong>{' ]'}</strong>
           {hasNext ? ',' : null}
@@ -160,7 +177,7 @@ class ArrayValue extends React.Component {
       const keys = Object.keys(value);
       return (
         <div className={isExactHighlightPath ? styles.highlightArray : styles.array}>
-          <div onClick={() => this.setState({isCollapsed: true})}>{this.props.propertyKey}: <strong>{'[ '}</strong></div>
+          <div onClick={this.onCollapseClick}>{this.props.propertyKey}: <strong>{'[ '}</strong></div>
           {value.map((item, index) => this.renderItem(item, index, index < value.length - 1, this.props.path))}
           <div><strong>{' ]'}</strong>{hasNext ? ',' : null}</div>
         </div>
@@ -168,7 +185,7 @@ class ArrayValue extends React.Component {
     } else {
       return (
         <div className={isExactHighlightPath ? styles.highlightArray : styles.array}>
-          <div onClick={() => this.setState({isCollapsed: true})}><strong>{'[ '}</strong></div>
+          <div onClick={this.onCollapseClick}><strong>{'[ '}</strong></div>
           {value.map((item, index) => this.renderItem(item, index, index < value.length - 1, this.props.path))}
           <div><strong>{' ]'}</strong>{hasNext ? ',' : null}</div>
         </div>
@@ -188,6 +205,10 @@ class Value extends React.Component {
       isEditing: false,
       path: props.path.slice()
     };
+
+    this.onSubmit = this.onSubmit.bind(this);
+    this.onBlur = this.onBlur.bind(this);
+    this.onClick = this.onClick.bind(this);
   }
   onClick() {
     this.setState({
@@ -205,6 +226,9 @@ class Value extends React.Component {
       value: value
     });
   }
+  onBlur() {
+    this.setState({isEditing: false});
+  }
   renderValue(value, hasNext) {
     const isExactHighlightPath = this.props.highlightPath && String(this.props.highlightPath) === String(this.props.path);
 
@@ -215,8 +239,8 @@ class Value extends React.Component {
           <span>
             <JSONInput
               value={value}
-            onBlur={() => this.setState({isEditing: false})}
-            onSubmit={(value) => this.onSubmit(value)}/>
+              onBlur={this.onBlur}
+              onSubmit={this.onSubmit}/>
           </span>
             {hasNext ? ',' : null}
         </div>
@@ -225,7 +249,7 @@ class Value extends React.Component {
       return (
         <div className={isExactHighlightPath ? styles.highlightValue : null}>
           {this.props.propertyKey ? this.props.propertyKey + ': ' : <span/>}
-          <span>{isString(value) ? '"' + value + '"' : String(value)}</span>
+          <span onClick={this.onClick}>{isString(value) ? '"' + value + '"' : String(value)}</span>
           {hasNext ? ',' : null}
         </div>
       );
@@ -237,9 +261,7 @@ class Value extends React.Component {
     if (isBoolean(this.props.value)) className = styles.boolean;
     if (isNull(this.props.value)) className = styles.null;
     return (
-      <div
-        className={className}
-        onClick={() => this.onClick()}>
+      <div className={className}>
         {this.renderValue(this.props.value, this.props.hasNext)}
       </div>
     );

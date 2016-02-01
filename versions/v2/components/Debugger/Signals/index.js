@@ -19,7 +19,7 @@ class Signals extends React.Component {
   }
   onResetClick() {
     this.props.signals.debugger.resetClicked();
-    connector.sendEvent('reset');
+    connector.sendEvent('resetStore');
   }
   render() {
     const currentSignal = this.props.debuggerSignals[this.props.currentSignalIndex];

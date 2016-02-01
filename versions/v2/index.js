@@ -1,3 +1,4 @@
+import Prism from 'common/prism';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Controller from 'cerebral';

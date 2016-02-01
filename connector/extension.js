@@ -1,3 +1,5 @@
+import inspectSignal from './inspectSignal';
+
 let onChangeCallback;
 let hasInitialized = false;
 let isInitializing = false;
@@ -32,6 +34,17 @@ const connector = {
         }
       });
     }
+  },
+  inspect(signalName, actionPath) {
+    var src = (
+      '(' + inspectSignal.toString() + ')(window, "' + signalName + '", "' + actionPath + '")'
+    );
+
+    chrome.devtools.inspectedWindow.eval(src, function(res, err) {
+      if (err) {
+        console.log(err);
+      }
+    });
   },
   connect(initCallback, reset) {
     currentInitCallback = initCallback;

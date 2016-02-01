@@ -40,8 +40,6 @@ class SignalsList extends React.Component {
     };
     const isActive = currentSignalIndex === index;
 
-    console.log(namePath.join('.'), name);
-
     const className = classnames({
       [styles.item]: true,
       [styles.activeItem]: isActive,

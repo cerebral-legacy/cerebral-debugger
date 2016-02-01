@@ -9,6 +9,7 @@ const connector = window.CONNECTOR = {
     cb(initData);
   },
   sendEvent() {},
+  inspect() {},
   receiveEvent(path) {
     require.ensure([], () => {
       onChangeCallback(require('./mocks/' + path));

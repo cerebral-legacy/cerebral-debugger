@@ -6,7 +6,7 @@ function updateSignals({input, module, modules, state}) {
 
   function getSignalIndex(signal) {
     for (var x = input.data.signals.length - 1; x >= 0; x--) {
-      if (app.signals[app.signals.length - 1 - x].start === signal.start) {
+      if (app.signals[app.signals.length - 1 - x] && app.signals[app.signals.length - 1 - x].start === signal.start) {
         return x;
         break;
       }

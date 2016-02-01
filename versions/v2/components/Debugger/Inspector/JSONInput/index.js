@@ -18,13 +18,16 @@ class JSONInput extends React.Component {
       value: this.props.value,
       initialValue: this.props.value
     };
+    this.onChange = this.onChange.bind(this);
+    this.onSubmit = this.onSubmit.bind(this);
   }
   componentDidMount(prevProps, prevState) {
     this.refs.input.select();
   }
-  onChange(value) {
+  onChange(event) {
+    let value = event.target.value;
     let isValid = true;
-    var parsedValue = value;
+    let parsedValue = value;
 
     try {
       parsedValue = JSON.parse(value);
@@ -49,9 +52,13 @@ class JSONInput extends React.Component {
     });
     this.props.onBlur();
   }
+  onSubmit(event) {
+    event.preventDefault();
+    this.props.onSubmit(this.state.value);
+  }
   render() {
     return (
-      <form style={{display: 'inline'}} onSubmit={(event) => {event.preventDefault();this.props.onSubmit(this.state.value)}}>
+      <form style={{display: 'inline'}} onSubmit={this.onSubmit}>
         <input
           ref="input"
           type="Text"
@@ -59,7 +66,7 @@ class JSONInput extends React.Component {
           onKeyDown={(event) => {event.keyCode === 27 && this.onBlur()}}
           className={this.state.isValid ? styles.input : styles.invalidInput}
           value={String(this.state.value)}
-          onChange={(event) => this.onChange(event.target.value)}
+          onChange={this.onChange}
           onBlur={() => this.onBlur()}
           disabled={this.props.isExecutingAsync || this.props.currentSignalIndex !== 0}/>
       </form>

@@ -6,6 +6,7 @@
 
 .list {
   flex: 2;
+  min-width: 200px;
 }
 
 .signal {
@@ -50,4 +51,25 @@
 }
 .reset:hover {
   background-color: #FAFAFA;
+}
+
+@media (max-width: 650px) {
+    .list {
+        flex: 0;
+        min-width: 25vw;
+        max-width: 25vw;
+    }
+
+    .list:hover {
+        min-width: inherit;
+        max-width: 80vw;
+    }
+
+    button {
+        font-size: 7px;
+    }
+
+    .list:hover button {
+        font-size: 11px;
+    }
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import classNames from 'classnames';
 import {Decorator as Cerebral} from 'cerebral-view-react';
 import styles from './styles.css';
 import icons from 'common/icons.css';
@@ -23,12 +24,12 @@ class Toolbar extends React.Component {
         <li className={styles.item}>
           <ul className={styles.tabs}>
             <li
-              className={this.props.currentPage === 'signals' ? styles.activeTab : styles.tab}
+              className={classNames(styles.tabOnSmall, styles.tab, {[styles.activeTab]: this.props.currentPage === 'signals'})}
               onClick={() => this.props.signals.debugger.pageChanged({page: 'signals'})}>
               <i className={icons.signals}/> SIGNALS
             </li>
             <li
-              className={this.props.currentPage === 'model' ? styles.activeTab : styles.tab}
+              className={classNames(styles.tabOnSmall, styles.tab, {[styles.activeTab]: this.props.currentPage === 'model'})}
               onClick={() => this.props.signals.debugger.pageChanged({page: 'model'})}>
               <i className={icons.model}/> MODEL
             </li>

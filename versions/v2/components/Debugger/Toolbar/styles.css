@@ -53,3 +53,9 @@
   line-height: 40px;
   margin-right: 10px;
 }
+
+@media (min-width: 1280px) {
+    .tabOnSmall {
+        display: none;
+    }
+}

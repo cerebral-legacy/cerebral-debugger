@@ -31,8 +31,8 @@ class Debugger extends React.Component {
           <Toolbar />
         </div>
         <div className={styles.content}>
-          <Signals className={this.props.currentPage !== 'signals' ? styles.hidden : ''}/>
-          <Model className={this.props.currentPage !== 'model' ? styles.hidden : ''}/>
+          <Signals className={this.props.currentPage !== 'signals' ? styles.hiddenOnSmall : null}/>
+          <Model className={this.props.currentPage !== 'model' ? styles.hiddenOnSmall : null}/>
         </div>
       </div>
     );

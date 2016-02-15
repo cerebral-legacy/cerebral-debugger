@@ -25,6 +25,8 @@
   color: #333;
 }
 
-.hidden {
-    display: none!important;
+@media (max-width: 1280px) {
+    .hiddenOnSmall {
+        display: none!important;
+    }
 }

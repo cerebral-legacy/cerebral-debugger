@@ -6,7 +6,7 @@ function setSignals({input, module, modules, state}) {
   module.state.merge({
     signals: debuggerSignals,
     currentSignalIndex: 0,
-    currentRememberedSignalPath: [0]
+    currentRememberedSignalPath: [input.data.signals.length - 1]
   });
 
 }

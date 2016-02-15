@@ -75,6 +75,12 @@ class ObjectValue extends React.Component {
     this.onCollapseClick = this.onCollapseClick.bind(this);
     this.onExpandClick = this.onExpandClick.bind(this);
   }
+  shouldComponentUpdate(nextProps, nextState) {
+    return (
+      nextState.isCollapsed !== this.state.isCollapsed ||
+      this.context.options.canEdit
+    );
+  }
   onExpandClick() {
     this.setState({isCollapsed: false})
   }
@@ -145,6 +151,12 @@ class ArrayValue extends React.Component {
     this.onCollapseClick = this.onCollapseClick.bind(this);
     this.onExpandClick = this.onExpandClick.bind(this);
   }
+  shouldComponentUpdate(nextProps, nextState) {
+    return (
+      nextState.isCollapsed !== this.state.isCollapsed ||
+      this.context.options.canEdit
+    );
+  }
   onExpandClick() {
     this.setState({isCollapsed: false})
   }
@@ -209,6 +221,12 @@ class Value extends React.Component {
     this.onSubmit = this.onSubmit.bind(this);
     this.onBlur = this.onBlur.bind(this);
     this.onClick = this.onClick.bind(this);
+  }
+  shouldComponentUpdate(nextProps, nextState) {
+    return (
+      nextProps.value !== this.props.value ||
+      nextState.isEditing !== this.state.isEditing
+    );
   }
   onClick() {
     this.setState({

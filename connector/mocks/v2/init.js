@@ -211,6 +211,1944 @@ module.exports = {
             "actionIndex": 0
           },
           {
+            "name": "addTodo",
+            "input": {},
+            "output": {
+              "ref": 0
+            },
+            "duration": 0,
+            "mutations": [
+              {
+                "name": "set",
+                "path": [
+                  "refs",
+                  "nextRef"
+                ],
+                "args": [
+                  1
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "list",
+                  "todos",
+                  0
+                ],
+                "args": [
+                  {
+                    "$ref": 0,
+                    "$isSaving": true,
+                    "title": "hey",
+                    "completed": false
+                  }
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "new",
+                  "title"
+                ],
+                "args": [
+                  ""
+                ]
+              }
+            ],
+            "isAsync": false,
+            "outputPath": null,
+            "isExecuting": false,
+            "hasExecuted": true,
+            "path": [
+              0
+            ],
+            "outputs": null,
+            "actionIndex": 0
+          },
+          {
+            "name": "addTodo",
+            "input": {},
+            "output": {
+              "ref": 0
+            },
+            "duration": 0,
+            "mutations": [
+              {
+                "name": "set",
+                "path": [
+                  "refs",
+                  "nextRef"
+                ],
+                "args": [
+                  1
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "list",
+                  "todos",
+                  0
+                ],
+                "args": [
+                  {
+                    "$ref": 0,
+                    "$isSaving": true,
+                    "title": "hey",
+                    "completed": false
+                  }
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "new",
+                  "title"
+                ],
+                "args": [
+                  ""
+                ]
+              }
+            ],
+            "isAsync": false,
+            "outputPath": null,
+            "isExecuting": false,
+            "hasExecuted": true,
+            "path": [
+              0
+            ],
+            "outputs": null,
+            "actionIndex": 0
+          },
+          {
+            "name": "addTodo",
+            "input": {},
+            "output": {
+              "ref": 0
+            },
+            "duration": 0,
+            "mutations": [
+              {
+                "name": "set",
+                "path": [
+                  "refs",
+                  "nextRef"
+                ],
+                "args": [
+                  1
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "list",
+                  "todos",
+                  0
+                ],
+                "args": [
+                  {
+                    "$ref": 0,
+                    "$isSaving": true,
+                    "title": "hey",
+                    "completed": false
+                  }
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "new",
+                  "title"
+                ],
+                "args": [
+                  ""
+                ]
+              }
+            ],
+            "isAsync": false,
+            "outputPath": null,
+            "isExecuting": false,
+            "hasExecuted": true,
+            "path": [
+              0
+            ],
+            "outputs": null,
+            "actionIndex": 0
+          },
+          {
+            "name": "addTodo",
+            "input": {},
+            "output": {
+              "ref": 0
+            },
+            "duration": 0,
+            "mutations": [
+              {
+                "name": "set",
+                "path": [
+                  "refs",
+                  "nextRef"
+                ],
+                "args": [
+                  1
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "list",
+                  "todos",
+                  0
+                ],
+                "args": [
+                  {
+                    "$ref": 0,
+                    "$isSaving": true,
+                    "title": "hey",
+                    "completed": false
+                  }
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "new",
+                  "title"
+                ],
+                "args": [
+                  ""
+                ]
+              }
+            ],
+            "isAsync": false,
+            "outputPath": null,
+            "isExecuting": false,
+            "hasExecuted": true,
+            "path": [
+              0
+            ],
+            "outputs": null,
+            "actionIndex": 0
+          },
+          {
+            "name": "addTodo",
+            "input": {},
+            "output": {
+              "ref": 0
+            },
+            "duration": 0,
+            "mutations": [
+              {
+                "name": "set",
+                "path": [
+                  "refs",
+                  "nextRef"
+                ],
+                "args": [
+                  1
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "list",
+                  "todos",
+                  0
+                ],
+                "args": [
+                  {
+                    "$ref": 0,
+                    "$isSaving": true,
+                    "title": "hey",
+                    "completed": false
+                  }
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "new",
+                  "title"
+                ],
+                "args": [
+                  ""
+                ]
+              }
+            ],
+            "isAsync": false,
+            "outputPath": null,
+            "isExecuting": false,
+            "hasExecuted": true,
+            "path": [
+              0
+            ],
+            "outputs": null,
+            "actionIndex": 0
+          },
+          {
+            "name": "addTodo",
+            "input": {},
+            "output": {
+              "ref": 0
+            },
+            "duration": 0,
+            "mutations": [
+              {
+                "name": "set",
+                "path": [
+                  "refs",
+                  "nextRef"
+                ],
+                "args": [
+                  1
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "list",
+                  "todos",
+                  0
+                ],
+                "args": [
+                  {
+                    "$ref": 0,
+                    "$isSaving": true,
+                    "title": "hey",
+                    "completed": false
+                  }
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "new",
+                  "title"
+                ],
+                "args": [
+                  ""
+                ]
+              }
+            ],
+            "isAsync": false,
+            "outputPath": null,
+            "isExecuting": false,
+            "hasExecuted": true,
+            "path": [
+              0
+            ],
+            "outputs": null,
+            "actionIndex": 0
+          },
+          {
+            "name": "addTodo",
+            "input": {},
+            "output": {
+              "ref": 0
+            },
+            "duration": 0,
+            "mutations": [
+              {
+                "name": "set",
+                "path": [
+                  "refs",
+                  "nextRef"
+                ],
+                "args": [
+                  1
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "list",
+                  "todos",
+                  0
+                ],
+                "args": [
+                  {
+                    "$ref": 0,
+                    "$isSaving": true,
+                    "title": "hey",
+                    "completed": false
+                  }
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "new",
+                  "title"
+                ],
+                "args": [
+                  ""
+                ]
+              }
+            ],
+            "isAsync": false,
+            "outputPath": null,
+            "isExecuting": false,
+            "hasExecuted": true,
+            "path": [
+              0
+            ],
+            "outputs": null,
+            "actionIndex": 0
+          },
+          {
+            "name": "addTodo",
+            "input": {},
+            "output": {
+              "ref": 0
+            },
+            "duration": 0,
+            "mutations": [
+              {
+                "name": "set",
+                "path": [
+                  "refs",
+                  "nextRef"
+                ],
+                "args": [
+                  1
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "list",
+                  "todos",
+                  0
+                ],
+                "args": [
+                  {
+                    "$ref": 0,
+                    "$isSaving": true,
+                    "title": "hey",
+                    "completed": false
+                  }
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "new",
+                  "title"
+                ],
+                "args": [
+                  ""
+                ]
+              }
+            ],
+            "isAsync": false,
+            "outputPath": null,
+            "isExecuting": false,
+            "hasExecuted": true,
+            "path": [
+              0
+            ],
+            "outputs": null,
+            "actionIndex": 0
+          },
+          {
+            "name": "addTodo",
+            "input": {},
+            "output": {
+              "ref": 0
+            },
+            "duration": 0,
+            "mutations": [
+              {
+                "name": "set",
+                "path": [
+                  "refs",
+                  "nextRef"
+                ],
+                "args": [
+                  1
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "list",
+                  "todos",
+                  0
+                ],
+                "args": [
+                  {
+                    "$ref": 0,
+                    "$isSaving": true,
+                    "title": "hey",
+                    "completed": false
+                  }
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "new",
+                  "title"
+                ],
+                "args": [
+                  ""
+                ]
+              }
+            ],
+            "isAsync": false,
+            "outputPath": null,
+            "isExecuting": false,
+            "hasExecuted": true,
+            "path": [
+              0
+            ],
+            "outputs": null,
+            "actionIndex": 0
+          },
+          {
+            "name": "addTodo",
+            "input": {},
+            "output": {
+              "ref": 0
+            },
+            "duration": 0,
+            "mutations": [
+              {
+                "name": "set",
+                "path": [
+                  "refs",
+                  "nextRef"
+                ],
+                "args": [
+                  1
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "list",
+                  "todos",
+                  0
+                ],
+                "args": [
+                  {
+                    "$ref": 0,
+                    "$isSaving": true,
+                    "title": "hey",
+                    "completed": false
+                  }
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "new",
+                  "title"
+                ],
+                "args": [
+                  ""
+                ]
+              }
+            ],
+            "isAsync": false,
+            "outputPath": null,
+            "isExecuting": false,
+            "hasExecuted": true,
+            "path": [
+              0
+            ],
+            "outputs": null,
+            "actionIndex": 0
+          },
+          {
+            "name": "addTodo",
+            "input": {},
+            "output": {
+              "ref": 0
+            },
+            "duration": 0,
+            "mutations": [
+              {
+                "name": "set",
+                "path": [
+                  "refs",
+                  "nextRef"
+                ],
+                "args": [
+                  1
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "list",
+                  "todos",
+                  0
+                ],
+                "args": [
+                  {
+                    "$ref": 0,
+                    "$isSaving": true,
+                    "title": "hey",
+                    "completed": false
+                  }
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "new",
+                  "title"
+                ],
+                "args": [
+                  ""
+                ]
+              }
+            ],
+            "isAsync": false,
+            "outputPath": null,
+            "isExecuting": false,
+            "hasExecuted": true,
+            "path": [
+              0
+            ],
+            "outputs": null,
+            "actionIndex": 0
+          },
+          {
+            "name": "addTodo",
+            "input": {},
+            "output": {
+              "ref": 0
+            },
+            "duration": 0,
+            "mutations": [
+              {
+                "name": "set",
+                "path": [
+                  "refs",
+                  "nextRef"
+                ],
+                "args": [
+                  1
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "list",
+                  "todos",
+                  0
+                ],
+                "args": [
+                  {
+                    "$ref": 0,
+                    "$isSaving": true,
+                    "title": "hey",
+                    "completed": false
+                  }
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "new",
+                  "title"
+                ],
+                "args": [
+                  ""
+                ]
+              }
+            ],
+            "isAsync": false,
+            "outputPath": null,
+            "isExecuting": false,
+            "hasExecuted": true,
+            "path": [
+              0
+            ],
+            "outputs": null,
+            "actionIndex": 0
+          },
+          {
+            "name": "addTodo",
+            "input": {},
+            "output": {
+              "ref": 0
+            },
+            "duration": 0,
+            "mutations": [
+              {
+                "name": "set",
+                "path": [
+                  "refs",
+                  "nextRef"
+                ],
+                "args": [
+                  1
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "list",
+                  "todos",
+                  0
+                ],
+                "args": [
+                  {
+                    "$ref": 0,
+                    "$isSaving": true,
+                    "title": "hey",
+                    "completed": false
+                  }
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "new",
+                  "title"
+                ],
+                "args": [
+                  ""
+                ]
+              }
+            ],
+            "isAsync": false,
+            "outputPath": null,
+            "isExecuting": false,
+            "hasExecuted": true,
+            "path": [
+              0
+            ],
+            "outputs": null,
+            "actionIndex": 0
+          },
+          {
+            "name": "addTodo",
+            "input": {},
+            "output": {
+              "ref": 0
+            },
+            "duration": 0,
+            "mutations": [
+              {
+                "name": "set",
+                "path": [
+                  "refs",
+                  "nextRef"
+                ],
+                "args": [
+                  1
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "list",
+                  "todos",
+                  0
+                ],
+                "args": [
+                  {
+                    "$ref": 0,
+                    "$isSaving": true,
+                    "title": "hey",
+                    "completed": false
+                  }
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "new",
+                  "title"
+                ],
+                "args": [
+                  ""
+                ]
+              }
+            ],
+            "isAsync": false,
+            "outputPath": null,
+            "isExecuting": false,
+            "hasExecuted": true,
+            "path": [
+              0
+            ],
+            "outputs": null,
+            "actionIndex": 0
+          },
+          {
+            "name": "addTodo",
+            "input": {},
+            "output": {
+              "ref": 0
+            },
+            "duration": 0,
+            "mutations": [
+              {
+                "name": "set",
+                "path": [
+                  "refs",
+                  "nextRef"
+                ],
+                "args": [
+                  1
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "list",
+                  "todos",
+                  0
+                ],
+                "args": [
+                  {
+                    "$ref": 0,
+                    "$isSaving": true,
+                    "title": "hey",
+                    "completed": false
+                  }
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "new",
+                  "title"
+                ],
+                "args": [
+                  ""
+                ]
+              }
+            ],
+            "isAsync": false,
+            "outputPath": null,
+            "isExecuting": false,
+            "hasExecuted": true,
+            "path": [
+              0
+            ],
+            "outputs": null,
+            "actionIndex": 0
+          },
+          {
+            "name": "addTodo",
+            "input": {},
+            "output": {
+              "ref": 0
+            },
+            "duration": 0,
+            "mutations": [
+              {
+                "name": "set",
+                "path": [
+                  "refs",
+                  "nextRef"
+                ],
+                "args": [
+                  1
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "list",
+                  "todos",
+                  0
+                ],
+                "args": [
+                  {
+                    "$ref": 0,
+                    "$isSaving": true,
+                    "title": "hey",
+                    "completed": false
+                  }
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "new",
+                  "title"
+                ],
+                "args": [
+                  ""
+                ]
+              }
+            ],
+            "isAsync": false,
+            "outputPath": null,
+            "isExecuting": false,
+            "hasExecuted": true,
+            "path": [
+              0
+            ],
+            "outputs": null,
+            "actionIndex": 0
+          },
+          {
+            "name": "addTodo",
+            "input": {},
+            "output": {
+              "ref": 0
+            },
+            "duration": 0,
+            "mutations": [
+              {
+                "name": "set",
+                "path": [
+                  "refs",
+                  "nextRef"
+                ],
+                "args": [
+                  1
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "list",
+                  "todos",
+                  0
+                ],
+                "args": [
+                  {
+                    "$ref": 0,
+                    "$isSaving": true,
+                    "title": "hey",
+                    "completed": false
+                  }
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "new",
+                  "title"
+                ],
+                "args": [
+                  ""
+                ]
+              }
+            ],
+            "isAsync": false,
+            "outputPath": null,
+            "isExecuting": false,
+            "hasExecuted": true,
+            "path": [
+              0
+            ],
+            "outputs": null,
+            "actionIndex": 0
+          },
+          {
+            "name": "addTodo",
+            "input": {},
+            "output": {
+              "ref": 0
+            },
+            "duration": 0,
+            "mutations": [
+              {
+                "name": "set",
+                "path": [
+                  "refs",
+                  "nextRef"
+                ],
+                "args": [
+                  1
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "list",
+                  "todos",
+                  0
+                ],
+                "args": [
+                  {
+                    "$ref": 0,
+                    "$isSaving": true,
+                    "title": "hey",
+                    "completed": false
+                  }
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "new",
+                  "title"
+                ],
+                "args": [
+                  ""
+                ]
+              }
+            ],
+            "isAsync": false,
+            "outputPath": null,
+            "isExecuting": false,
+            "hasExecuted": true,
+            "path": [
+              0
+            ],
+            "outputs": null,
+            "actionIndex": 0
+          },
+          {
+            "name": "addTodo",
+            "input": {},
+            "output": {
+              "ref": 0
+            },
+            "duration": 0,
+            "mutations": [
+              {
+                "name": "set",
+                "path": [
+                  "refs",
+                  "nextRef"
+                ],
+                "args": [
+                  1
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "list",
+                  "todos",
+                  0
+                ],
+                "args": [
+                  {
+                    "$ref": 0,
+                    "$isSaving": true,
+                    "title": "hey",
+                    "completed": false
+                  }
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "new",
+                  "title"
+                ],
+                "args": [
+                  ""
+                ]
+              }
+            ],
+            "isAsync": false,
+            "outputPath": null,
+            "isExecuting": false,
+            "hasExecuted": true,
+            "path": [
+              0
+            ],
+            "outputs": null,
+            "actionIndex": 0
+          },
+          {
+            "name": "addTodo",
+            "input": {},
+            "output": {
+              "ref": 0
+            },
+            "duration": 0,
+            "mutations": [
+              {
+                "name": "set",
+                "path": [
+                  "refs",
+                  "nextRef"
+                ],
+                "args": [
+                  1
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "list",
+                  "todos",
+                  0
+                ],
+                "args": [
+                  {
+                    "$ref": 0,
+                    "$isSaving": true,
+                    "title": "hey",
+                    "completed": false
+                  }
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "new",
+                  "title"
+                ],
+                "args": [
+                  ""
+                ]
+              }
+            ],
+            "isAsync": false,
+            "outputPath": null,
+            "isExecuting": false,
+            "hasExecuted": true,
+            "path": [
+              0
+            ],
+            "outputs": null,
+            "actionIndex": 0
+          },
+          {
+            "name": "addTodo",
+            "input": {},
+            "output": {
+              "ref": 0
+            },
+            "duration": 0,
+            "mutations": [
+              {
+                "name": "set",
+                "path": [
+                  "refs",
+                  "nextRef"
+                ],
+                "args": [
+                  1
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "list",
+                  "todos",
+                  0
+                ],
+                "args": [
+                  {
+                    "$ref": 0,
+                    "$isSaving": true,
+                    "title": "hey",
+                    "completed": false
+                  }
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "new",
+                  "title"
+                ],
+                "args": [
+                  ""
+                ]
+              }
+            ],
+            "isAsync": false,
+            "outputPath": null,
+            "isExecuting": false,
+            "hasExecuted": true,
+            "path": [
+              0
+            ],
+            "outputs": null,
+            "actionIndex": 0
+          },
+          {
+            "name": "addTodo",
+            "input": {},
+            "output": {
+              "ref": 0
+            },
+            "duration": 0,
+            "mutations": [
+              {
+                "name": "set",
+                "path": [
+                  "refs",
+                  "nextRef"
+                ],
+                "args": [
+                  1
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "list",
+                  "todos",
+                  0
+                ],
+                "args": [
+                  {
+                    "$ref": 0,
+                    "$isSaving": true,
+                    "title": "hey",
+                    "completed": false
+                  }
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "new",
+                  "title"
+                ],
+                "args": [
+                  ""
+                ]
+              }
+            ],
+            "isAsync": false,
+            "outputPath": null,
+            "isExecuting": false,
+            "hasExecuted": true,
+            "path": [
+              0
+            ],
+            "outputs": null,
+            "actionIndex": 0
+          },
+          {
+            "name": "addTodo",
+            "input": {},
+            "output": {
+              "ref": 0
+            },
+            "duration": 0,
+            "mutations": [
+              {
+                "name": "set",
+                "path": [
+                  "refs",
+                  "nextRef"
+                ],
+                "args": [
+                  1
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "list",
+                  "todos",
+                  0
+                ],
+                "args": [
+                  {
+                    "$ref": 0,
+                    "$isSaving": true,
+                    "title": "hey",
+                    "completed": false
+                  }
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "new",
+                  "title"
+                ],
+                "args": [
+                  ""
+                ]
+              }
+            ],
+            "isAsync": false,
+            "outputPath": null,
+            "isExecuting": false,
+            "hasExecuted": true,
+            "path": [
+              0
+            ],
+            "outputs": null,
+            "actionIndex": 0
+          },
+          {
+            "name": "addTodo",
+            "input": {},
+            "output": {
+              "ref": 0
+            },
+            "duration": 0,
+            "mutations": [
+              {
+                "name": "set",
+                "path": [
+                  "refs",
+                  "nextRef"
+                ],
+                "args": [
+                  1
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "list",
+                  "todos",
+                  0
+                ],
+                "args": [
+                  {
+                    "$ref": 0,
+                    "$isSaving": true,
+                    "title": "hey",
+                    "completed": false
+                  }
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "new",
+                  "title"
+                ],
+                "args": [
+                  ""
+                ]
+              }
+            ],
+            "isAsync": false,
+            "outputPath": null,
+            "isExecuting": false,
+            "hasExecuted": true,
+            "path": [
+              0
+            ],
+            "outputs": null,
+            "actionIndex": 0
+          },
+          {
+            "name": "addTodo",
+            "input": {},
+            "output": {
+              "ref": 0
+            },
+            "duration": 0,
+            "mutations": [
+              {
+                "name": "set",
+                "path": [
+                  "refs",
+                  "nextRef"
+                ],
+                "args": [
+                  1
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "list",
+                  "todos",
+                  0
+                ],
+                "args": [
+                  {
+                    "$ref": 0,
+                    "$isSaving": true,
+                    "title": "hey",
+                    "completed": false
+                  }
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "new",
+                  "title"
+                ],
+                "args": [
+                  ""
+                ]
+              }
+            ],
+            "isAsync": false,
+            "outputPath": null,
+            "isExecuting": false,
+            "hasExecuted": true,
+            "path": [
+              0
+            ],
+            "outputs": null,
+            "actionIndex": 0
+          },
+          {
+            "name": "addTodo",
+            "input": {},
+            "output": {
+              "ref": 0
+            },
+            "duration": 0,
+            "mutations": [
+              {
+                "name": "set",
+                "path": [
+                  "refs",
+                  "nextRef"
+                ],
+                "args": [
+                  1
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "list",
+                  "todos",
+                  0
+                ],
+                "args": [
+                  {
+                    "$ref": 0,
+                    "$isSaving": true,
+                    "title": "hey",
+                    "completed": false
+                  }
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "new",
+                  "title"
+                ],
+                "args": [
+                  ""
+                ]
+              }
+            ],
+            "isAsync": false,
+            "outputPath": null,
+            "isExecuting": false,
+            "hasExecuted": true,
+            "path": [
+              0
+            ],
+            "outputs": null,
+            "actionIndex": 0
+          },
+          {
+            "name": "addTodo",
+            "input": {},
+            "output": {
+              "ref": 0
+            },
+            "duration": 0,
+            "mutations": [
+              {
+                "name": "set",
+                "path": [
+                  "refs",
+                  "nextRef"
+                ],
+                "args": [
+                  1
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "list",
+                  "todos",
+                  0
+                ],
+                "args": [
+                  {
+                    "$ref": 0,
+                    "$isSaving": true,
+                    "title": "hey",
+                    "completed": false
+                  }
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "new",
+                  "title"
+                ],
+                "args": [
+                  ""
+                ]
+              }
+            ],
+            "isAsync": false,
+            "outputPath": null,
+            "isExecuting": false,
+            "hasExecuted": true,
+            "path": [
+              0
+            ],
+            "outputs": null,
+            "actionIndex": 0
+          },
+          {
+            "name": "addTodo",
+            "input": {},
+            "output": {
+              "ref": 0
+            },
+            "duration": 0,
+            "mutations": [
+              {
+                "name": "set",
+                "path": [
+                  "refs",
+                  "nextRef"
+                ],
+                "args": [
+                  1
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "list",
+                  "todos",
+                  0
+                ],
+                "args": [
+                  {
+                    "$ref": 0,
+                    "$isSaving": true,
+                    "title": "hey",
+                    "completed": false
+                  }
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "new",
+                  "title"
+                ],
+                "args": [
+                  ""
+                ]
+              }
+            ],
+            "isAsync": false,
+            "outputPath": null,
+            "isExecuting": false,
+            "hasExecuted": true,
+            "path": [
+              0
+            ],
+            "outputs": null,
+            "actionIndex": 0
+          },
+          {
+            "name": "addTodo",
+            "input": {},
+            "output": {
+              "ref": 0
+            },
+            "duration": 0,
+            "mutations": [
+              {
+                "name": "set",
+                "path": [
+                  "refs",
+                  "nextRef"
+                ],
+                "args": [
+                  1
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "list",
+                  "todos",
+                  0
+                ],
+                "args": [
+                  {
+                    "$ref": 0,
+                    "$isSaving": true,
+                    "title": "hey",
+                    "completed": false
+                  }
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "new",
+                  "title"
+                ],
+                "args": [
+                  ""
+                ]
+              }
+            ],
+            "isAsync": false,
+            "outputPath": null,
+            "isExecuting": false,
+            "hasExecuted": true,
+            "path": [
+              0
+            ],
+            "outputs": null,
+            "actionIndex": 0
+          },
+          {
+            "name": "addTodo",
+            "input": {},
+            "output": {
+              "ref": 0
+            },
+            "duration": 0,
+            "mutations": [
+              {
+                "name": "set",
+                "path": [
+                  "refs",
+                  "nextRef"
+                ],
+                "args": [
+                  1
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "list",
+                  "todos",
+                  0
+                ],
+                "args": [
+                  {
+                    "$ref": 0,
+                    "$isSaving": true,
+                    "title": "hey",
+                    "completed": false
+                  }
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "new",
+                  "title"
+                ],
+                "args": [
+                  ""
+                ]
+              }
+            ],
+            "isAsync": false,
+            "outputPath": null,
+            "isExecuting": false,
+            "hasExecuted": true,
+            "path": [
+              0
+            ],
+            "outputs": null,
+            "actionIndex": 0
+          },
+          {
+            "name": "addTodo",
+            "input": {},
+            "output": {
+              "ref": 0
+            },
+            "duration": 0,
+            "mutations": [
+              {
+                "name": "set",
+                "path": [
+                  "refs",
+                  "nextRef"
+                ],
+                "args": [
+                  1
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "list",
+                  "todos",
+                  0
+                ],
+                "args": [
+                  {
+                    "$ref": 0,
+                    "$isSaving": true,
+                    "title": "hey",
+                    "completed": false
+                  }
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "new",
+                  "title"
+                ],
+                "args": [
+                  ""
+                ]
+              }
+            ],
+            "isAsync": false,
+            "outputPath": null,
+            "isExecuting": false,
+            "hasExecuted": true,
+            "path": [
+              0
+            ],
+            "outputs": null,
+            "actionIndex": 0
+          },
+          {
+            "name": "addTodo",
+            "input": {},
+            "output": {
+              "ref": 0
+            },
+            "duration": 0,
+            "mutations": [
+              {
+                "name": "set",
+                "path": [
+                  "refs",
+                  "nextRef"
+                ],
+                "args": [
+                  1
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "list",
+                  "todos",
+                  0
+                ],
+                "args": [
+                  {
+                    "$ref": 0,
+                    "$isSaving": true,
+                    "title": "hey",
+                    "completed": false
+                  }
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "new",
+                  "title"
+                ],
+                "args": [
+                  ""
+                ]
+              }
+            ],
+            "isAsync": false,
+            "outputPath": null,
+            "isExecuting": false,
+            "hasExecuted": true,
+            "path": [
+              0
+            ],
+            "outputs": null,
+            "actionIndex": 0
+          },
+          {
+            "name": "addTodo",
+            "input": {},
+            "output": {
+              "ref": 0
+            },
+            "duration": 0,
+            "mutations": [
+              {
+                "name": "set",
+                "path": [
+                  "refs",
+                  "nextRef"
+                ],
+                "args": [
+                  1
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "list",
+                  "todos",
+                  0
+                ],
+                "args": [
+                  {
+                    "$ref": 0,
+                    "$isSaving": true,
+                    "title": "hey",
+                    "completed": false
+                  }
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "new",
+                  "title"
+                ],
+                "args": [
+                  ""
+                ]
+              }
+            ],
+            "isAsync": false,
+            "outputPath": null,
+            "isExecuting": false,
+            "hasExecuted": true,
+            "path": [
+              0
+            ],
+            "outputs": null,
+            "actionIndex": 0
+          },
+          {
+            "name": "addTodo",
+            "input": {},
+            "output": {
+              "ref": 0
+            },
+            "duration": 0,
+            "mutations": [
+              {
+                "name": "set",
+                "path": [
+                  "refs",
+                  "nextRef"
+                ],
+                "args": [
+                  1
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "list",
+                  "todos",
+                  0
+                ],
+                "args": [
+                  {
+                    "$ref": 0,
+                    "$isSaving": true,
+                    "title": "hey",
+                    "completed": false
+                  }
+                ]
+              },
+              {
+                "name": "set",
+                "path": [
+                  "app",
+                  "new",
+                  "title"
+                ],
+                "args": [
+                  ""
+                ]
+              }
+            ],
+            "isAsync": false,
+            "outputPath": null,
+            "isExecuting": false,
+            "hasExecuted": true,
+            "path": [
+              0
+            ],
+            "outputs": null,
+            "actionIndex": 0
+          },
+          {
             "name": "setSaving",
             "input": {
               "ref": 0

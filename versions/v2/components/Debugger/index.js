@@ -7,11 +7,6 @@ import Toolbar from './Toolbar';
 import Signals from './Signals';
 import Model from './Model';
 
-const pages = {
-  signals: Signals,
-  model: Model
-};
-
 @Cerebral({
   currentPage: ['debugger', 'currentPage'],
   currentApp: ['debugger', 'currentApp']
@@ -21,8 +16,6 @@ class Debugger extends React.Component {
     onChange(this.props.signals.debugger.payloadReceived);
   }
   render() {
-    const Page = pages[this.props.currentPage];
-
     if (!this.props.currentApp) {
       return (
         <div className={styles.loading}>
@@ -35,10 +28,11 @@ class Debugger extends React.Component {
     return (
       <div className={styles.debugger}>
         <div className={styles.toolbar}>
-          <Toolbar/>
+          <Toolbar />
         </div>
         <div className={styles.content}>
-          <Page/>
+          <Signals className={this.props.currentPage !== 'signals' ? styles.hidden : ''}/>
+          <Model className={this.props.currentPage !== 'model' ? styles.hidden : ''}/>
         </div>
       </div>
     );

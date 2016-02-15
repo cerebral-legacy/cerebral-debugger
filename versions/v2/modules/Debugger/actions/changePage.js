@@ -1,7 +1,6 @@
-function changePage({input, module}) {
-  module.state.merge({
-    currentPage: input.page,
-    currentMutationPath: null
+function changePage({input, state}) {
+  state.merge('debugger', {
+    currentPage: input.page
   });
 }
 

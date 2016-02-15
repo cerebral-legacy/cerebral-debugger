@@ -1,18 +1,18 @@
-function setCurrentSignalIndex({input, module}) {
+function setCurrentSignalIndex({input, state}) {
+  const debuggerState = state.select('debugger');
+  const expandedSignalGroups = debuggerState.get(['expandedSignalGroups']);
+  const currentSignalIndex = debuggerState.get(['currentSignalIndex']);
 
-  const expandedSignalGroups = module.state.get(['expandedSignalGroups']);
-  const currentSignalIndex = module.state.get(['currentSignalIndex']);
-
-  module.state.set(['currentSignalIndex'], input.index);
+  debuggerState.set(['currentSignalIndex'], input.index);
 
   if (currentSignalIndex !== input.index) {
     return;
   }
 
   if (input.groupId && expandedSignalGroups.indexOf(input.groupId) === -1) {
-    module.state.push(['expandedSignalGroups'], input.groupId);
+    debuggerState.push(['expandedSignalGroups'], input.groupId);
   } else if (input.groupId) {
-    module.state.splice(['expandedSignalGroups'], expandedSignalGroups.indexOf(input.groupId), 1);
+    debuggerState.splice(['expandedSignalGroups'], expandedSignalGroups.indexOf(input.groupId), 1);
   }
 }
 

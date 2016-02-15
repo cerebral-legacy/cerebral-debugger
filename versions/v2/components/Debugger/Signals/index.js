@@ -8,6 +8,8 @@ import List from './List';
 import Signal from './Signal';
 
 @Cerebral({
+  currentPage: ['debugger', 'currentPage'],
+  media: ['useragent', 'media'],
   currentSignalIndex: ['debugger', 'currentSignalIndex'],
   debuggerSignals: ['debugger', 'signals'],
   appSignals: ['debugger', 'currentApp', 'signals'],
@@ -21,6 +23,9 @@ class Signals extends React.Component {
   onResetClick() {
     this.props.signals.debugger.resetClicked();
     connector.sendEvent('resetStore');
+  }
+  shouldComponentUpdate() {
+    return this.props.currentPage === 'signals' || !this.props.media.small;
   }
   render() {
     const currentSignal = this.props.debuggerSignals[this.props.currentSignalIndex];

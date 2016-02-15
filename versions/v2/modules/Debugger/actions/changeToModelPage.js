@@ -1,5 +1,5 @@
-function changeToModelPage({module}) {
-  module.state.set(['currentPage'], 'model');
+function changeToModelPage({state}) {
+  state.set('debugger.currentPage', 'model');
 }
 
 export default changeToModelPage;

@@ -1,25 +1,26 @@
 import extractMutations from '../helpers/extractMutations';
 
-function remember({input, module}) {
+function remember({input, state}) {
+  const debuggerState = state.select('debugger');
   const signalToRememberIndex = input.path[0];
-  const lastSignal = module.state.get(['signals']).reduce((lastSignal, signal, index) => {
+  const lastSignal = debuggerState.get(['signals']).reduce((lastSignal, signal, index) => {
     if (!lastSignal && signal.path[0] === signalToRememberIndex) {
       return signal;
     }
     return lastSignal;
   }, null);
 
-  const appSignals = module.state.get(['currentApp', 'signals']);
+  const appSignals = debuggerState.get(['currentApp', 'signals']);
   const signalsToRemember = appSignals.slice(0, signalToRememberIndex + 1);
   const mutationsToRun = extractMutations(signalsToRemember);
-  const initialModel = module.state.get(['currentApp', 'initialModel']);
+  const initialModel = debuggerState.get(['currentApp', 'initialModel']);
 
-  module.state.set(['currentApp', 'model'], initialModel);
+  debuggerState.set(['currentApp', 'model'], initialModel);
   mutationsToRun.forEach((mutation) => {
     const path = ['currentApp', 'model'].concat(mutation.path);
-    module.state[mutation.name].apply(null, [path, ...mutation.args]);
+    debuggerState[mutation.name].apply(null, [path, ...mutation.args]);
   });
-  module.state.set(['currentRememberedSignalPath'], lastSignal ? lastSignal.path : [appSignals.length - 1]);
+  debuggerState.set(['currentRememberedSignalPath'], lastSignal ? lastSignal.path : [appSignals.length - 1]);
 
 }
 

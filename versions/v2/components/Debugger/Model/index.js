@@ -6,10 +6,15 @@ import styles from './styles.css';
 import Inspector from '../Inspector';
 
 @Cerebral({
+  currentPage: ['debugger', 'currentPage'],
+  media: ['useragent', 'media'],
   currentApp: ['debugger', 'currentApp'],
   path: ['debugger', 'currentMutationPath']
 })
 class Model extends React.Component {
+  shouldComponentUpdate(nextProps) {
+    return this.props.currentPage === 'model' || !this.props.media.small || this.props.path !== nextProps.path;
+  }
   render() {
     return (
       <div className={classNames(styles.wrapper, this.props.className)}>

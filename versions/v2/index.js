@@ -4,14 +4,22 @@ import ReactDOM from 'react-dom';
 import Controller from 'cerebral';
 import Model from 'cerebral-model-baobab';
 import {Container} from 'cerebral-view-react';
-
+import UserAgent from 'cerebral-module-useragent';
+import Devtools from 'cerebral-module-devtools';
 import DebuggerModule from './modules/Debugger';
 import Debugger from './components/Debugger';
 
 const controller = Controller(Model({}));
 
-controller.modules({
-  debugger: DebuggerModule
+controller.addModules({
+  debugger: DebuggerModule,
+
+  devtools: process.env.NODE_ENV === 'production' ? function () {} : Devtools(),
+  useragent: UserAgent({
+    media: {
+      small: '(max-width: 650px)'
+    }
+  })
 });
 
 export default {

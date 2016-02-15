@@ -1,5 +1,6 @@
-function updateModel({input, module}) {
-  module.state.set(['currentApp', 'model'].concat(input.path), input.value);
+function updateModel({input, state}) {
+  const debuggerState = state.select('debugger');
+  debuggerState.set(['currentApp', 'model'].concat(input.path), input.value);
 }
 
 export default updateModel;

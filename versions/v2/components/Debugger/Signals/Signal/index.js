@@ -9,6 +9,8 @@ import currentSignal from 'common/computed/currentSignal';
 import Action from './Action';
 
 @Cerebral({
+  currentPage: ['debugger', 'currentPage'],
+  media: ['useragent', 'media'],
   app: ['debugger', 'currentApp'],
   signal: currentSignal
 })
@@ -18,6 +20,9 @@ class Signal extends React.Component {
     this.renderAction = this.renderAction.bind(this);
     this.onMutationClick = this.onMutationClick.bind(this);
     this.onActionClick = this.onActionClick.bind(this);
+  }
+  shouldComponentUpdate() {
+    return this.props.currentPage === 'signals' || !this.props.media.small;
   }
   onMutationClick(path) {
     this.props.signals.debugger.mutationClicked({

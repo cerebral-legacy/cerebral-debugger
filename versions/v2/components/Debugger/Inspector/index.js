@@ -13,6 +13,9 @@ import JSONInput from './JSONInput';
 import connector from 'connector';
 
 function isInPath(source, target) {
+  if (!source || !target) {
+    return false;
+  }
   return target.reduce((isInPath, key, index) => {
     if (!isInPath) {
       return false;
@@ -69,7 +72,7 @@ class ObjectValue extends React.Component {
     const preventCollapse = this.props.path.length === 0 && context.options.expanded;
 
     this.state = {
-      isCollapsed: !(preventCollapse || isHighlightPath || (numberOfKeys < 3 && numberOfKeys > 0)) ? true : context.options.expanded ? false : true
+      isCollapsed: !preventCollapse && !isHighlightPath && (numberOfKeys > 3 || numberOfKeys === 0 ? true : context.options.expanded ? false : true)
     };
 
     this.onCollapseClick = this.onCollapseClick.bind(this);
@@ -78,8 +81,24 @@ class ObjectValue extends React.Component {
   shouldComponentUpdate(nextProps, nextState) {
     return (
       nextState.isCollapsed !== this.state.isCollapsed ||
-      this.context.options.canEdit
+      this.context.options.canEdit ||
+      nextProps.path !== this.props.path ||
+      nextProps.highlightPath !== this.props.highlightPath
     );
+  }
+  componentWillReceiveProps(nextProps) {
+    const context = this.context;
+    const props = nextProps;
+    const numberOfKeys = Object.keys(props.value).length;
+    const isHighlightPath = !!(props.highlightPath && isInPath(props.highlightPath, props.path));
+    const preventCollapse = props.path.length === 0 && context.options.expanded;
+
+    if (this.state.isCollapsed) {
+      this.setState({
+        isCollapsed: !preventCollapse && !isHighlightPath && (numberOfKeys > 3 || numberOfKeys === 0 ? true : context.options.expanded ? false : true)
+      });
+    }
+
   }
   onExpandClick() {
     this.setState({isCollapsed: false})
@@ -154,8 +173,21 @@ class ArrayValue extends React.Component {
   shouldComponentUpdate(nextProps, nextState) {
     return (
       nextState.isCollapsed !== this.state.isCollapsed ||
-      this.context.options.canEdit
+      this.context.options.canEdit ||
+      nextProps.path !== this.props.path ||
+      nextProps.highlightPath !== this.props.highlightPath
     );
+  }
+  componentWillReceiveProps(nextProps) {
+    const context = this.context;
+    const props = nextProps;
+    const numberOfItems = props.value.length;
+    const isHighlightPath = props.highlightPath && isInPath(props.highlightPath, props.path);
+    if (this.state.isCollapsed) {
+      this.setState({
+        isCollapsed: !isHighlightPath && (numberOfItems > 3 || numberOfItems === 0) ? true : context.options.expanded ? false : true
+      });
+    }
   }
   onExpandClick() {
     this.setState({isCollapsed: false})
@@ -225,7 +257,8 @@ class Value extends React.Component {
   shouldComponentUpdate(nextProps, nextState) {
     return (
       nextProps.value !== this.props.value ||
-      nextState.isEditing !== this.state.isEditing
+      nextState.isEditing !== this.state.isEditing ||
+      nextProps.path !== this.props.path
     );
   }
   onClick() {

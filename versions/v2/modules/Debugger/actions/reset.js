@@ -1,10 +1,11 @@
-function reset({module}) {
-  const currentApp = module.state.get(['currentApp']);
-  module.state.merge(['currentApp'], {
+function reset({state}) {
+  const debuggerState = state.select('debugger');
+  const currentApp = debuggerState.get(['currentApp']);
+  debuggerState.merge(['currentApp'], {
     model: currentApp.initialModel,
     signals: []
   });
-  module.state.merge({
+  debuggerState.merge({
     signals: [],
     currentSignalIndex: 0,
     currentRememberedSignalPath: [0]

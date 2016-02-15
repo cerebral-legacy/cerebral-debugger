@@ -1,9 +1,9 @@
 import createSignalsStructure from '../helpers/createSignalsStructure';
 
-function setSignals({input, module, modules, state}) {
-
+function setSignals({input, state}) {
+  const debuggerState = state.select('debugger');
   const debuggerSignals = createSignalsStructure(input.data.signals);
-  module.state.merge({
+  debuggerState.merge({
     signals: debuggerSignals,
     currentSignalIndex: 0,
     currentRememberedSignalPath: [input.data.signals.length - 1]

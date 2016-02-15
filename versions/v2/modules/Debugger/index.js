@@ -9,7 +9,7 @@ import resetClicked from './signals/resetClicked';
 
 export default (module) => {
 
-  module.state({
+  module.addState({
     currentPage: 'signals',
     currentApp: null,
     lastMutationCount: 0,
@@ -20,7 +20,7 @@ export default (module) => {
     currentMutationPath: null
   });
 
-  module.signals({
+  module.addSignals({
     pageChanged,
     signalClicked,
     payloadReceived,

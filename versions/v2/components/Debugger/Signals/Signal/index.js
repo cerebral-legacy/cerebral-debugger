@@ -21,8 +21,8 @@ class Signal extends React.Component {
     this.onMutationClick = this.onMutationClick.bind(this);
     this.onActionClick = this.onActionClick.bind(this);
   }
-  shouldComponentUpdate() {
-    return this.props.currentPage === 'signals' || !this.props.media.small;
+  shouldComponentUpdate(nextProps) {
+    return nextProps.currentPage === 'signals' || !nextProps.media.small;
   }
   onMutationClick(path) {
     this.props.signals.debugger.mutationClicked({

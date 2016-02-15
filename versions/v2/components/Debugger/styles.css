@@ -24,3 +24,7 @@
 .loading h3 {
   color: #333;
 }
+
+.hidden {
+    display: none!important;
+}

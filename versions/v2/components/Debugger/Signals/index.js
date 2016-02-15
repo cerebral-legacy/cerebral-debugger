@@ -1,4 +1,5 @@
 import React from 'react';
+import classNames from 'classnames';
 import {Decorator as Cerebral} from 'cerebral-view-react';
 import styles from './styles.css';
 import connector from 'connector';
@@ -27,7 +28,7 @@ class Signals extends React.Component {
     const lastAppSignalsIndex = this.props.appSignals.length - 1;
 
     return (
-      <div className={styles.signals}>
+      <div className={classNames(styles.signals, this.props.className)}>
         <div className={styles.list}>
           <List/>
           <button

@@ -8,7 +8,8 @@ function reset({state}) {
   debuggerState.merge({
     signals: [],
     currentSignalIndex: 0,
-    currentRememberedSignalPath: [0]
+    currentRememberedSignalPath: [0],
+    lastMutationCount: 0
   });
 }
 

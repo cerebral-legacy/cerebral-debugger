@@ -6,6 +6,7 @@ function setInitialPayload({input, state}) {
     signals: input.data.signals,
     currentSignalIndex: 0
   });
+  debuggerState.set('lastMutationCount', 0);
 }
 
 export default setInitialPayload;

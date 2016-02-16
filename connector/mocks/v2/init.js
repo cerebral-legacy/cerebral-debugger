@@ -19,2674 +19,1897 @@ module.exports = {
         nextRef: 0
       }
     },
-    "signals": [
-      {
-        "name": "app.whatpha.heahe.eheaehhaeheaheaaheaehaehaehaehaheaehaehaheheaheh",
-        "start": 1452960398493,
-        "isSync": true,
-        "isExecuting": false,
-        "branches": [
-          {
-            "name": "setTitle",
-            "input": {
-              "title": "h"
-            },
-            "duration": 3,
-            "mutations": [
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "new",
-                  "title"
-                ],
-                "args": [
-                  "h"
-                ]
-              }
-            ],
-            "isAsync": false,
-            "outputPath": null,
-            "isExecuting": false,
-            "hasExecuted": true,
-            "path": [
-              0
-            ],
-            "outputs": null,
-            "actionIndex": 0
-          }
-        ],
-        "duration": 0,
-        "input": {
-          "title": "h"
-        }
-      },
-      {
-        "name": "app.new.titleChanged",
-        "start": 1452960398675,
-        "isSync": true,
-        "isExecuting": false,
-        "branches": [
-          {
-            "name": "setTitle",
-            "input": {
-              "title": "he"
-            },
-            "duration": 0,
-            "mutations": [
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "new",
-                  "title"
-                ],
-                "args": [
-                  "he"
-                ]
-              }
-            ],
-            "services": [{
-              name: "ajax",
-              method: "get",
-              args: ["/api/user"]
-            }],
-            "isAsync": false,
-            "outputPath": null,
-            "isExecuting": false,
-            "hasExecuted": true,
-            "path": [
-              0
-            ],
-            "outputs": null,
-            "actionIndex": 0
-          }
-        ],
-        "duration": 0,
-        "input": {
-          "title": "he"
-        }
-      },
-      {
-        "name": "app.new.titleChanged",
-        "start": 1452960398724,
-        "isSync": true,
-        "isExecuting": false,
-        "branches": [
-          {
-            "name": "setTitle",
-            "input": {
-              "title": "hey"
-            },
-            "duration": 1,
-            "mutations": [
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "new",
-                  "title"
-                ],
-                "args": [
-                  "hey"
-                ]
-              }
-            ],
-            "isAsync": false,
-            "outputPath": null,
-            "isExecuting": false,
-            "hasExecuted": true,
-            "path": [
-              0
-            ],
-            "outputs": null,
-            "actionIndex": 0
-          }
-        ],
-        "duration": 0,
-        "input": {
-          "title": "hey"
-        }
-      },
-      {
-        "name": "app.new.submitted",
-        "start": 1452960398902,
-        "isExecuting": false,
-        "branches": [
-          {
-            "name": "addTodo",
-            "input": {},
-            "output": {
-              "ref": 0
-            },
-            "duration": 0,
-            "mutations": [
-              {
-                "name": "set",
-                "path": [
-                  "refs",
-                  "nextRef"
-                ],
-                "args": [
-                  1
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "list",
-                  "todos",
-                  0
-                ],
-                "args": [
-                  {
-                    "$ref": 0,
-                    "$isSaving": true,
-                    "title": "hey",
-                    "completed": false
-                  }
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "new",
-                  "title"
-                ],
-                "args": [
-                  ""
-                ]
-              }
-            ],
-            "isAsync": false,
-            "outputPath": null,
-            "isExecuting": false,
-            "hasExecuted": true,
-            "path": [
-              0
-            ],
-            "outputs": null,
-            "actionIndex": 0
-          },
-          {
-            "name": "addTodo",
-            "input": {},
-            "output": {
-              "ref": 0
-            },
-            "duration": 0,
-            "mutations": [
-              {
-                "name": "set",
-                "path": [
-                  "refs",
-                  "nextRef"
-                ],
-                "args": [
-                  1
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "list",
-                  "todos",
-                  0
-                ],
-                "args": [
-                  {
-                    "$ref": 0,
-                    "$isSaving": true,
-                    "title": "hey",
-                    "completed": false
-                  }
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "new",
-                  "title"
-                ],
-                "args": [
-                  ""
-                ]
-              }
-            ],
-            "isAsync": false,
-            "outputPath": null,
-            "isExecuting": false,
-            "hasExecuted": true,
-            "path": [
-              0
-            ],
-            "outputs": null,
-            "actionIndex": 0
-          },
-          {
-            "name": "addTodo",
-            "input": {},
-            "output": {
-              "ref": 0
-            },
-            "duration": 0,
-            "mutations": [
-              {
-                "name": "set",
-                "path": [
-                  "refs",
-                  "nextRef"
-                ],
-                "args": [
-                  1
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "list",
-                  "todos",
-                  0
-                ],
-                "args": [
-                  {
-                    "$ref": 0,
-                    "$isSaving": true,
-                    "title": "hey",
-                    "completed": false
-                  }
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "new",
-                  "title"
-                ],
-                "args": [
-                  ""
-                ]
-              }
-            ],
-            "isAsync": false,
-            "outputPath": null,
-            "isExecuting": false,
-            "hasExecuted": true,
-            "path": [
-              0
-            ],
-            "outputs": null,
-            "actionIndex": 0
-          },
-          {
-            "name": "addTodo",
-            "input": {},
-            "output": {
-              "ref": 0
-            },
-            "duration": 0,
-            "mutations": [
-              {
-                "name": "set",
-                "path": [
-                  "refs",
-                  "nextRef"
-                ],
-                "args": [
-                  1
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "list",
-                  "todos",
-                  0
-                ],
-                "args": [
-                  {
-                    "$ref": 0,
-                    "$isSaving": true,
-                    "title": "hey",
-                    "completed": false
-                  }
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "new",
-                  "title"
-                ],
-                "args": [
-                  ""
-                ]
-              }
-            ],
-            "isAsync": false,
-            "outputPath": null,
-            "isExecuting": false,
-            "hasExecuted": true,
-            "path": [
-              0
-            ],
-            "outputs": null,
-            "actionIndex": 0
-          },
-          {
-            "name": "addTodo",
-            "input": {},
-            "output": {
-              "ref": 0
-            },
-            "duration": 0,
-            "mutations": [
-              {
-                "name": "set",
-                "path": [
-                  "refs",
-                  "nextRef"
-                ],
-                "args": [
-                  1
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "list",
-                  "todos",
-                  0
-                ],
-                "args": [
-                  {
-                    "$ref": 0,
-                    "$isSaving": true,
-                    "title": "hey",
-                    "completed": false
-                  }
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "new",
-                  "title"
-                ],
-                "args": [
-                  ""
-                ]
-              }
-            ],
-            "isAsync": false,
-            "outputPath": null,
-            "isExecuting": false,
-            "hasExecuted": true,
-            "path": [
-              0
-            ],
-            "outputs": null,
-            "actionIndex": 0
-          },
-          {
-            "name": "addTodo",
-            "input": {},
-            "output": {
-              "ref": 0
-            },
-            "duration": 0,
-            "mutations": [
-              {
-                "name": "set",
-                "path": [
-                  "refs",
-                  "nextRef"
-                ],
-                "args": [
-                  1
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "list",
-                  "todos",
-                  0
-                ],
-                "args": [
-                  {
-                    "$ref": 0,
-                    "$isSaving": true,
-                    "title": "hey",
-                    "completed": false
-                  }
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "new",
-                  "title"
-                ],
-                "args": [
-                  ""
-                ]
-              }
-            ],
-            "isAsync": false,
-            "outputPath": null,
-            "isExecuting": false,
-            "hasExecuted": true,
-            "path": [
-              0
-            ],
-            "outputs": null,
-            "actionIndex": 0
-          },
-          {
-            "name": "addTodo",
-            "input": {},
-            "output": {
-              "ref": 0
-            },
-            "duration": 0,
-            "mutations": [
-              {
-                "name": "set",
-                "path": [
-                  "refs",
-                  "nextRef"
-                ],
-                "args": [
-                  1
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "list",
-                  "todos",
-                  0
-                ],
-                "args": [
-                  {
-                    "$ref": 0,
-                    "$isSaving": true,
-                    "title": "hey",
-                    "completed": false
-                  }
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "new",
-                  "title"
-                ],
-                "args": [
-                  ""
-                ]
-              }
-            ],
-            "isAsync": false,
-            "outputPath": null,
-            "isExecuting": false,
-            "hasExecuted": true,
-            "path": [
-              0
-            ],
-            "outputs": null,
-            "actionIndex": 0
-          },
-          {
-            "name": "addTodo",
-            "input": {},
-            "output": {
-              "ref": 0
-            },
-            "duration": 0,
-            "mutations": [
-              {
-                "name": "set",
-                "path": [
-                  "refs",
-                  "nextRef"
-                ],
-                "args": [
-                  1
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "list",
-                  "todos",
-                  0
-                ],
-                "args": [
-                  {
-                    "$ref": 0,
-                    "$isSaving": true,
-                    "title": "hey",
-                    "completed": false
-                  }
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "new",
-                  "title"
-                ],
-                "args": [
-                  ""
-                ]
-              }
-            ],
-            "isAsync": false,
-            "outputPath": null,
-            "isExecuting": false,
-            "hasExecuted": true,
-            "path": [
-              0
-            ],
-            "outputs": null,
-            "actionIndex": 0
-          },
-          {
-            "name": "addTodo",
-            "input": {},
-            "output": {
-              "ref": 0
-            },
-            "duration": 0,
-            "mutations": [
-              {
-                "name": "set",
-                "path": [
-                  "refs",
-                  "nextRef"
-                ],
-                "args": [
-                  1
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "list",
-                  "todos",
-                  0
-                ],
-                "args": [
-                  {
-                    "$ref": 0,
-                    "$isSaving": true,
-                    "title": "hey",
-                    "completed": false
-                  }
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "new",
-                  "title"
-                ],
-                "args": [
-                  ""
-                ]
-              }
-            ],
-            "isAsync": false,
-            "outputPath": null,
-            "isExecuting": false,
-            "hasExecuted": true,
-            "path": [
-              0
-            ],
-            "outputs": null,
-            "actionIndex": 0
-          },
-          {
-            "name": "addTodo",
-            "input": {},
-            "output": {
-              "ref": 0
-            },
-            "duration": 0,
-            "mutations": [
-              {
-                "name": "set",
-                "path": [
-                  "refs",
-                  "nextRef"
-                ],
-                "args": [
-                  1
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "list",
-                  "todos",
-                  0
-                ],
-                "args": [
-                  {
-                    "$ref": 0,
-                    "$isSaving": true,
-                    "title": "hey",
-                    "completed": false
-                  }
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "new",
-                  "title"
-                ],
-                "args": [
-                  ""
-                ]
-              }
-            ],
-            "isAsync": false,
-            "outputPath": null,
-            "isExecuting": false,
-            "hasExecuted": true,
-            "path": [
-              0
-            ],
-            "outputs": null,
-            "actionIndex": 0
-          },
-          {
-            "name": "addTodo",
-            "input": {},
-            "output": {
-              "ref": 0
-            },
-            "duration": 0,
-            "mutations": [
-              {
-                "name": "set",
-                "path": [
-                  "refs",
-                  "nextRef"
-                ],
-                "args": [
-                  1
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "list",
-                  "todos",
-                  0
-                ],
-                "args": [
-                  {
-                    "$ref": 0,
-                    "$isSaving": true,
-                    "title": "hey",
-                    "completed": false
-                  }
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "new",
-                  "title"
-                ],
-                "args": [
-                  ""
-                ]
-              }
-            ],
-            "isAsync": false,
-            "outputPath": null,
-            "isExecuting": false,
-            "hasExecuted": true,
-            "path": [
-              0
-            ],
-            "outputs": null,
-            "actionIndex": 0
-          },
-          {
-            "name": "addTodo",
-            "input": {},
-            "output": {
-              "ref": 0
-            },
-            "duration": 0,
-            "mutations": [
-              {
-                "name": "set",
-                "path": [
-                  "refs",
-                  "nextRef"
-                ],
-                "args": [
-                  1
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "list",
-                  "todos",
-                  0
-                ],
-                "args": [
-                  {
-                    "$ref": 0,
-                    "$isSaving": true,
-                    "title": "hey",
-                    "completed": false
-                  }
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "new",
-                  "title"
-                ],
-                "args": [
-                  ""
-                ]
-              }
-            ],
-            "isAsync": false,
-            "outputPath": null,
-            "isExecuting": false,
-            "hasExecuted": true,
-            "path": [
-              0
-            ],
-            "outputs": null,
-            "actionIndex": 0
-          },
-          {
-            "name": "addTodo",
-            "input": {},
-            "output": {
-              "ref": 0
-            },
-            "duration": 0,
-            "mutations": [
-              {
-                "name": "set",
-                "path": [
-                  "refs",
-                  "nextRef"
-                ],
-                "args": [
-                  1
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "list",
-                  "todos",
-                  0
-                ],
-                "args": [
-                  {
-                    "$ref": 0,
-                    "$isSaving": true,
-                    "title": "hey",
-                    "completed": false
-                  }
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "new",
-                  "title"
-                ],
-                "args": [
-                  ""
-                ]
-              }
-            ],
-            "isAsync": false,
-            "outputPath": null,
-            "isExecuting": false,
-            "hasExecuted": true,
-            "path": [
-              0
-            ],
-            "outputs": null,
-            "actionIndex": 0
-          },
-          {
-            "name": "addTodo",
-            "input": {},
-            "output": {
-              "ref": 0
-            },
-            "duration": 0,
-            "mutations": [
-              {
-                "name": "set",
-                "path": [
-                  "refs",
-                  "nextRef"
-                ],
-                "args": [
-                  1
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "list",
-                  "todos",
-                  0
-                ],
-                "args": [
-                  {
-                    "$ref": 0,
-                    "$isSaving": true,
-                    "title": "hey",
-                    "completed": false
-                  }
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "new",
-                  "title"
-                ],
-                "args": [
-                  ""
-                ]
-              }
-            ],
-            "isAsync": false,
-            "outputPath": null,
-            "isExecuting": false,
-            "hasExecuted": true,
-            "path": [
-              0
-            ],
-            "outputs": null,
-            "actionIndex": 0
-          },
-          {
-            "name": "addTodo",
-            "input": {},
-            "output": {
-              "ref": 0
-            },
-            "duration": 0,
-            "mutations": [
-              {
-                "name": "set",
-                "path": [
-                  "refs",
-                  "nextRef"
-                ],
-                "args": [
-                  1
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "list",
-                  "todos",
-                  0
-                ],
-                "args": [
-                  {
-                    "$ref": 0,
-                    "$isSaving": true,
-                    "title": "hey",
-                    "completed": false
-                  }
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "new",
-                  "title"
-                ],
-                "args": [
-                  ""
-                ]
-              }
-            ],
-            "isAsync": false,
-            "outputPath": null,
-            "isExecuting": false,
-            "hasExecuted": true,
-            "path": [
-              0
-            ],
-            "outputs": null,
-            "actionIndex": 0
-          },
-          {
-            "name": "addTodo",
-            "input": {},
-            "output": {
-              "ref": 0
-            },
-            "duration": 0,
-            "mutations": [
-              {
-                "name": "set",
-                "path": [
-                  "refs",
-                  "nextRef"
-                ],
-                "args": [
-                  1
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "list",
-                  "todos",
-                  0
-                ],
-                "args": [
-                  {
-                    "$ref": 0,
-                    "$isSaving": true,
-                    "title": "hey",
-                    "completed": false
-                  }
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "new",
-                  "title"
-                ],
-                "args": [
-                  ""
-                ]
-              }
-            ],
-            "isAsync": false,
-            "outputPath": null,
-            "isExecuting": false,
-            "hasExecuted": true,
-            "path": [
-              0
-            ],
-            "outputs": null,
-            "actionIndex": 0
-          },
-          {
-            "name": "addTodo",
-            "input": {},
-            "output": {
-              "ref": 0
-            },
-            "duration": 0,
-            "mutations": [
-              {
-                "name": "set",
-                "path": [
-                  "refs",
-                  "nextRef"
-                ],
-                "args": [
-                  1
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "list",
-                  "todos",
-                  0
-                ],
-                "args": [
-                  {
-                    "$ref": 0,
-                    "$isSaving": true,
-                    "title": "hey",
-                    "completed": false
-                  }
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "new",
-                  "title"
-                ],
-                "args": [
-                  ""
-                ]
-              }
-            ],
-            "isAsync": false,
-            "outputPath": null,
-            "isExecuting": false,
-            "hasExecuted": true,
-            "path": [
-              0
-            ],
-            "outputs": null,
-            "actionIndex": 0
-          },
-          {
-            "name": "addTodo",
-            "input": {},
-            "output": {
-              "ref": 0
-            },
-            "duration": 0,
-            "mutations": [
-              {
-                "name": "set",
-                "path": [
-                  "refs",
-                  "nextRef"
-                ],
-                "args": [
-                  1
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "list",
-                  "todos",
-                  0
-                ],
-                "args": [
-                  {
-                    "$ref": 0,
-                    "$isSaving": true,
-                    "title": "hey",
-                    "completed": false
-                  }
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "new",
-                  "title"
-                ],
-                "args": [
-                  ""
-                ]
-              }
-            ],
-            "isAsync": false,
-            "outputPath": null,
-            "isExecuting": false,
-            "hasExecuted": true,
-            "path": [
-              0
-            ],
-            "outputs": null,
-            "actionIndex": 0
-          },
-          {
-            "name": "addTodo",
-            "input": {},
-            "output": {
-              "ref": 0
-            },
-            "duration": 0,
-            "mutations": [
-              {
-                "name": "set",
-                "path": [
-                  "refs",
-                  "nextRef"
-                ],
-                "args": [
-                  1
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "list",
-                  "todos",
-                  0
-                ],
-                "args": [
-                  {
-                    "$ref": 0,
-                    "$isSaving": true,
-                    "title": "hey",
-                    "completed": false
-                  }
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "new",
-                  "title"
-                ],
-                "args": [
-                  ""
-                ]
-              }
-            ],
-            "isAsync": false,
-            "outputPath": null,
-            "isExecuting": false,
-            "hasExecuted": true,
-            "path": [
-              0
-            ],
-            "outputs": null,
-            "actionIndex": 0
-          },
-          {
-            "name": "addTodo",
-            "input": {},
-            "output": {
-              "ref": 0
-            },
-            "duration": 0,
-            "mutations": [
-              {
-                "name": "set",
-                "path": [
-                  "refs",
-                  "nextRef"
-                ],
-                "args": [
-                  1
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "list",
-                  "todos",
-                  0
-                ],
-                "args": [
-                  {
-                    "$ref": 0,
-                    "$isSaving": true,
-                    "title": "hey",
-                    "completed": false
-                  }
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "new",
-                  "title"
-                ],
-                "args": [
-                  ""
-                ]
-              }
-            ],
-            "isAsync": false,
-            "outputPath": null,
-            "isExecuting": false,
-            "hasExecuted": true,
-            "path": [
-              0
-            ],
-            "outputs": null,
-            "actionIndex": 0
-          },
-          {
-            "name": "addTodo",
-            "input": {},
-            "output": {
-              "ref": 0
-            },
-            "duration": 0,
-            "mutations": [
-              {
-                "name": "set",
-                "path": [
-                  "refs",
-                  "nextRef"
-                ],
-                "args": [
-                  1
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "list",
-                  "todos",
-                  0
-                ],
-                "args": [
-                  {
-                    "$ref": 0,
-                    "$isSaving": true,
-                    "title": "hey",
-                    "completed": false
-                  }
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "new",
-                  "title"
-                ],
-                "args": [
-                  ""
-                ]
-              }
-            ],
-            "isAsync": false,
-            "outputPath": null,
-            "isExecuting": false,
-            "hasExecuted": true,
-            "path": [
-              0
-            ],
-            "outputs": null,
-            "actionIndex": 0
-          },
-          {
-            "name": "addTodo",
-            "input": {},
-            "output": {
-              "ref": 0
-            },
-            "duration": 0,
-            "mutations": [
-              {
-                "name": "set",
-                "path": [
-                  "refs",
-                  "nextRef"
-                ],
-                "args": [
-                  1
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "list",
-                  "todos",
-                  0
-                ],
-                "args": [
-                  {
-                    "$ref": 0,
-                    "$isSaving": true,
-                    "title": "hey",
-                    "completed": false
-                  }
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "new",
-                  "title"
-                ],
-                "args": [
-                  ""
-                ]
-              }
-            ],
-            "isAsync": false,
-            "outputPath": null,
-            "isExecuting": false,
-            "hasExecuted": true,
-            "path": [
-              0
-            ],
-            "outputs": null,
-            "actionIndex": 0
-          },
-          {
-            "name": "addTodo",
-            "input": {},
-            "output": {
-              "ref": 0
-            },
-            "duration": 0,
-            "mutations": [
-              {
-                "name": "set",
-                "path": [
-                  "refs",
-                  "nextRef"
-                ],
-                "args": [
-                  1
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "list",
-                  "todos",
-                  0
-                ],
-                "args": [
-                  {
-                    "$ref": 0,
-                    "$isSaving": true,
-                    "title": "hey",
-                    "completed": false
-                  }
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "new",
-                  "title"
-                ],
-                "args": [
-                  ""
-                ]
-              }
-            ],
-            "isAsync": false,
-            "outputPath": null,
-            "isExecuting": false,
-            "hasExecuted": true,
-            "path": [
-              0
-            ],
-            "outputs": null,
-            "actionIndex": 0
-          },
-          {
-            "name": "addTodo",
-            "input": {},
-            "output": {
-              "ref": 0
-            },
-            "duration": 0,
-            "mutations": [
-              {
-                "name": "set",
-                "path": [
-                  "refs",
-                  "nextRef"
-                ],
-                "args": [
-                  1
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "list",
-                  "todos",
-                  0
-                ],
-                "args": [
-                  {
-                    "$ref": 0,
-                    "$isSaving": true,
-                    "title": "hey",
-                    "completed": false
-                  }
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "new",
-                  "title"
-                ],
-                "args": [
-                  ""
-                ]
-              }
-            ],
-            "isAsync": false,
-            "outputPath": null,
-            "isExecuting": false,
-            "hasExecuted": true,
-            "path": [
-              0
-            ],
-            "outputs": null,
-            "actionIndex": 0
-          },
-          {
-            "name": "addTodo",
-            "input": {},
-            "output": {
-              "ref": 0
-            },
-            "duration": 0,
-            "mutations": [
-              {
-                "name": "set",
-                "path": [
-                  "refs",
-                  "nextRef"
-                ],
-                "args": [
-                  1
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "list",
-                  "todos",
-                  0
-                ],
-                "args": [
-                  {
-                    "$ref": 0,
-                    "$isSaving": true,
-                    "title": "hey",
-                    "completed": false
-                  }
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "new",
-                  "title"
-                ],
-                "args": [
-                  ""
-                ]
-              }
-            ],
-            "isAsync": false,
-            "outputPath": null,
-            "isExecuting": false,
-            "hasExecuted": true,
-            "path": [
-              0
-            ],
-            "outputs": null,
-            "actionIndex": 0
-          },
-          {
-            "name": "addTodo",
-            "input": {},
-            "output": {
-              "ref": 0
-            },
-            "duration": 0,
-            "mutations": [
-              {
-                "name": "set",
-                "path": [
-                  "refs",
-                  "nextRef"
-                ],
-                "args": [
-                  1
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "list",
-                  "todos",
-                  0
-                ],
-                "args": [
-                  {
-                    "$ref": 0,
-                    "$isSaving": true,
-                    "title": "hey",
-                    "completed": false
-                  }
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "new",
-                  "title"
-                ],
-                "args": [
-                  ""
-                ]
-              }
-            ],
-            "isAsync": false,
-            "outputPath": null,
-            "isExecuting": false,
-            "hasExecuted": true,
-            "path": [
-              0
-            ],
-            "outputs": null,
-            "actionIndex": 0
-          },
-          {
-            "name": "addTodo",
-            "input": {},
-            "output": {
-              "ref": 0
-            },
-            "duration": 0,
-            "mutations": [
-              {
-                "name": "set",
-                "path": [
-                  "refs",
-                  "nextRef"
-                ],
-                "args": [
-                  1
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "list",
-                  "todos",
-                  0
-                ],
-                "args": [
-                  {
-                    "$ref": 0,
-                    "$isSaving": true,
-                    "title": "hey",
-                    "completed": false
-                  }
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "new",
-                  "title"
-                ],
-                "args": [
-                  ""
-                ]
-              }
-            ],
-            "isAsync": false,
-            "outputPath": null,
-            "isExecuting": false,
-            "hasExecuted": true,
-            "path": [
-              0
-            ],
-            "outputs": null,
-            "actionIndex": 0
-          },
-          {
-            "name": "addTodo",
-            "input": {},
-            "output": {
-              "ref": 0
-            },
-            "duration": 0,
-            "mutations": [
-              {
-                "name": "set",
-                "path": [
-                  "refs",
-                  "nextRef"
-                ],
-                "args": [
-                  1
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "list",
-                  "todos",
-                  0
-                ],
-                "args": [
-                  {
-                    "$ref": 0,
-                    "$isSaving": true,
-                    "title": "hey",
-                    "completed": false
-                  }
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "new",
-                  "title"
-                ],
-                "args": [
-                  ""
-                ]
-              }
-            ],
-            "isAsync": false,
-            "outputPath": null,
-            "isExecuting": false,
-            "hasExecuted": true,
-            "path": [
-              0
-            ],
-            "outputs": null,
-            "actionIndex": 0
-          },
-          {
-            "name": "addTodo",
-            "input": {},
-            "output": {
-              "ref": 0
-            },
-            "duration": 0,
-            "mutations": [
-              {
-                "name": "set",
-                "path": [
-                  "refs",
-                  "nextRef"
-                ],
-                "args": [
-                  1
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "list",
-                  "todos",
-                  0
-                ],
-                "args": [
-                  {
-                    "$ref": 0,
-                    "$isSaving": true,
-                    "title": "hey",
-                    "completed": false
-                  }
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "new",
-                  "title"
-                ],
-                "args": [
-                  ""
-                ]
-              }
-            ],
-            "isAsync": false,
-            "outputPath": null,
-            "isExecuting": false,
-            "hasExecuted": true,
-            "path": [
-              0
-            ],
-            "outputs": null,
-            "actionIndex": 0
-          },
-          {
-            "name": "addTodo",
-            "input": {},
-            "output": {
-              "ref": 0
-            },
-            "duration": 0,
-            "mutations": [
-              {
-                "name": "set",
-                "path": [
-                  "refs",
-                  "nextRef"
-                ],
-                "args": [
-                  1
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "list",
-                  "todos",
-                  0
-                ],
-                "args": [
-                  {
-                    "$ref": 0,
-                    "$isSaving": true,
-                    "title": "hey",
-                    "completed": false
-                  }
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "new",
-                  "title"
-                ],
-                "args": [
-                  ""
-                ]
-              }
-            ],
-            "isAsync": false,
-            "outputPath": null,
-            "isExecuting": false,
-            "hasExecuted": true,
-            "path": [
-              0
-            ],
-            "outputs": null,
-            "actionIndex": 0
-          },
-          {
-            "name": "addTodo",
-            "input": {},
-            "output": {
-              "ref": 0
-            },
-            "duration": 0,
-            "mutations": [
-              {
-                "name": "set",
-                "path": [
-                  "refs",
-                  "nextRef"
-                ],
-                "args": [
-                  1
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "list",
-                  "todos",
-                  0
-                ],
-                "args": [
-                  {
-                    "$ref": 0,
-                    "$isSaving": true,
-                    "title": "hey",
-                    "completed": false
-                  }
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "new",
-                  "title"
-                ],
-                "args": [
-                  ""
-                ]
-              }
-            ],
-            "isAsync": false,
-            "outputPath": null,
-            "isExecuting": false,
-            "hasExecuted": true,
-            "path": [
-              0
-            ],
-            "outputs": null,
-            "actionIndex": 0
-          },
-          {
-            "name": "addTodo",
-            "input": {},
-            "output": {
-              "ref": 0
-            },
-            "duration": 0,
-            "mutations": [
-              {
-                "name": "set",
-                "path": [
-                  "refs",
-                  "nextRef"
-                ],
-                "args": [
-                  1
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "list",
-                  "todos",
-                  0
-                ],
-                "args": [
-                  {
-                    "$ref": 0,
-                    "$isSaving": true,
-                    "title": "hey",
-                    "completed": false
-                  }
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "new",
-                  "title"
-                ],
-                "args": [
-                  ""
-                ]
-              }
-            ],
-            "isAsync": false,
-            "outputPath": null,
-            "isExecuting": false,
-            "hasExecuted": true,
-            "path": [
-              0
-            ],
-            "outputs": null,
-            "actionIndex": 0
-          },
-          {
-            "name": "addTodo",
-            "input": {},
-            "output": {
-              "ref": 0
-            },
-            "duration": 0,
-            "mutations": [
-              {
-                "name": "set",
-                "path": [
-                  "refs",
-                  "nextRef"
-                ],
-                "args": [
-                  1
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "list",
-                  "todos",
-                  0
-                ],
-                "args": [
-                  {
-                    "$ref": 0,
-                    "$isSaving": true,
-                    "title": "hey",
-                    "completed": false
-                  }
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "new",
-                  "title"
-                ],
-                "args": [
-                  ""
-                ]
-              }
-            ],
-            "isAsync": false,
-            "outputPath": null,
-            "isExecuting": false,
-            "hasExecuted": true,
-            "path": [
-              0
-            ],
-            "outputs": null,
-            "actionIndex": 0
-          },
-          {
-            "name": "addTodo",
-            "input": {},
-            "output": {
-              "ref": 0
-            },
-            "duration": 0,
-            "mutations": [
-              {
-                "name": "set",
-                "path": [
-                  "refs",
-                  "nextRef"
-                ],
-                "args": [
-                  1
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "list",
-                  "todos",
-                  0
-                ],
-                "args": [
-                  {
-                    "$ref": 0,
-                    "$isSaving": true,
-                    "title": "hey",
-                    "completed": false
-                  }
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "new",
-                  "title"
-                ],
-                "args": [
-                  ""
-                ]
-              }
-            ],
-            "isAsync": false,
-            "outputPath": null,
-            "isExecuting": false,
-            "hasExecuted": true,
-            "path": [
-              0
-            ],
-            "outputs": null,
-            "actionIndex": 0
-          },
-          {
-            "name": "addTodo",
-            "input": {},
-            "output": {
-              "ref": 0
-            },
-            "duration": 0,
-            "mutations": [
-              {
-                "name": "set",
-                "path": [
-                  "refs",
-                  "nextRef"
-                ],
-                "args": [
-                  1
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "list",
-                  "todos",
-                  0
-                ],
-                "args": [
-                  {
-                    "$ref": 0,
-                    "$isSaving": true,
-                    "title": "hey",
-                    "completed": false
-                  }
-                ]
-              },
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "new",
-                  "title"
-                ],
-                "args": [
-                  ""
-                ]
-              }
-            ],
-            "isAsync": false,
-            "outputPath": null,
-            "isExecuting": false,
-            "hasExecuted": true,
-            "path": [
-              0
-            ],
-            "outputs": null,
-            "actionIndex": 0
-          },
-          {
-            "name": "setSaving",
-            "input": {
-              "ref": 0
-            },
-            "duration": 3,
-            "mutations": [
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "new",
-                  "isSaving"
-                ],
-                "args": [
-                  true
-                ]
-              }
-            ],
-            "isAsync": false,
-            "outputPath": null,
-            "isExecuting": false,
-            "hasExecuted": true,
-            "path": [
-              1
-            ],
-            "outputs": null,
-            "actionIndex": 1
-          },
-          [
-            {
-              "name": "saveTodo",
-              "input": {
-                "ref": 0
-              },
-              "output": {
-                "id": 1452960401269
-              },
-              "duration": 0,
-              "mutations": [],
-              "isAsync": true,
-              "outputPath": "success",
-              "isExecuting": false,
-              "hasExecuted": false,
-              "path": [
-                2,
-                0
-              ],
-              "outputs": {
-                "success": [
-                  {
-                    "name": "updateTodo",
-                    "input": {
-                      "ref": 0,
-                      "id": 1452960401269
-                    },
-                    "duration": 1,
-                    "mutations": [
-                      {
-                        "name": "merge",
-                        "path": [
-                          "app",
-                          "list",
-                          "todos",
-                          0
-                        ],
-                        "args": [
-                          {
-                            "id": 1452960401269,
-                            "$isSaving": false
-                          }
-                        ]
-                      }
-                    ],
-                    "isAsync": false,
-                    "outputPath": null,
-                    "isExecuting": false,
-                    "hasExecuted": true,
-                    "path": [
-                      2,
-                      0,
-                      "outputs",
-                      "success",
-                      0
-                    ],
-                    "outputs": null,
-                    "actionIndex": 3
-                  }
-                ],
-                "error": [
-                  {
-                    "name": "setError",
-                    "input": {},
-                    "output": null,
-                    "duration": 0,
-                    "mutations": [],
-                    "isAsync": false,
-                    "outputPath": null,
-                    "isExecuting": false,
-                    "hasExecuted": false,
-                    "path": [
-                      2,
-                      0,
-                      "outputs",
-                      "error",
-                      0
-                    ],
-                    "outputs": null,
-                    "actionIndex": 4
-                  }
-                ]
-              },
-              "actionIndex": 2,
-              "signals": [
-                {
-                  "name": "app.new.titleChanged",
-                  "start": 1452960399131,
-                  "isSync": true,
-                  "isExecuting": false,
-                  "branches": [
-                    {
-                      "name": "setTitle",
-                      "input": {
-                        "title": "h"
-                      },
-                      "duration": 1,
-                      "mutations": [
-                        {
-                          "name": "set",
-                          "path": [
-                            "app",
-                            "new",
-                            "title"
-                          ],
-                          "args": [
-                            "h"
-                          ]
-                        }
-                      ],
-                      "isAsync": false,
-                      "outputPath": null,
-                      "isExecuting": false,
-                      "hasExecuted": true,
-                      "path": [
-                        0
-                      ],
-                      "outputs": null,
-                      "actionIndex": 0
-                    }
-                  ],
-                  "duration": 0,
-                  "input": {
-                    "title": "h"
-                  }
-                },
-                {
-                  "name": "app.new.titleChanged",
-                  "start": 1452960399242,
-                  "isSync": true,
-                  "isExecuting": false,
-                  "branches": [
-                    {
-                      "name": "setTitle",
-                      "input": {
-                        "title": "he"
-                      },
-                      "duration": 1,
-                      "mutations": [
-                        {
-                          "name": "set",
-                          "path": [
-                            "app",
-                            "new",
-                            "title"
-                          ],
-                          "args": [
-                            "he"
-                          ]
-                        }
-                      ],
-                      "isAsync": false,
-                      "outputPath": null,
-                      "isExecuting": false,
-                      "hasExecuted": true,
-                      "path": [
-                        0
-                      ],
-                      "outputs": null,
-                      "actionIndex": 0
-                    }
-                  ],
-                  "duration": 0,
-                  "input": {
-                    "title": "he"
-                  }
-                },
-                {
-                  "name": "app.new.titleChanged",
-                  "start": 1452960399299,
-                  "isSync": true,
-                  "isExecuting": false,
-                  "branches": [
-                    {
-                      "name": "setTitle",
-                      "input": {
-                        "title": "hey"
-                      },
-                      "duration": 1,
-                      "mutations": [
-                        {
-                          "name": "set",
-                          "path": [
-                            "app",
-                            "new",
-                            "title"
-                          ],
-                          "args": [
-                            "hey"
-                          ]
-                        }
-                      ],
-                      "isAsync": false,
-                      "outputPath": null,
-                      "isExecuting": false,
-                      "hasExecuted": true,
-                      "path": [
-                        0
-                      ],
-                      "outputs": null,
-                      "actionIndex": 0
-                    }
-                  ],
-                  "duration": 0,
-                  "input": {
-                    "title": "hey"
-                  }
-                },
-                {
-                  "name": "app.new.submitted",
-                  "start": 1452960399371,
-                  "isExecuting": false,
-                  "branches": [
-                    {
-                      "name": "addTodo",
-                      "input": {},
-                      "output": {
-                        "ref": 1
-                      },
-                      "duration": 0,
-                      "mutations": [
-                        {
-                          "name": "set",
-                          "path": [
-                            "refs",
-                            "nextRef"
-                          ],
-                          "args": [
-                            2
-                          ]
-                        },
-                        {
-                          "name": "set",
-                          "path": [
-                            "app",
-                            "list",
-                            "todos",
-                            1
-                          ],
-                          "args": [
-                            {
-                              "$ref": 1,
-                              "$isSaving": true,
-                              "title": "hey",
-                              "completed": false
-                            }
-                          ]
-                        },
-                        {
-                          "name": "set",
-                          "path": [
-                            "app",
-                            "new",
-                            "title"
-                          ],
-                          "args": [
-                            ""
-                          ]
-                        }
-                      ],
-                      "isAsync": false,
-                      "outputPath": null,
-                      "isExecuting": false,
-                      "hasExecuted": true,
-                      "path": [
-                        0
-                      ],
-                      "outputs": null,
-                      "actionIndex": 0
-                    },
-                    {
-                      "name": "setSaving",
-                      "input": {
-                        "ref": 1
-                      },
-                      "duration": 2,
-                      "mutations": [
-                        {
-                          "name": "set",
-                          "path": [
-                            "app",
-                            "new",
-                            "isSaving"
-                          ],
-                          "args": [
-                            true
-                          ]
-                        }
-                      ],
-                      "isAsync": false,
-                      "outputPath": null,
-                      "isExecuting": false,
-                      "hasExecuted": true,
-                      "path": [
-                        1
-                      ],
-                      "outputs": null,
-                      "actionIndex": 1
-                    },
-                    [
-                      {
-                        "name": "saveTodo",
-                        "input": {
-                          "ref": 1
-                        },
-                        "output": {
-                          "id": 1452960401818
-                        },
-                        "duration": 0,
-                        "mutations": [],
-                        "isAsync": true,
-                        "outputPath": "success",
-                        "isExecuting": false,
-                        "hasExecuted": false,
-                        "path": [
-                          2,
-                          0
-                        ],
-                        "outputs": {
-                          "success": [
-                            {
-                              "name": "updateTodo",
-                              "input": {
-                                "ref": 1,
-                                "id": 1452960401818
-                              },
-                              "duration": 1,
-                              "mutations": [
-                                {
-                                  "name": "merge",
-                                  "path": [
-                                    "app",
-                                    "list",
-                                    "todos",
-                                    1
-                                  ],
-                                  "args": [
-                                    {
-                                      "id": 1452960401818,
-                                      "$isSaving": false
-                                    }
-                                  ]
-                                }
-                              ],
-                              "isAsync": false,
-                              "outputPath": null,
-                              "isExecuting": false,
-                              "hasExecuted": true,
-                              "path": [
-                                2,
-                                0,
-                                "outputs",
-                                "success",
-                                0
-                              ],
-                              "outputs": null,
-                              "actionIndex": 3
-                            }
-                          ],
-                          "error": [
-                            {
-                              "name": "setError",
-                              "input": {},
-                              "output": null,
-                              "duration": 0,
-                              "mutations": [],
-                              "isAsync": false,
-                              "outputPath": null,
-                              "isExecuting": false,
-                              "hasExecuted": false,
-                              "path": [
-                                2,
-                                0,
-                                "outputs",
-                                "error",
-                                0
-                              ],
-                              "outputs": null,
-                              "actionIndex": 4
-                            }
-                          ]
-                        },
-                        "actionIndex": 2
-                      }
-                    ],
-                    {
-                      "name": "unsetSaving",
-                      "input": {
-                        "ref": 1,
-                        "id": 1452960401818
-                      },
-                      "duration": 0,
-                      "mutations": [
-                        {
-                          "name": "set",
-                          "path": [
-                            "app",
-                            "new",
-                            "isSaving"
-                          ],
-                          "args": [
-                            false
-                          ]
-                        }
-                      ],
-                      "isAsync": false,
-                      "outputPath": null,
-                      "isExecuting": false,
-                      "hasExecuted": true,
-                      "path": [
-                        3
-                      ],
-                      "outputs": null,
-                      "actionIndex": 5
-                    }
-                  ],
-                  "duration": 0
-                }
-              ]
-            }
-          ],
-          {
-            "name": "unsetSaving",
-            "input": {
-              "ref": 0,
-              "id": 1452960401269
-            },
-            "duration": 1,
-            "mutations": [
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "new",
-                  "isSaving"
-                ],
-                "args": [
-                  false
-                ]
-              }
-            ],
-            "isAsync": false,
-            "outputPath": null,
-            "isExecuting": false,
-            "hasExecuted": true,
-            "path": [
-              3
-            ],
-            "outputs": null,
-            "actionIndex": 5
-          }
-        ],
-        "duration": 0
-      },
-      {
-        "name": "app.new.titleChanged",
-        "start": 1452960398493,
-        "isSync": true,
-        "isExecuting": false,
-        "branches": [
-          {
-            "name": "setTitle(some, thing)",
-            /*
-            "error": {
-              name: "ReferenceError",
-              message: "gege is not defined",
-              stack: `
-function getFleets(_ref) {
-  var input = _ref.input;
-  var services = _ref.services;
-  var output = _ref.output;
-
-  gege.ge;
-  services.ajax.get('/api/fleets').then(output.success).catch(output.error);
-}
-              `
-            },*/
-            "input": {
-              "title": "h"
-            },
-            "duration": 3,
-            "mutations": [
-              {
-                "name": "set",
-                "path": [
-                  "app",
-                  "new",
-                  "title"
-                ],
-                "args": [
-                  "h"
-                ]
-              }
-            ],
-            "isAsync": false,
-            "outputPath": null,
-            "isExecuting": false,
-            "hasExecuted": true,
-            "path": [
-              0
-            ],
-            "outputs": null,
-            "actionIndex": 0
-          }
-        ],
-        "duration": 0,
-        "input": {
-          "title": "h"
-        }
-      }
-    ]
+    "signals": [{
+	"name": "sp.applicationStarted",
+	"start": 1455613986215,
+	"isRouted": false,
+	"isExecuting": false,
+	"isPrevented": false,
+	"isRecorded": false,
+	"branches": [
+		[{
+			"name": "getFilters",
+			"input": {},
+			"output": {
+				"result": {
+					"@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Filters",
+					"value": [{
+						"Id": 1,
+						"Name": "123",
+						"FilterString": "{\"Type\":[],\"ProductCode\":null,\"Code\":null,\"PlannedStartDate\":null,\"PlannedFinishDate\":null,\"ChiefDesigner\":[],\"State\":[],\"Author\":[],\"Status\":[\"PlanExecution\"],\"Approved\":null,\"JobTicket\":null}"
+					}, {
+						"Id": 1001,
+						"Name": "test",
+						"FilterString": "{\"Type\":[],\"ProductCode\":null,\"Code\":null,\"PlannedStartDate\":null,\"PlannedFinishDate\":null,\"ChiefDesigner\":[],\"State\":[],\"Author\":[],\"Status\":[],\"Approved\":true,\"JobTicket\":null}"
+					}, {
+						"Id": 1002,
+						"Name": "qw",
+						"FilterString": "{\"Type\":[],\"ProductCode\":null,\"Code\":null,\"PlannedStartDate\":null,\"PlannedFinishDate\":null,\"ChiefDesigner\":[],\"State\":[],\"Author\":[],\"Status\":[],\"Approved\":false,\"JobTicket\":null}"
+					}, {
+						"Id": 2001,
+						"Name": "Новые",
+						"FilterString": "{\"Type\":[],\"ProductCode\":null,\"Code\":null,\"PlannedStartDate\":null,\"PlannedFinishDate\":null,\"ChiefDesigner\":[],\"State\":[],\"Author\":[],\"Status\":[],\"Approved\":null,\"IsOutdated\":false,\"JobTicket\":null}"
+					}]
+				}
+			},
+			"duration": 0,
+			"mutations": [],
+			"serviceCalls": [{
+				"name": "http",
+				"method": "get",
+				"args": ["/api/PlanGrafik/Filters"]
+			}],
+			"isAsync": true,
+			"outputPath": "success",
+			"isExecuting": false,
+			"hasExecuted": true,
+			"path": [0, 0],
+			"outputs": {
+				"success": [{
+					"name": "addons.copy(\"input:/result.value\", \"state:/smart-project.data.Filters\")",
+					"input": {
+						"result": {
+							"@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Filters",
+							"value": [{
+								"Id": 1,
+								"Name": "123",
+								"FilterString": "{\"Type\":[],\"ProductCode\":null,\"Code\":null,\"PlannedStartDate\":null,\"PlannedFinishDate\":null,\"ChiefDesigner\":[],\"State\":[],\"Author\":[],\"Status\":[\"PlanExecution\"],\"Approved\":null,\"JobTicket\":null}"
+							}, {
+								"Id": 1001,
+								"Name": "test",
+								"FilterString": "{\"Type\":[],\"ProductCode\":null,\"Code\":null,\"PlannedStartDate\":null,\"PlannedFinishDate\":null,\"ChiefDesigner\":[],\"State\":[],\"Author\":[],\"Status\":[],\"Approved\":true,\"JobTicket\":null}"
+							}, {
+								"Id": 1002,
+								"Name": "qw",
+								"FilterString": "{\"Type\":[],\"ProductCode\":null,\"Code\":null,\"PlannedStartDate\":null,\"PlannedFinishDate\":null,\"ChiefDesigner\":[],\"State\":[],\"Author\":[],\"Status\":[],\"Approved\":false,\"JobTicket\":null}"
+							}, {
+								"Id": 2001,
+								"Name": "Новые",
+								"FilterString": "{\"Type\":[],\"ProductCode\":null,\"Code\":null,\"PlannedStartDate\":null,\"PlannedFinishDate\":null,\"ChiefDesigner\":[],\"State\":[],\"Author\":[],\"Status\":[],\"Approved\":null,\"IsOutdated\":false,\"JobTicket\":null}"
+							}]
+						}
+					},
+					"output": {},
+					"duration": 2,
+					"mutations": [{
+						"name": "set",
+						"path": ["smart-project", "data", "Filters"],
+						"args": [
+							[{
+								"Id": 1,
+								"Name": "123",
+								"FilterString": "{\"Type\":[],\"ProductCode\":null,\"Code\":null,\"PlannedStartDate\":null,\"PlannedFinishDate\":null,\"ChiefDesigner\":[],\"State\":[],\"Author\":[],\"Status\":[\"PlanExecution\"],\"Approved\":null,\"JobTicket\":null}"
+							}, {
+								"Id": 1001,
+								"Name": "test",
+								"FilterString": "{\"Type\":[],\"ProductCode\":null,\"Code\":null,\"PlannedStartDate\":null,\"PlannedFinishDate\":null,\"ChiefDesigner\":[],\"State\":[],\"Author\":[],\"Status\":[],\"Approved\":true,\"JobTicket\":null}"
+							}, {
+								"Id": 1002,
+								"Name": "qw",
+								"FilterString": "{\"Type\":[],\"ProductCode\":null,\"Code\":null,\"PlannedStartDate\":null,\"PlannedFinishDate\":null,\"ChiefDesigner\":[],\"State\":[],\"Author\":[],\"Status\":[],\"Approved\":false,\"JobTicket\":null}"
+							}, {
+								"Id": 2001,
+								"Name": "Новые",
+								"FilterString": "{\"Type\":[],\"ProductCode\":null,\"Code\":null,\"PlannedStartDate\":null,\"PlannedFinishDate\":null,\"ChiefDesigner\":[],\"State\":[],\"Author\":[],\"Status\":[],\"Approved\":null,\"IsOutdated\":false,\"JobTicket\":null}"
+							}]
+						]
+					}],
+					"serviceCalls": [],
+					"isAsync": false,
+					"outputPath": null,
+					"isExecuting": false,
+					"hasExecuted": true,
+					"path": [0, 0, "outputs", "success", 0],
+					"outputs": null,
+					"actionIndex": 1
+				}],
+				"error": [{
+					"name": "redirectToSso",
+					"input": {},
+					"output": null,
+					"duration": 0,
+					"mutations": [],
+					"serviceCalls": [],
+					"isAsync": false,
+					"outputPath": null,
+					"isExecuting": false,
+					"hasExecuted": false,
+					"path": [0, 0, "outputs", "error", 0],
+					"outputs": null,
+					"actionIndex": 2
+				}]
+			},
+			"actionIndex": 0,
+			"signals": [{
+				"name": "sp.groupProjectsOpened",
+				"start": 1455613986237,
+				"isSync": true,
+				"isRouted": true,
+				"isExecuting": false,
+				"isPrevented": false,
+				"isRecorded": false,
+				"branches": [{
+						"name": "addons.set(\"state:/smart-project.page\", \"groupProjects\")",
+						"input": {
+							"statusCode": "undefined",
+							"result": {
+								"@odata.context": "http://localhost:6651/api/planGrafik/$metadata"
+							}
+						},
+						"output": {},
+						"duration": 4,
+						"mutations": [{
+							"name": "set",
+							"path": ["smart-project", "page"],
+							"args": ["groupProjects"]
+						}],
+						"serviceCalls": [],
+						"isAsync": false,
+						"outputPath": null,
+						"isExecuting": false,
+						"hasExecuted": true,
+						"path": [0],
+						"outputs": null,
+						"actionIndex": 0
+					},
+					[{
+						"name": "getGroupProjects(top=50)",
+						"input": {
+							"statusCode": "undefined",
+							"result": {
+								"@odata.context": "http://localhost:6651/api/planGrafik/$metadata"
+							}
+						},
+						"output": {
+							"result": {
+								"@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Budget,Status,State,CalculatedPlannedFinishDate,CalculatedPlannedStartDate,PlannedFinishDate,PlannedStartDate,ShortName,Id,KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned,KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer,KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager,Type)",
+								"@odata.count": 17,
+								"value": [{
+									"Budget": null,
+									"Status": "PlanExecution",
+									"State": "OnAgreeing",
+									"CalculatedPlannedFinishDate": "2016-02-16T00:00:00Z",
+									"CalculatedPlannedStartDate": "2016-02-15T00:00:00Z",
+									"PlannedFinishDate": "2016-02-16T00:00:00Z",
+									"PlannedStartDate": "2016-02-15T00:00:00Z",
+									"ShortName": "Проектsda",
+									"Id": 33050,
+									"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(33050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+									"Assigned": null,
+									"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(33050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+									"Customer": null,
+									"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(33050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+									"Manager": {
+										"Id": 109,
+										"Name": "Абдулхалимов [Имя]",
+										"IsCorporateData": true,
+										"FirstName": "[Имя]",
+										"MiddleName": null,
+										"LastName": "Абдулхалимов",
+										"Email": null,
+										"Parent@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(33050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/Parent/$entity",
+										"Parent": null
+									},
+									"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(33050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+									"Type": {
+										"Id": 5,
+										"Name": "Проект",
+										"Type": "GroupProject"
+									}
+								}, {
+									"Budget": null,
+									"Status": "PlanExecution",
+									"State": "Planned",
+									"CalculatedPlannedFinishDate": "2016-01-28T00:00:00Z",
+									"CalculatedPlannedStartDate": "2016-01-27T00:00:00Z",
+									"PlannedFinishDate": null,
+									"PlannedStartDate": null,
+									"ShortName": "ТР",
+									"Id": 9002,
+									"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(9002)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+									"Assigned": null,
+									"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(9002)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+									"Customer": null,
+									"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(9002)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+									"Manager": null,
+									"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(9002)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+									"Type": {
+										"Id": 5,
+										"Name": "Проект",
+										"Type": "GroupProject"
+									}
+								}, {
+									"Budget": null,
+									"Status": "PlanExecution",
+									"State": "Planned",
+									"CalculatedPlannedFinishDate": "2016-01-26T00:00:00Z",
+									"CalculatedPlannedStartDate": "2016-01-25T00:00:00Z",
+									"PlannedFinishDate": "2016-01-26T00:00:00Z",
+									"PlannedStartDate": "2016-01-25T00:00:00Z",
+									"ShortName": "Проект",
+									"Id": 26050,
+									"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(26050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+									"Assigned": null,
+									"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(26050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+									"Customer": null,
+									"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(26050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+									"Manager": {
+										"Id": 2,
+										"Name": "Рязанцев [Имя]",
+										"IsCorporateData": true,
+										"FirstName": "[Имя]",
+										"MiddleName": null,
+										"LastName": "Рязанцев",
+										"Email": null,
+										"Parent@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(26050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/Parent/$entity",
+										"Parent": {
+											"@odata.type": "#KG.SE2.Modules.PlanGrafikModule.Model.API.Organization",
+											"Id": 1739,
+											"Name": "РКЗ",
+											"IsCorporateData": true,
+											"Email": null
+										}
+									},
+									"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(26050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+									"Type": {
+										"Id": 5,
+										"Name": "Проект",
+										"Type": "GroupProject"
+									}
+								}, {
+									"Budget": null,
+									"Status": "PlanExecution",
+									"State": "Planned",
+									"CalculatedPlannedFinishDate": "2016-01-23T00:00:00Z",
+									"CalculatedPlannedStartDate": "2016-01-22T00:00:00Z",
+									"PlannedFinishDate": "2016-01-23T00:00:00Z",
+									"PlannedStartDate": "2016-01-22T00:00:00Z",
+									"ShortName": "Проект",
+									"Id": 25058,
+									"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(25058)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+									"Assigned": null,
+									"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(25058)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+									"Customer": null,
+									"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(25058)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+									"Manager": null,
+									"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(25058)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+									"Type": {
+										"Id": 5,
+										"Name": "Проект",
+										"Type": "GroupProject"
+									}
+								}, {
+									"Budget": null,
+									"Status": "PlanExecution",
+									"State": "Planned",
+									"CalculatedPlannedFinishDate": "2016-01-23T00:00:00Z",
+									"CalculatedPlannedStartDate": "2016-01-22T00:00:00Z",
+									"PlannedFinishDate": null,
+									"PlannedStartDate": null,
+									"ShortName": "ТР",
+									"Id": 10001,
+									"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(10001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+									"Assigned": null,
+									"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(10001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+									"Customer": null,
+									"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(10001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+									"Manager": null,
+									"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(10001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+									"Type": {
+										"Id": 5,
+										"Name": "Проект",
+										"Type": "GroupProject"
+									}
+								}, {
+									"Budget": null,
+									"Status": "PlanExecution",
+									"State": "Planned",
+									"CalculatedPlannedFinishDate": null,
+									"CalculatedPlannedStartDate": null,
+									"PlannedFinishDate": "2016-01-22T00:00:00Z",
+									"PlannedStartDate": "2016-01-21T00:00:00Z",
+									"ShortName": "Проект",
+									"Id": 24051,
+									"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(24051)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+									"Assigned": null,
+									"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(24051)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+									"Customer": null,
+									"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(24051)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+									"Manager": null,
+									"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(24051)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+									"Type": {
+										"Id": 5,
+										"Name": "Проект",
+										"Type": "GroupProject"
+									}
+								}, {
+									"Budget": null,
+									"Status": "PlanExecution",
+									"State": "Planned",
+									"CalculatedPlannedFinishDate": null,
+									"CalculatedPlannedStartDate": null,
+									"PlannedFinishDate": "2016-01-20T00:00:00Z",
+									"PlannedStartDate": "2016-01-19T00:00:00Z",
+									"ShortName": "Проект",
+									"Id": 22050,
+									"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(22050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+									"Assigned": null,
+									"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(22050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+									"Customer": null,
+									"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(22050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+									"Manager": null,
+									"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(22050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+									"Type": {
+										"Id": 5,
+										"Name": "Проект",
+										"Type": "GroupProject"
+									}
+								}, {
+									"Budget": null,
+									"Status": "PlanExecution",
+									"State": "Planned",
+									"CalculatedPlannedFinishDate": null,
+									"CalculatedPlannedStartDate": null,
+									"PlannedFinishDate": "2016-01-20T00:00:00Z",
+									"PlannedStartDate": "2016-01-19T00:00:00Z",
+									"ShortName": "Проект",
+									"Id": 23050,
+									"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(23050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+									"Assigned": null,
+									"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(23050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+									"Customer": null,
+									"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(23050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+									"Manager": null,
+									"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(23050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+									"Type": {
+										"Id": 5,
+										"Name": "Проект",
+										"Type": "GroupProject"
+									}
+								}, {
+									"Budget": null,
+									"Status": "PlanDateDisruption",
+									"State": "Execution",
+									"CalculatedPlannedFinishDate": "2016-02-22T00:00:00Z",
+									"CalculatedPlannedStartDate": "2016-01-12T00:00:00Z",
+									"PlannedFinishDate": "2016-01-13T00:00:00Z",
+									"PlannedStartDate": "2016-01-12T00:00:00Z",
+									"ShortName": "Проект с сдр 2",
+									"Id": 19050,
+									"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(19050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+									"Assigned": null,
+									"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(19050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+									"Customer": null,
+									"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(19050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+									"Manager": null,
+									"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(19050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+									"Type": {
+										"Id": 5,
+										"Name": "Проект",
+										"Type": "GroupProject"
+									}
+								}, {
+									"Budget": null,
+									"Status": "PlanExecution",
+									"State": "Planned",
+									"CalculatedPlannedFinishDate": null,
+									"CalculatedPlannedStartDate": null,
+									"PlannedFinishDate": "2015-12-26T00:00:00Z",
+									"PlannedStartDate": "2015-12-25T00:00:00Z",
+									"ShortName": "Проект",
+									"Id": 17001,
+									"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+									"Assigned": null,
+									"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+									"Customer": null,
+									"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+									"Manager": null,
+									"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+									"Type": {
+										"Id": 5,
+										"Name": "Проект",
+										"Type": "GroupProject"
+									}
+								}, {
+									"Budget": null,
+									"Status": "PlanExecution",
+									"State": "Planned",
+									"CalculatedPlannedFinishDate": null,
+									"CalculatedPlannedStartDate": null,
+									"PlannedFinishDate": "2015-12-26T00:00:00Z",
+									"PlannedStartDate": "2015-12-25T00:00:00Z",
+									"ShortName": "Проект",
+									"Id": 17003,
+									"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17003)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+									"Assigned": null,
+									"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17003)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+									"Customer": null,
+									"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17003)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+									"Manager": null,
+									"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17003)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+									"Type": {
+										"Id": 5,
+										"Name": "Проект",
+										"Type": "GroupProject"
+									}
+								}, {
+									"Budget": null,
+									"Status": "PlanExecution",
+									"State": "Planned",
+									"CalculatedPlannedFinishDate": null,
+									"CalculatedPlannedStartDate": null,
+									"PlannedFinishDate": "2015-12-26T00:00:00Z",
+									"PlannedStartDate": "2015-12-25T00:00:00Z",
+									"ShortName": "Проект",
+									"Id": 17004,
+									"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17004)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+									"Assigned": null,
+									"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17004)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+									"Customer": null,
+									"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17004)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+									"Manager": null,
+									"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17004)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+									"Type": {
+										"Id": 5,
+										"Name": "Проект",
+										"Type": "GroupProject"
+									}
+								}, {
+									"Budget": null,
+									"Status": "PlanExecution",
+									"State": "Planned",
+									"CalculatedPlannedFinishDate": null,
+									"CalculatedPlannedStartDate": null,
+									"PlannedFinishDate": "2015-12-26T00:00:00Z",
+									"PlannedStartDate": "2015-12-25T00:00:00Z",
+									"ShortName": "Проект",
+									"Id": 17006,
+									"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17006)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+									"Assigned": null,
+									"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17006)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+									"Customer": null,
+									"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17006)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+									"Manager": null,
+									"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17006)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+									"Type": {
+										"Id": 5,
+										"Name": "Проект",
+										"Type": "GroupProject"
+									}
+								}, {
+									"Budget": 4050,
+									"Status": "PlanExecution",
+									"State": "Planned",
+									"CalculatedPlannedFinishDate": null,
+									"CalculatedPlannedStartDate": null,
+									"PlannedFinishDate": "2015-12-30T00:00:00Z",
+									"PlannedStartDate": "2015-12-18T00:00:00Z",
+									"ShortName": "707",
+									"Id": 17008,
+									"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17008)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+									"Assigned": null,
+									"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17008)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+									"Customer": null,
+									"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17008)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+									"Manager": null,
+									"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17008)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+									"Type": {
+										"Id": 5,
+										"Name": "Проект",
+										"Type": "GroupProject"
+									}
+								}, {
+									"Budget": 123453,
+									"Status": "PlanExecution",
+									"State": "Planned",
+									"CalculatedPlannedFinishDate": "2016-02-11T00:00:00Z",
+									"CalculatedPlannedStartDate": "2015-12-18T00:00:00Z",
+									"PlannedFinishDate": "2013-12-13T00:00:00Z",
+									"PlannedStartDate": "2012-12-12T00:00:00Z",
+									"ShortName": "групповой проект",
+									"Id": 12001,
+									"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(12001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+									"Assigned": null,
+									"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(12001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+									"Customer": null,
+									"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(12001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+									"Manager": {
+										"Id": 3,
+										"Name": "Андрейчук [Имя]",
+										"IsCorporateData": true,
+										"FirstName": "[Имя]",
+										"MiddleName": null,
+										"LastName": "Андрейчук",
+										"Email": null,
+										"Parent@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(12001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/Parent/$entity",
+										"Parent": {
+											"@odata.type": "#KG.SE2.Modules.PlanGrafikModule.Model.API.Organization",
+											"Id": 1739,
+											"Name": "РКЗ",
+											"IsCorporateData": true,
+											"Email": null
+										}
+									},
+									"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(12001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+									"Type": {
+										"Id": 5,
+										"Name": "Проект",
+										"Type": "GroupProject"
+									}
+								}, {
+									"Budget": null,
+									"Status": "PlanExecution",
+									"State": "Planned",
+									"CalculatedPlannedFinishDate": "2015-12-08T00:00:00Z",
+									"CalculatedPlannedStartDate": "2015-12-06T00:00:00Z",
+									"PlannedFinishDate": null,
+									"PlannedStartDate": "2014-01-12T00:00:00Z",
+									"ShortName": "ТР 12",
+									"Id": 9001,
+									"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(9001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+									"Assigned": null,
+									"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(9001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+									"Customer": null,
+									"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(9001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+									"Manager": null,
+									"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(9001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+									"Type": {
+										"Id": 5,
+										"Name": "Проект",
+										"Type": "GroupProject"
+									}
+								}, {
+									"Budget": null,
+									"Status": "PlanExecution",
+									"State": "Planned",
+									"CalculatedPlannedFinishDate": null,
+									"CalculatedPlannedStartDate": null,
+									"PlannedFinishDate": null,
+									"PlannedStartDate": null,
+									"ShortName": "тест - М",
+									"Id": 13001,
+									"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(13001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+									"Assigned": null,
+									"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(13001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+									"Customer": null,
+									"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(13001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+									"Manager": null,
+									"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(13001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+									"Type": {
+										"Id": 5,
+										"Name": "Проект",
+										"Type": "GroupProject"
+									}
+								}]
+							}
+						},
+						"duration": 0,
+						"mutations": [],
+						"serviceCalls": [{
+							"name": "http",
+							"method": "get",
+							"args": ["/api/PlanGrafik/Projects/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject?$filter=HeadProject%20eq%20null&$orderby=CalculatedPlannedStartDate%20desc&$top=50&$expand=KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned,KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer,KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager($expand=Parent),Type&$select=KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Budget,Status,State,CalculatedPlannedFinishDate,CalculatedPlannedStartDate,PlannedFinishDate,PlannedStartDate,ShortName,Id"]
+						}],
+						"isAsync": true,
+						"outputPath": "success",
+						"isExecuting": false,
+						"hasExecuted": true,
+						"path": [1, 0],
+						"outputs": {
+							"success": [{
+								"name": "addons.copy(\"input:/result.value\", \"state:/smart-project.data.GroupProjects\")",
+								"input": {
+									"result": {
+										"@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Budget,Status,State,CalculatedPlannedFinishDate,CalculatedPlannedStartDate,PlannedFinishDate,PlannedStartDate,ShortName,Id,KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned,KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer,KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager,Type)",
+										"@odata.count": 17,
+										"value": [{
+											"Budget": null,
+											"Status": "PlanExecution",
+											"State": "OnAgreeing",
+											"CalculatedPlannedFinishDate": "2016-02-16T00:00:00Z",
+											"CalculatedPlannedStartDate": "2016-02-15T00:00:00Z",
+											"PlannedFinishDate": "2016-02-16T00:00:00Z",
+											"PlannedStartDate": "2016-02-15T00:00:00Z",
+											"ShortName": "Проектsda",
+											"Id": 33050,
+											"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(33050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+											"Assigned": null,
+											"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(33050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+											"Customer": null,
+											"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(33050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+											"Manager": {
+												"Id": 109,
+												"Name": "Абдулхалимов [Имя]",
+												"IsCorporateData": true,
+												"FirstName": "[Имя]",
+												"MiddleName": null,
+												"LastName": "Абдулхалимов",
+												"Email": null,
+												"Parent@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(33050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/Parent/$entity",
+												"Parent": null
+											},
+											"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(33050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+											"Type": {
+												"Id": 5,
+												"Name": "Проект",
+												"Type": "GroupProject"
+											}
+										}, {
+											"Budget": null,
+											"Status": "PlanExecution",
+											"State": "Planned",
+											"CalculatedPlannedFinishDate": "2016-01-28T00:00:00Z",
+											"CalculatedPlannedStartDate": "2016-01-27T00:00:00Z",
+											"PlannedFinishDate": null,
+											"PlannedStartDate": null,
+											"ShortName": "ТР",
+											"Id": 9002,
+											"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(9002)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+											"Assigned": null,
+											"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(9002)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+											"Customer": null,
+											"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(9002)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+											"Manager": null,
+											"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(9002)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+											"Type": {
+												"Id": 5,
+												"Name": "Проект",
+												"Type": "GroupProject"
+											}
+										}, {
+											"Budget": null,
+											"Status": "PlanExecution",
+											"State": "Planned",
+											"CalculatedPlannedFinishDate": "2016-01-26T00:00:00Z",
+											"CalculatedPlannedStartDate": "2016-01-25T00:00:00Z",
+											"PlannedFinishDate": "2016-01-26T00:00:00Z",
+											"PlannedStartDate": "2016-01-25T00:00:00Z",
+											"ShortName": "Проект",
+											"Id": 26050,
+											"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(26050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+											"Assigned": null,
+											"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(26050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+											"Customer": null,
+											"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(26050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+											"Manager": {
+												"Id": 2,
+												"Name": "Рязанцев [Имя]",
+												"IsCorporateData": true,
+												"FirstName": "[Имя]",
+												"MiddleName": null,
+												"LastName": "Рязанцев",
+												"Email": null,
+												"Parent@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(26050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/Parent/$entity",
+												"Parent": {
+													"@odata.type": "#KG.SE2.Modules.PlanGrafikModule.Model.API.Organization",
+													"Id": 1739,
+													"Name": "РКЗ",
+													"IsCorporateData": true,
+													"Email": null
+												}
+											},
+											"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(26050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+											"Type": {
+												"Id": 5,
+												"Name": "Проект",
+												"Type": "GroupProject"
+											}
+										}, {
+											"Budget": null,
+											"Status": "PlanExecution",
+											"State": "Planned",
+											"CalculatedPlannedFinishDate": "2016-01-23T00:00:00Z",
+											"CalculatedPlannedStartDate": "2016-01-22T00:00:00Z",
+											"PlannedFinishDate": "2016-01-23T00:00:00Z",
+											"PlannedStartDate": "2016-01-22T00:00:00Z",
+											"ShortName": "Проект",
+											"Id": 25058,
+											"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(25058)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+											"Assigned": null,
+											"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(25058)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+											"Customer": null,
+											"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(25058)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+											"Manager": null,
+											"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(25058)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+											"Type": {
+												"Id": 5,
+												"Name": "Проект",
+												"Type": "GroupProject"
+											}
+										}, {
+											"Budget": null,
+											"Status": "PlanExecution",
+											"State": "Planned",
+											"CalculatedPlannedFinishDate": "2016-01-23T00:00:00Z",
+											"CalculatedPlannedStartDate": "2016-01-22T00:00:00Z",
+											"PlannedFinishDate": null,
+											"PlannedStartDate": null,
+											"ShortName": "ТР",
+											"Id": 10001,
+											"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(10001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+											"Assigned": null,
+											"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(10001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+											"Customer": null,
+											"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(10001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+											"Manager": null,
+											"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(10001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+											"Type": {
+												"Id": 5,
+												"Name": "Проект",
+												"Type": "GroupProject"
+											}
+										}, {
+											"Budget": null,
+											"Status": "PlanExecution",
+											"State": "Planned",
+											"CalculatedPlannedFinishDate": null,
+											"CalculatedPlannedStartDate": null,
+											"PlannedFinishDate": "2016-01-22T00:00:00Z",
+											"PlannedStartDate": "2016-01-21T00:00:00Z",
+											"ShortName": "Проект",
+											"Id": 24051,
+											"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(24051)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+											"Assigned": null,
+											"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(24051)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+											"Customer": null,
+											"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(24051)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+											"Manager": null,
+											"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(24051)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+											"Type": {
+												"Id": 5,
+												"Name": "Проект",
+												"Type": "GroupProject"
+											}
+										}, {
+											"Budget": null,
+											"Status": "PlanExecution",
+											"State": "Planned",
+											"CalculatedPlannedFinishDate": null,
+											"CalculatedPlannedStartDate": null,
+											"PlannedFinishDate": "2016-01-20T00:00:00Z",
+											"PlannedStartDate": "2016-01-19T00:00:00Z",
+											"ShortName": "Проект",
+											"Id": 22050,
+											"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(22050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+											"Assigned": null,
+											"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(22050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+											"Customer": null,
+											"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(22050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+											"Manager": null,
+											"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(22050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+											"Type": {
+												"Id": 5,
+												"Name": "Проект",
+												"Type": "GroupProject"
+											}
+										}, {
+											"Budget": null,
+											"Status": "PlanExecution",
+											"State": "Planned",
+											"CalculatedPlannedFinishDate": null,
+											"CalculatedPlannedStartDate": null,
+											"PlannedFinishDate": "2016-01-20T00:00:00Z",
+											"PlannedStartDate": "2016-01-19T00:00:00Z",
+											"ShortName": "Проект",
+											"Id": 23050,
+											"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(23050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+											"Assigned": null,
+											"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(23050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+											"Customer": null,
+											"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(23050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+											"Manager": null,
+											"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(23050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+											"Type": {
+												"Id": 5,
+												"Name": "Проект",
+												"Type": "GroupProject"
+											}
+										}, {
+											"Budget": null,
+											"Status": "PlanDateDisruption",
+											"State": "Execution",
+											"CalculatedPlannedFinishDate": "2016-02-22T00:00:00Z",
+											"CalculatedPlannedStartDate": "2016-01-12T00:00:00Z",
+											"PlannedFinishDate": "2016-01-13T00:00:00Z",
+											"PlannedStartDate": "2016-01-12T00:00:00Z",
+											"ShortName": "Проект с сдр 2",
+											"Id": 19050,
+											"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(19050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+											"Assigned": null,
+											"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(19050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+											"Customer": null,
+											"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(19050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+											"Manager": null,
+											"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(19050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+											"Type": {
+												"Id": 5,
+												"Name": "Проект",
+												"Type": "GroupProject"
+											}
+										}, {
+											"Budget": null,
+											"Status": "PlanExecution",
+											"State": "Planned",
+											"CalculatedPlannedFinishDate": null,
+											"CalculatedPlannedStartDate": null,
+											"PlannedFinishDate": "2015-12-26T00:00:00Z",
+											"PlannedStartDate": "2015-12-25T00:00:00Z",
+											"ShortName": "Проект",
+											"Id": 17001,
+											"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+											"Assigned": null,
+											"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+											"Customer": null,
+											"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+											"Manager": null,
+											"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+											"Type": {
+												"Id": 5,
+												"Name": "Проект",
+												"Type": "GroupProject"
+											}
+										}, {
+											"Budget": null,
+											"Status": "PlanExecution",
+											"State": "Planned",
+											"CalculatedPlannedFinishDate": null,
+											"CalculatedPlannedStartDate": null,
+											"PlannedFinishDate": "2015-12-26T00:00:00Z",
+											"PlannedStartDate": "2015-12-25T00:00:00Z",
+											"ShortName": "Проект",
+											"Id": 17003,
+											"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17003)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+											"Assigned": null,
+											"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17003)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+											"Customer": null,
+											"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17003)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+											"Manager": null,
+											"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17003)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+											"Type": {
+												"Id": 5,
+												"Name": "Проект",
+												"Type": "GroupProject"
+											}
+										}, {
+											"Budget": null,
+											"Status": "PlanExecution",
+											"State": "Planned",
+											"CalculatedPlannedFinishDate": null,
+											"CalculatedPlannedStartDate": null,
+											"PlannedFinishDate": "2015-12-26T00:00:00Z",
+											"PlannedStartDate": "2015-12-25T00:00:00Z",
+											"ShortName": "Проект",
+											"Id": 17004,
+											"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17004)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+											"Assigned": null,
+											"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17004)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+											"Customer": null,
+											"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17004)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+											"Manager": null,
+											"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17004)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+											"Type": {
+												"Id": 5,
+												"Name": "Проект",
+												"Type": "GroupProject"
+											}
+										}, {
+											"Budget": null,
+											"Status": "PlanExecution",
+											"State": "Planned",
+											"CalculatedPlannedFinishDate": null,
+											"CalculatedPlannedStartDate": null,
+											"PlannedFinishDate": "2015-12-26T00:00:00Z",
+											"PlannedStartDate": "2015-12-25T00:00:00Z",
+											"ShortName": "Проект",
+											"Id": 17006,
+											"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17006)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+											"Assigned": null,
+											"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17006)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+											"Customer": null,
+											"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17006)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+											"Manager": null,
+											"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17006)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+											"Type": {
+												"Id": 5,
+												"Name": "Проект",
+												"Type": "GroupProject"
+											}
+										}, {
+											"Budget": 4050,
+											"Status": "PlanExecution",
+											"State": "Planned",
+											"CalculatedPlannedFinishDate": null,
+											"CalculatedPlannedStartDate": null,
+											"PlannedFinishDate": "2015-12-30T00:00:00Z",
+											"PlannedStartDate": "2015-12-18T00:00:00Z",
+											"ShortName": "707",
+											"Id": 17008,
+											"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17008)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+											"Assigned": null,
+											"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17008)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+											"Customer": null,
+											"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17008)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+											"Manager": null,
+											"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17008)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+											"Type": {
+												"Id": 5,
+												"Name": "Проект",
+												"Type": "GroupProject"
+											}
+										}, {
+											"Budget": 123453,
+											"Status": "PlanExecution",
+											"State": "Planned",
+											"CalculatedPlannedFinishDate": "2016-02-11T00:00:00Z",
+											"CalculatedPlannedStartDate": "2015-12-18T00:00:00Z",
+											"PlannedFinishDate": "2013-12-13T00:00:00Z",
+											"PlannedStartDate": "2012-12-12T00:00:00Z",
+											"ShortName": "групповой проект",
+											"Id": 12001,
+											"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(12001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+											"Assigned": null,
+											"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(12001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+											"Customer": null,
+											"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(12001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+											"Manager": {
+												"Id": 3,
+												"Name": "Андрейчук [Имя]",
+												"IsCorporateData": true,
+												"FirstName": "[Имя]",
+												"MiddleName": null,
+												"LastName": "Андрейчук",
+												"Email": null,
+												"Parent@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(12001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/Parent/$entity",
+												"Parent": {
+													"@odata.type": "#KG.SE2.Modules.PlanGrafikModule.Model.API.Organization",
+													"Id": 1739,
+													"Name": "РКЗ",
+													"IsCorporateData": true,
+													"Email": null
+												}
+											},
+											"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(12001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+											"Type": {
+												"Id": 5,
+												"Name": "Проект",
+												"Type": "GroupProject"
+											}
+										}, {
+											"Budget": null,
+											"Status": "PlanExecution",
+											"State": "Planned",
+											"CalculatedPlannedFinishDate": "2015-12-08T00:00:00Z",
+											"CalculatedPlannedStartDate": "2015-12-06T00:00:00Z",
+											"PlannedFinishDate": null,
+											"PlannedStartDate": "2014-01-12T00:00:00Z",
+											"ShortName": "ТР 12",
+											"Id": 9001,
+											"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(9001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+											"Assigned": null,
+											"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(9001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+											"Customer": null,
+											"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(9001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+											"Manager": null,
+											"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(9001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+											"Type": {
+												"Id": 5,
+												"Name": "Проект",
+												"Type": "GroupProject"
+											}
+										}, {
+											"Budget": null,
+											"Status": "PlanExecution",
+											"State": "Planned",
+											"CalculatedPlannedFinishDate": null,
+											"CalculatedPlannedStartDate": null,
+											"PlannedFinishDate": null,
+											"PlannedStartDate": null,
+											"ShortName": "тест - М",
+											"Id": 13001,
+											"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(13001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+											"Assigned": null,
+											"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(13001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+											"Customer": null,
+											"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(13001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+											"Manager": null,
+											"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(13001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+											"Type": {
+												"Id": 5,
+												"Name": "Проект",
+												"Type": "GroupProject"
+											}
+										}]
+									}
+								},
+								"output": {},
+								"duration": 5,
+								"mutations": [{
+									"name": "set",
+									"path": ["smart-project", "data", "GroupProjects"],
+									"args": [
+										[{
+											"Budget": null,
+											"Status": "PlanExecution",
+											"State": "OnAgreeing",
+											"CalculatedPlannedFinishDate": "2016-02-16T00:00:00Z",
+											"CalculatedPlannedStartDate": "2016-02-15T00:00:00Z",
+											"PlannedFinishDate": "2016-02-16T00:00:00Z",
+											"PlannedStartDate": "2016-02-15T00:00:00Z",
+											"ShortName": "Проектsda",
+											"Id": 33050,
+											"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(33050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+											"Assigned": null,
+											"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(33050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+											"Customer": null,
+											"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(33050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+											"Manager": {
+												"Id": 109,
+												"Name": "Абдулхалимов [Имя]",
+												"IsCorporateData": true,
+												"FirstName": "[Имя]",
+												"MiddleName": null,
+												"LastName": "Абдулхалимов",
+												"Email": null,
+												"Parent@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(33050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/Parent/$entity",
+												"Parent": null
+											},
+											"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(33050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+											"Type": {
+												"Id": 5,
+												"Name": "Проект",
+												"Type": "GroupProject"
+											}
+										}, {
+											"Budget": null,
+											"Status": "PlanExecution",
+											"State": "Planned",
+											"CalculatedPlannedFinishDate": "2016-01-28T00:00:00Z",
+											"CalculatedPlannedStartDate": "2016-01-27T00:00:00Z",
+											"PlannedFinishDate": null,
+											"PlannedStartDate": null,
+											"ShortName": "ТР",
+											"Id": 9002,
+											"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(9002)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+											"Assigned": null,
+											"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(9002)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+											"Customer": null,
+											"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(9002)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+											"Manager": null,
+											"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(9002)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+											"Type": {
+												"Id": 5,
+												"Name": "Проект",
+												"Type": "GroupProject"
+											}
+										}, {
+											"Budget": null,
+											"Status": "PlanExecution",
+											"State": "Planned",
+											"CalculatedPlannedFinishDate": "2016-01-26T00:00:00Z",
+											"CalculatedPlannedStartDate": "2016-01-25T00:00:00Z",
+											"PlannedFinishDate": "2016-01-26T00:00:00Z",
+											"PlannedStartDate": "2016-01-25T00:00:00Z",
+											"ShortName": "Проект",
+											"Id": 26050,
+											"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(26050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+											"Assigned": null,
+											"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(26050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+											"Customer": null,
+											"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(26050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+											"Manager": {
+												"Id": 2,
+												"Name": "Рязанцев [Имя]",
+												"IsCorporateData": true,
+												"FirstName": "[Имя]",
+												"MiddleName": null,
+												"LastName": "Рязанцев",
+												"Email": null,
+												"Parent@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(26050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/Parent/$entity",
+												"Parent": {
+													"@odata.type": "#KG.SE2.Modules.PlanGrafikModule.Model.API.Organization",
+													"Id": 1739,
+													"Name": "РКЗ",
+													"IsCorporateData": true,
+													"Email": null
+												}
+											},
+											"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(26050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+											"Type": {
+												"Id": 5,
+												"Name": "Проект",
+												"Type": "GroupProject"
+											}
+										}, {
+											"Budget": null,
+											"Status": "PlanExecution",
+											"State": "Planned",
+											"CalculatedPlannedFinishDate": "2016-01-23T00:00:00Z",
+											"CalculatedPlannedStartDate": "2016-01-22T00:00:00Z",
+											"PlannedFinishDate": "2016-01-23T00:00:00Z",
+											"PlannedStartDate": "2016-01-22T00:00:00Z",
+											"ShortName": "Проект",
+											"Id": 25058,
+											"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(25058)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+											"Assigned": null,
+											"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(25058)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+											"Customer": null,
+											"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(25058)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+											"Manager": null,
+											"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(25058)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+											"Type": {
+												"Id": 5,
+												"Name": "Проект",
+												"Type": "GroupProject"
+											}
+										}, {
+											"Budget": null,
+											"Status": "PlanExecution",
+											"State": "Planned",
+											"CalculatedPlannedFinishDate": "2016-01-23T00:00:00Z",
+											"CalculatedPlannedStartDate": "2016-01-22T00:00:00Z",
+											"PlannedFinishDate": null,
+											"PlannedStartDate": null,
+											"ShortName": "ТР",
+											"Id": 10001,
+											"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(10001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+											"Assigned": null,
+											"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(10001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+											"Customer": null,
+											"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(10001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+											"Manager": null,
+											"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(10001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+											"Type": {
+												"Id": 5,
+												"Name": "Проект",
+												"Type": "GroupProject"
+											}
+										}, {
+											"Budget": null,
+											"Status": "PlanExecution",
+											"State": "Planned",
+											"CalculatedPlannedFinishDate": null,
+											"CalculatedPlannedStartDate": null,
+											"PlannedFinishDate": "2016-01-22T00:00:00Z",
+											"PlannedStartDate": "2016-01-21T00:00:00Z",
+											"ShortName": "Проект",
+											"Id": 24051,
+											"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(24051)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+											"Assigned": null,
+											"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(24051)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+											"Customer": null,
+											"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(24051)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+											"Manager": null,
+											"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(24051)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+											"Type": {
+												"Id": 5,
+												"Name": "Проект",
+												"Type": "GroupProject"
+											}
+										}, {
+											"Budget": null,
+											"Status": "PlanExecution",
+											"State": "Planned",
+											"CalculatedPlannedFinishDate": null,
+											"CalculatedPlannedStartDate": null,
+											"PlannedFinishDate": "2016-01-20T00:00:00Z",
+											"PlannedStartDate": "2016-01-19T00:00:00Z",
+											"ShortName": "Проект",
+											"Id": 22050,
+											"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(22050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+											"Assigned": null,
+											"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(22050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+											"Customer": null,
+											"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(22050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+											"Manager": null,
+											"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(22050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+											"Type": {
+												"Id": 5,
+												"Name": "Проект",
+												"Type": "GroupProject"
+											}
+										}, {
+											"Budget": null,
+											"Status": "PlanExecution",
+											"State": "Planned",
+											"CalculatedPlannedFinishDate": null,
+											"CalculatedPlannedStartDate": null,
+											"PlannedFinishDate": "2016-01-20T00:00:00Z",
+											"PlannedStartDate": "2016-01-19T00:00:00Z",
+											"ShortName": "Проект",
+											"Id": 23050,
+											"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(23050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+											"Assigned": null,
+											"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(23050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+											"Customer": null,
+											"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(23050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+											"Manager": null,
+											"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(23050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+											"Type": {
+												"Id": 5,
+												"Name": "Проект",
+												"Type": "GroupProject"
+											}
+										}, {
+											"Budget": null,
+											"Status": "PlanDateDisruption",
+											"State": "Execution",
+											"CalculatedPlannedFinishDate": "2016-02-22T00:00:00Z",
+											"CalculatedPlannedStartDate": "2016-01-12T00:00:00Z",
+											"PlannedFinishDate": "2016-01-13T00:00:00Z",
+											"PlannedStartDate": "2016-01-12T00:00:00Z",
+											"ShortName": "Проект с сдр 2",
+											"Id": 19050,
+											"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(19050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+											"Assigned": null,
+											"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(19050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+											"Customer": null,
+											"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(19050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+											"Manager": null,
+											"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(19050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+											"Type": {
+												"Id": 5,
+												"Name": "Проект",
+												"Type": "GroupProject"
+											}
+										}, {
+											"Budget": null,
+											"Status": "PlanExecution",
+											"State": "Planned",
+											"CalculatedPlannedFinishDate": null,
+											"CalculatedPlannedStartDate": null,
+											"PlannedFinishDate": "2015-12-26T00:00:00Z",
+											"PlannedStartDate": "2015-12-25T00:00:00Z",
+											"ShortName": "Проект",
+											"Id": 17001,
+											"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+											"Assigned": null,
+											"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+											"Customer": null,
+											"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+											"Manager": null,
+											"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+											"Type": {
+												"Id": 5,
+												"Name": "Проект",
+												"Type": "GroupProject"
+											}
+										}, {
+											"Budget": null,
+											"Status": "PlanExecution",
+											"State": "Planned",
+											"CalculatedPlannedFinishDate": null,
+											"CalculatedPlannedStartDate": null,
+											"PlannedFinishDate": "2015-12-26T00:00:00Z",
+											"PlannedStartDate": "2015-12-25T00:00:00Z",
+											"ShortName": "Проект",
+											"Id": 17003,
+											"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17003)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+											"Assigned": null,
+											"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17003)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+											"Customer": null,
+											"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17003)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+											"Manager": null,
+											"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17003)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+											"Type": {
+												"Id": 5,
+												"Name": "Проект",
+												"Type": "GroupProject"
+											}
+										}, {
+											"Budget": null,
+											"Status": "PlanExecution",
+											"State": "Planned",
+											"CalculatedPlannedFinishDate": null,
+											"CalculatedPlannedStartDate": null,
+											"PlannedFinishDate": "2015-12-26T00:00:00Z",
+											"PlannedStartDate": "2015-12-25T00:00:00Z",
+											"ShortName": "Проект",
+											"Id": 17004,
+											"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17004)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+											"Assigned": null,
+											"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17004)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+											"Customer": null,
+											"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17004)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+											"Manager": null,
+											"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17004)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+											"Type": {
+												"Id": 5,
+												"Name": "Проект",
+												"Type": "GroupProject"
+											}
+										}, {
+											"Budget": null,
+											"Status": "PlanExecution",
+											"State": "Planned",
+											"CalculatedPlannedFinishDate": null,
+											"CalculatedPlannedStartDate": null,
+											"PlannedFinishDate": "2015-12-26T00:00:00Z",
+											"PlannedStartDate": "2015-12-25T00:00:00Z",
+											"ShortName": "Проект",
+											"Id": 17006,
+											"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17006)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+											"Assigned": null,
+											"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17006)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+											"Customer": null,
+											"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17006)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+											"Manager": null,
+											"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17006)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+											"Type": {
+												"Id": 5,
+												"Name": "Проект",
+												"Type": "GroupProject"
+											}
+										}, {
+											"Budget": 4050,
+											"Status": "PlanExecution",
+											"State": "Planned",
+											"CalculatedPlannedFinishDate": null,
+											"CalculatedPlannedStartDate": null,
+											"PlannedFinishDate": "2015-12-30T00:00:00Z",
+											"PlannedStartDate": "2015-12-18T00:00:00Z",
+											"ShortName": "707",
+											"Id": 17008,
+											"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17008)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+											"Assigned": null,
+											"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17008)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+											"Customer": null,
+											"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17008)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+											"Manager": null,
+											"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17008)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+											"Type": {
+												"Id": 5,
+												"Name": "Проект",
+												"Type": "GroupProject"
+											}
+										}, {
+											"Budget": 123453,
+											"Status": "PlanExecution",
+											"State": "Planned",
+											"CalculatedPlannedFinishDate": "2016-02-11T00:00:00Z",
+											"CalculatedPlannedStartDate": "2015-12-18T00:00:00Z",
+											"PlannedFinishDate": "2013-12-13T00:00:00Z",
+											"PlannedStartDate": "2012-12-12T00:00:00Z",
+											"ShortName": "групповой проект",
+											"Id": 12001,
+											"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(12001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+											"Assigned": null,
+											"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(12001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+											"Customer": null,
+											"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(12001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+											"Manager": {
+												"Id": 3,
+												"Name": "Андрейчук [Имя]",
+												"IsCorporateData": true,
+												"FirstName": "[Имя]",
+												"MiddleName": null,
+												"LastName": "Андрейчук",
+												"Email": null,
+												"Parent@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(12001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/Parent/$entity",
+												"Parent": {
+													"@odata.type": "#KG.SE2.Modules.PlanGrafikModule.Model.API.Organization",
+													"Id": 1739,
+													"Name": "РКЗ",
+													"IsCorporateData": true,
+													"Email": null
+												}
+											},
+											"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(12001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+											"Type": {
+												"Id": 5,
+												"Name": "Проект",
+												"Type": "GroupProject"
+											}
+										}, {
+											"Budget": null,
+											"Status": "PlanExecution",
+											"State": "Planned",
+											"CalculatedPlannedFinishDate": "2015-12-08T00:00:00Z",
+											"CalculatedPlannedStartDate": "2015-12-06T00:00:00Z",
+											"PlannedFinishDate": null,
+											"PlannedStartDate": "2014-01-12T00:00:00Z",
+											"ShortName": "ТР 12",
+											"Id": 9001,
+											"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(9001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+											"Assigned": null,
+											"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(9001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+											"Customer": null,
+											"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(9001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+											"Manager": null,
+											"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(9001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+											"Type": {
+												"Id": 5,
+												"Name": "Проект",
+												"Type": "GroupProject"
+											}
+										}, {
+											"Budget": null,
+											"Status": "PlanExecution",
+											"State": "Planned",
+											"CalculatedPlannedFinishDate": null,
+											"CalculatedPlannedStartDate": null,
+											"PlannedFinishDate": null,
+											"PlannedStartDate": null,
+											"ShortName": "тест - М",
+											"Id": 13001,
+											"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(13001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+											"Assigned": null,
+											"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(13001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+											"Customer": null,
+											"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(13001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+											"Manager": null,
+											"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(13001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+											"Type": {
+												"Id": 5,
+												"Name": "Проект",
+												"Type": "GroupProject"
+											}
+										}]
+									]
+								}],
+								"serviceCalls": [],
+								"isAsync": false,
+								"outputPath": null,
+								"isExecuting": false,
+								"hasExecuted": true,
+								"path": [1, 0, "outputs", "success", 0],
+								"outputs": null,
+								"actionIndex": 2
+							}],
+							"error": []
+						},
+						"actionIndex": 1
+					}]
+				],
+				"options": {},
+				"duration": 0,
+				"input": {
+					"result": {
+						"@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Budget,Status,State,CalculatedPlannedFinishDate,CalculatedPlannedStartDate,PlannedFinishDate,PlannedStartDate,ShortName,Id,KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned,KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer,KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager,Type)",
+						"@odata.count": 17,
+						"value": [{
+							"Budget": null,
+							"Status": "PlanExecution",
+							"State": "OnAgreeing",
+							"CalculatedPlannedFinishDate": "2016-02-16T00:00:00Z",
+							"CalculatedPlannedStartDate": "2016-02-15T00:00:00Z",
+							"PlannedFinishDate": "2016-02-16T00:00:00Z",
+							"PlannedStartDate": "2016-02-15T00:00:00Z",
+							"ShortName": "Проектsda",
+							"Id": 33050,
+							"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(33050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+							"Assigned": null,
+							"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(33050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+							"Customer": null,
+							"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(33050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+							"Manager": {
+								"Id": 109,
+								"Name": "Абдулхалимов [Имя]",
+								"IsCorporateData": true,
+								"FirstName": "[Имя]",
+								"MiddleName": null,
+								"LastName": "Абдулхалимов",
+								"Email": null,
+								"Parent@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(33050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/Parent/$entity",
+								"Parent": null
+							},
+							"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(33050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+							"Type": {
+								"Id": 5,
+								"Name": "Проект",
+								"Type": "GroupProject"
+							}
+						}, {
+							"Budget": null,
+							"Status": "PlanExecution",
+							"State": "Planned",
+							"CalculatedPlannedFinishDate": "2016-01-28T00:00:00Z",
+							"CalculatedPlannedStartDate": "2016-01-27T00:00:00Z",
+							"PlannedFinishDate": null,
+							"PlannedStartDate": null,
+							"ShortName": "ТР",
+							"Id": 9002,
+							"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(9002)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+							"Assigned": null,
+							"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(9002)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+							"Customer": null,
+							"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(9002)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+							"Manager": null,
+							"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(9002)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+							"Type": {
+								"Id": 5,
+								"Name": "Проект",
+								"Type": "GroupProject"
+							}
+						}, {
+							"Budget": null,
+							"Status": "PlanExecution",
+							"State": "Planned",
+							"CalculatedPlannedFinishDate": "2016-01-26T00:00:00Z",
+							"CalculatedPlannedStartDate": "2016-01-25T00:00:00Z",
+							"PlannedFinishDate": "2016-01-26T00:00:00Z",
+							"PlannedStartDate": "2016-01-25T00:00:00Z",
+							"ShortName": "Проект",
+							"Id": 26050,
+							"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(26050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+							"Assigned": null,
+							"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(26050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+							"Customer": null,
+							"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(26050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+							"Manager": {
+								"Id": 2,
+								"Name": "Рязанцев [Имя]",
+								"IsCorporateData": true,
+								"FirstName": "[Имя]",
+								"MiddleName": null,
+								"LastName": "Рязанцев",
+								"Email": null,
+								"Parent@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(26050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/Parent/$entity",
+								"Parent": {
+									"@odata.type": "#KG.SE2.Modules.PlanGrafikModule.Model.API.Organization",
+									"Id": 1739,
+									"Name": "РКЗ",
+									"IsCorporateData": true,
+									"Email": null
+								}
+							},
+							"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(26050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+							"Type": {
+								"Id": 5,
+								"Name": "Проект",
+								"Type": "GroupProject"
+							}
+						}, {
+							"Budget": null,
+							"Status": "PlanExecution",
+							"State": "Planned",
+							"CalculatedPlannedFinishDate": "2016-01-23T00:00:00Z",
+							"CalculatedPlannedStartDate": "2016-01-22T00:00:00Z",
+							"PlannedFinishDate": "2016-01-23T00:00:00Z",
+							"PlannedStartDate": "2016-01-22T00:00:00Z",
+							"ShortName": "Проект",
+							"Id": 25058,
+							"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(25058)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+							"Assigned": null,
+							"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(25058)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+							"Customer": null,
+							"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(25058)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+							"Manager": null,
+							"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(25058)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+							"Type": {
+								"Id": 5,
+								"Name": "Проект",
+								"Type": "GroupProject"
+							}
+						}, {
+							"Budget": null,
+							"Status": "PlanExecution",
+							"State": "Planned",
+							"CalculatedPlannedFinishDate": "2016-01-23T00:00:00Z",
+							"CalculatedPlannedStartDate": "2016-01-22T00:00:00Z",
+							"PlannedFinishDate": null,
+							"PlannedStartDate": null,
+							"ShortName": "ТР",
+							"Id": 10001,
+							"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(10001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+							"Assigned": null,
+							"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(10001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+							"Customer": null,
+							"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(10001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+							"Manager": null,
+							"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(10001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+							"Type": {
+								"Id": 5,
+								"Name": "Проект",
+								"Type": "GroupProject"
+							}
+						}, {
+							"Budget": null,
+							"Status": "PlanExecution",
+							"State": "Planned",
+							"CalculatedPlannedFinishDate": null,
+							"CalculatedPlannedStartDate": null,
+							"PlannedFinishDate": "2016-01-22T00:00:00Z",
+							"PlannedStartDate": "2016-01-21T00:00:00Z",
+							"ShortName": "Проект",
+							"Id": 24051,
+							"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(24051)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+							"Assigned": null,
+							"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(24051)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+							"Customer": null,
+							"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(24051)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+							"Manager": null,
+							"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(24051)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+							"Type": {
+								"Id": 5,
+								"Name": "Проект",
+								"Type": "GroupProject"
+							}
+						}, {
+							"Budget": null,
+							"Status": "PlanExecution",
+							"State": "Planned",
+							"CalculatedPlannedFinishDate": null,
+							"CalculatedPlannedStartDate": null,
+							"PlannedFinishDate": "2016-01-20T00:00:00Z",
+							"PlannedStartDate": "2016-01-19T00:00:00Z",
+							"ShortName": "Проект",
+							"Id": 22050,
+							"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(22050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+							"Assigned": null,
+							"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(22050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+							"Customer": null,
+							"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(22050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+							"Manager": null,
+							"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(22050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+							"Type": {
+								"Id": 5,
+								"Name": "Проект",
+								"Type": "GroupProject"
+							}
+						}, {
+							"Budget": null,
+							"Status": "PlanExecution",
+							"State": "Planned",
+							"CalculatedPlannedFinishDate": null,
+							"CalculatedPlannedStartDate": null,
+							"PlannedFinishDate": "2016-01-20T00:00:00Z",
+							"PlannedStartDate": "2016-01-19T00:00:00Z",
+							"ShortName": "Проект",
+							"Id": 23050,
+							"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(23050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+							"Assigned": null,
+							"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(23050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+							"Customer": null,
+							"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(23050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+							"Manager": null,
+							"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(23050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+							"Type": {
+								"Id": 5,
+								"Name": "Проект",
+								"Type": "GroupProject"
+							}
+						}, {
+							"Budget": null,
+							"Status": "PlanDateDisruption",
+							"State": "Execution",
+							"CalculatedPlannedFinishDate": "2016-02-22T00:00:00Z",
+							"CalculatedPlannedStartDate": "2016-01-12T00:00:00Z",
+							"PlannedFinishDate": "2016-01-13T00:00:00Z",
+							"PlannedStartDate": "2016-01-12T00:00:00Z",
+							"ShortName": "Проект с сдр 2",
+							"Id": 19050,
+							"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(19050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+							"Assigned": null,
+							"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(19050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+							"Customer": null,
+							"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(19050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+							"Manager": null,
+							"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(19050)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+							"Type": {
+								"Id": 5,
+								"Name": "Проект",
+								"Type": "GroupProject"
+							}
+						}, {
+							"Budget": null,
+							"Status": "PlanExecution",
+							"State": "Planned",
+							"CalculatedPlannedFinishDate": null,
+							"CalculatedPlannedStartDate": null,
+							"PlannedFinishDate": "2015-12-26T00:00:00Z",
+							"PlannedStartDate": "2015-12-25T00:00:00Z",
+							"ShortName": "Проект",
+							"Id": 17001,
+							"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+							"Assigned": null,
+							"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+							"Customer": null,
+							"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+							"Manager": null,
+							"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+							"Type": {
+								"Id": 5,
+								"Name": "Проект",
+								"Type": "GroupProject"
+							}
+						}, {
+							"Budget": null,
+							"Status": "PlanExecution",
+							"State": "Planned",
+							"CalculatedPlannedFinishDate": null,
+							"CalculatedPlannedStartDate": null,
+							"PlannedFinishDate": "2015-12-26T00:00:00Z",
+							"PlannedStartDate": "2015-12-25T00:00:00Z",
+							"ShortName": "Проект",
+							"Id": 17003,
+							"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17003)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+							"Assigned": null,
+							"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17003)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+							"Customer": null,
+							"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17003)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+							"Manager": null,
+							"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17003)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+							"Type": {
+								"Id": 5,
+								"Name": "Проект",
+								"Type": "GroupProject"
+							}
+						}, {
+							"Budget": null,
+							"Status": "PlanExecution",
+							"State": "Planned",
+							"CalculatedPlannedFinishDate": null,
+							"CalculatedPlannedStartDate": null,
+							"PlannedFinishDate": "2015-12-26T00:00:00Z",
+							"PlannedStartDate": "2015-12-25T00:00:00Z",
+							"ShortName": "Проект",
+							"Id": 17004,
+							"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17004)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+							"Assigned": null,
+							"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17004)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+							"Customer": null,
+							"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17004)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+							"Manager": null,
+							"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17004)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+							"Type": {
+								"Id": 5,
+								"Name": "Проект",
+								"Type": "GroupProject"
+							}
+						}, {
+							"Budget": null,
+							"Status": "PlanExecution",
+							"State": "Planned",
+							"CalculatedPlannedFinishDate": null,
+							"CalculatedPlannedStartDate": null,
+							"PlannedFinishDate": "2015-12-26T00:00:00Z",
+							"PlannedStartDate": "2015-12-25T00:00:00Z",
+							"ShortName": "Проект",
+							"Id": 17006,
+							"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17006)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+							"Assigned": null,
+							"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17006)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+							"Customer": null,
+							"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17006)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+							"Manager": null,
+							"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17006)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+							"Type": {
+								"Id": 5,
+								"Name": "Проект",
+								"Type": "GroupProject"
+							}
+						}, {
+							"Budget": 4050,
+							"Status": "PlanExecution",
+							"State": "Planned",
+							"CalculatedPlannedFinishDate": null,
+							"CalculatedPlannedStartDate": null,
+							"PlannedFinishDate": "2015-12-30T00:00:00Z",
+							"PlannedStartDate": "2015-12-18T00:00:00Z",
+							"ShortName": "707",
+							"Id": 17008,
+							"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17008)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+							"Assigned": null,
+							"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17008)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+							"Customer": null,
+							"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17008)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+							"Manager": null,
+							"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(17008)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+							"Type": {
+								"Id": 5,
+								"Name": "Проект",
+								"Type": "GroupProject"
+							}
+						}, {
+							"Budget": 123453,
+							"Status": "PlanExecution",
+							"State": "Planned",
+							"CalculatedPlannedFinishDate": "2016-02-11T00:00:00Z",
+							"CalculatedPlannedStartDate": "2015-12-18T00:00:00Z",
+							"PlannedFinishDate": "2013-12-13T00:00:00Z",
+							"PlannedStartDate": "2012-12-12T00:00:00Z",
+							"ShortName": "групповой проект",
+							"Id": 12001,
+							"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(12001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+							"Assigned": null,
+							"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(12001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+							"Customer": null,
+							"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(12001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+							"Manager": {
+								"Id": 3,
+								"Name": "Андрейчук [Имя]",
+								"IsCorporateData": true,
+								"FirstName": "[Имя]",
+								"MiddleName": null,
+								"LastName": "Андрейчук",
+								"Email": null,
+								"Parent@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(12001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/Parent/$entity",
+								"Parent": {
+									"@odata.type": "#KG.SE2.Modules.PlanGrafikModule.Model.API.Organization",
+									"Id": 1739,
+									"Name": "РКЗ",
+									"IsCorporateData": true,
+									"Email": null
+								}
+							},
+							"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(12001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+							"Type": {
+								"Id": 5,
+								"Name": "Проект",
+								"Type": "GroupProject"
+							}
+						}, {
+							"Budget": null,
+							"Status": "PlanExecution",
+							"State": "Planned",
+							"CalculatedPlannedFinishDate": "2015-12-08T00:00:00Z",
+							"CalculatedPlannedStartDate": "2015-12-06T00:00:00Z",
+							"PlannedFinishDate": null,
+							"PlannedStartDate": "2014-01-12T00:00:00Z",
+							"ShortName": "ТР 12",
+							"Id": 9001,
+							"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(9001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+							"Assigned": null,
+							"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(9001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+							"Customer": null,
+							"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(9001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+							"Manager": null,
+							"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(9001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+							"Type": {
+								"Id": 5,
+								"Name": "Проект",
+								"Type": "GroupProject"
+							}
+						}, {
+							"Budget": null,
+							"Status": "PlanExecution",
+							"State": "Planned",
+							"CalculatedPlannedFinishDate": null,
+							"CalculatedPlannedStartDate": null,
+							"PlannedFinishDate": null,
+							"PlannedStartDate": null,
+							"ShortName": "тест - М",
+							"Id": 13001,
+							"Assigned@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(13001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Assigned/$entity",
+							"Assigned": null,
+							"Customer@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(13001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Customer/$entity",
+							"Customer": null,
+							"Manager@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(13001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Manager/$entity",
+							"Manager": null,
+							"Type@odata.context": "http://localhost:6651/api/planGrafik/$metadata#Projects(13001)/KG.SE2.Modules.PlanGrafikModule.Model.API.GroupProject/Type/$entity",
+							"Type": {
+								"Id": 5,
+								"Name": "Проект",
+								"Type": "GroupProject"
+							}
+						}]
+					}
+				}
+			}]
+		}]
+	],
+	"options": {},
+	"duration": 0
+}]
   }
 }

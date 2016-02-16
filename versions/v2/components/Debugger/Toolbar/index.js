@@ -10,17 +10,36 @@ import connector from 'connector';
   currentApp: ['debugger', 'currentApp']
 })
 class Toolbar extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      copiedSignals: null
+    };
+  }
   onDisableDebuggerClick() {
     connector.sendEvent('toggleDisableDebugger');
   }
   onResetOnRefreshClick() {
     connector.sendEvent('toggleKeepState');
   }
+  onCopySignalsClick() {
+    this.setState({copiedSignals: JSON.stringify(this.props.currentApp.signals, null, 2)}, () => {
+      this.refs.textarea.select();
+    });
+  }
   render() {
     const currentApp = this.props.currentApp || {};
 
     return (
       <ul className={styles.toolbar}>
+        {
+          this.state.copiedSignals ?
+            <li className={styles.textarea}>
+              <textarea ref="textarea" value={this.state.copiedSignals} onBlur={() => this.setState({copiedSignals: null})}/>
+            </li>
+          :
+            null
+        }
         <li className={styles.item}>
           <ul className={styles.tabs}>
             <li
@@ -36,7 +55,12 @@ class Toolbar extends React.Component {
             <li className={styles.rightItem}>
               <button
                 onClick={() => this.onDisableDebuggerClick()}
-                disabled={currentApp.isExecutingAsync || !currentApp.disableDebugger}>{currentApp.disableDebugger ? 'enable' : 'disable'}</button>
+                disabled={currentApp.isExecutingAsync}>{currentApp.disableDebugger ? 'enable' : 'disable'}</button>
+            </li>
+            <li className={styles.rightItem}>
+              <button
+                onClick={() => this.onCopySignalsClick()}
+                disabled={currentApp.isExecutingAsync}>copy signals</button>
             </li>
             <li className={styles.rightItem}>
               <label style={{cursor: 'pointer'}}><input

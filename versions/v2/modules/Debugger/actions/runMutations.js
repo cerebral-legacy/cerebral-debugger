@@ -7,7 +7,7 @@ function runMutations({input, state}) {
   const currentMutationsLength = mutations.length;
   const lastMutationsLength = debuggerState.get(['lastMutationCount']);
 
-  mutations.splice(lastMutationsLength, currentMutationsLength - lastMutationsLength).forEach((mutation) => {
+  mutations.slice(lastMutationsLength).forEach((mutation) => {
     const path = ['currentApp', 'model'].concat(mutation.path);
     debuggerState[mutation.name].apply(null, [path, ...mutation.args]);
   });

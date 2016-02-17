@@ -17,7 +17,7 @@ controller.addModules({
   devtools: process.env.NODE_ENV === 'production' ? function () {} : Devtools(),
   useragent: UserAgent({
     media: {
-      small: '(max-width: 1280px)'
+      small: '(max-width: 1270px)'
     }
   })
 });

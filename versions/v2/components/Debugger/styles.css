@@ -25,7 +25,12 @@
   color: #333;
 }
 
-@media (max-width: 1280px) {
+.disabled {
+  padding: 50px;
+  text-align: center;
+}
+
+@media (max-width: 1270px) {
     .hiddenOnSmall {
         display: none!important;
     }

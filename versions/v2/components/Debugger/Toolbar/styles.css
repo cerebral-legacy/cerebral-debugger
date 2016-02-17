@@ -65,7 +65,7 @@
   margin-right: 10px;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1270px) {
     .tabOnSmall {
         display: none;
     }

@@ -25,6 +25,21 @@ class Debugger extends React.Component {
       );
     }
 
+    if (this.props.currentApp.disableDebugger) {
+      return (
+        <div className={styles.debugger}>
+          <div className={styles.toolbar}>
+            <Toolbar />
+          </div>
+          <div className={styles.disabled}>
+            <img src="logo.png" width="200"/>
+            <h1>Disabled</h1>
+            <h3>Enable debugger and refresh</h3>
+          </div>
+        </div>
+      );
+    }
+
     return (
       <div className={styles.debugger}>
         <div className={styles.toolbar}>

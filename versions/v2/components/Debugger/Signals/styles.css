@@ -62,16 +62,7 @@
         max-width: 25vw;
     }
 
-    .list:hover {
-        min-width: inherit;
-        max-width: 80vw;
-    }
-
     button {
         font-size: 7px;
-    }
-
-    .list:hover button {
-        font-size: 11px;
     }
 }

@@ -11,7 +11,9 @@ let currentInitCallback = null;
 const connector = {
   onChange(cb) {
     onChangeCallback = cb;
-    initialMessages.forEach(cb);
+    initialMessages.forEach(function (args) {
+      cb.apply(null, args);
+    });
     hasInitialized = true;
     isInitializing = false;
   },
@@ -47,6 +49,7 @@ const connector = {
     });
   },
   connect(initCallback, reset) {
+    console.log('Connecting');
     currentInitCallback = initCallback;
     const port = chrome.extension.connect({
         name: "Cerebral"
@@ -54,9 +57,14 @@ const connector = {
 
     // Listen to messages from the background page
     port.onMessage.addListener((message) => {
+      var tabId = null;
       message = JSON.parse(message);
+      if (message.tabId) {
+        tabId = message.tabId;
+        message = JSON.parse(message.message);
+      }
       var init = function () {
-        initialMessages.push(message);
+        initialMessages.push([message, tabId]);
 
         if (isInitializing) {
           return;
@@ -69,8 +77,11 @@ const connector = {
 
       if (hasInitialized) {
         if (
-          ('app' in message && currentAppId !== message.app) ||
-          (currentAppId && !message.app)
+          !tabId &&
+          (
+            ('app' in message && currentAppId !== message.app) ||
+            (currentAppId && !message.app)
+          )
         ) {
           reset(message.type === 'init'); // Show debugger if init event
           if (message.type === 'init') {
@@ -78,7 +89,7 @@ const connector = {
             onChangeCallback(message);
           }
         } else {
-          onChangeCallback(message);
+          onChangeCallback(message, tabId);
         }
 
       } else if ('app' in message && message.type === 'init' || !('app' in message)) {

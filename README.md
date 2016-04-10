@@ -16,6 +16,9 @@ The debugger will receive a simulated INIT message when it fires up. To send mor
 
 `CONNECTOR.receiveEvent('v2/someMockData')`
 
+Or with timed events:
+`CONNECTOR.receiveEvents('v2/someMockData')`
+
 The mocked data is put into the folder `connector\mocks\v2\someMockData`. Look at existing examples for more help.
 
 ### Data used by debugger

@@ -30,7 +30,7 @@ class Signal extends React.Component {
     });
   }
   onActionClick(action) {
-    connector.inspect(this.props.signal.name, action.path);
+    connector.inspect(this.props.signal.name, action.actionIndex);
   }
   componentDidMount() {
     Prism.highlightAll();

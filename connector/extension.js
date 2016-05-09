@@ -37,9 +37,9 @@ const connector = {
       });
     }
   },
-  inspect(signalName, actionPath) {
+  inspect(signalName, actionIndex) {
     var src = (
-      '(' + inspectSignal.toString() + ')(window, "' + signalName + '", "' + actionPath + '")'
+      '(' + inspectSignal.toString() + ')(window, "' + signalName + '", "' + actionIndex + '")'
     );
 
     chrome.devtools.inspectedWindow.eval(src, function(res, err) {

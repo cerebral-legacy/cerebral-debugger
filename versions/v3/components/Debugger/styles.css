@@ -32,6 +32,6 @@
 
 @media (max-width: 1270px) {
     .hiddenOnSmall {
-        display: none!important;
+        display: none !important;
     }
 }

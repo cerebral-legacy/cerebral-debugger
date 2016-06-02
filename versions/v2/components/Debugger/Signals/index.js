@@ -25,7 +25,7 @@ class Signals extends React.Component {
     connector.sendEvent('resetStore');
   }
   shouldComponentUpdate(nextProps) {
-    return nextProps.currentPage === 'signals' || !nextProps.media.small;
+    return this.props.currentPage !== nextProps.currentPage || this.props.media.small !== nextProps.media.small;
   }
   render() {
     const currentSignal = this.props.debuggerSignals[this.props.currentSignalIndex];

@@ -13,7 +13,12 @@ import Inspector from '../Inspector';
 })
 class Model extends React.Component {
   shouldComponentUpdate(nextProps) {
-    return nextProps.currentPage === 'model' || !nextProps.media.small || this.props.path !== nextProps.path;
+    return (
+      this.props.currentPage !== nextProps.currentPage ||
+      this.props.media.small !== nextProps.media.small ||
+      this.props.path !== nextProps.path ||
+      this.props.currentApp.model !== nextProps.currentApp.model
+    );
   }
   render() {
     return (

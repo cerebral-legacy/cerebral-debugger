@@ -35,7 +35,7 @@ class Debugger extends React.Component {
         </div>
       );
     }
-
+    console.log(this.props.currentPage);
     return (
       <div className={styles.debugger}>
         <div className={styles.toolbar}>

@@ -1,0 +1,58 @@
+.wrapper {
+  flex: 1;
+}
+
+.componentsWrapper {
+  background-color: #FFF;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #DDD;
+  width: 100%;
+  list-style-type: none;
+  height: calc(100vh - 60px);
+  overflow-y: scroll;
+}
+
+.item {
+  display: flex;
+  position: relative;
+  padding-left: 15px;
+  cursor: pointer;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid #DDD;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.itemHeader {
+  display: flex;
+  position: relative;
+  padding-left: 15px;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid #DDD;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: #FAFAFA;
+}
+
+.itemHeader div {
+  font-weight: normal;
+  opacity: 0.5;
+}
+
+.pathName {
+  flex: 2;
+  font-weight: bold;
+}
+
+.components {
+  flex: 1;
+}
+
+.item:hover {
+  background-color: #FAFAFA;
+}

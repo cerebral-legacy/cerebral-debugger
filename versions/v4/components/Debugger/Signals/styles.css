@@ -1,0 +1,29 @@
+.signals {
+  flex: 1.25;
+  display: flex;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.list {
+  flex: 2;
+  min-width: 200px;
+}
+
+.signal {
+  margin-left: 10px;
+  flex: 4;
+    overflow: auto;
+}
+
+@media (max-width: 650px) {
+    .list {
+        flex: 0;
+        min-width: 25vw;
+        max-width: 25vw;
+    }
+
+    button {
+        font-size: 7px;
+    }
+}

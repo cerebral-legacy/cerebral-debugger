@@ -4,6 +4,7 @@ import styles from './styles.css';
 
 import Toolbar from './Toolbar';
 import Signals from './Signals';
+import Components from './Components';
 import Model from './Model';
 
 @Cerebral({
@@ -42,7 +43,18 @@ class Debugger extends React.Component {
           <Toolbar />
         </div>
         <div className={styles.content}>
-          <Signals className={this.props.currentPage !== 'signals' ? styles.hiddenOnSmall : null}/>
+          {
+            this.props.currentPage === 'signals' ?
+              <Signals className={this.props.currentPage !== 'signals' ? styles.hiddenOnSmall : null}/>
+            :
+              null
+          }
+          {
+            this.props.currentPage === 'components' ?
+              <Components className={this.props.currentPage !== 'components' ? styles.hiddenOnSmall : null}/>
+            :
+              null
+          }
           <Model className={this.props.currentPage !== 'model' ? styles.hiddenOnSmall : null}/>
         </div>
       </div>

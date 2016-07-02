@@ -2,7 +2,7 @@ import Prism from 'common/prism';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Controller from 'cerebral';
-import Model from 'cerebral-model-baobab';
+import Model from 'cerebral-model-immutable';
 import {Container} from 'cerebral-view-react';
 import UserAgent from 'cerebral-module-useragent';
 import Devtools from 'cerebral-module-devtools';

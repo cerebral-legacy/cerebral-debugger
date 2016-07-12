@@ -1,8 +1,12 @@
-function currentSignal(get) {
-  const currentSignalIndex = get(['debugger', 'currentSignalIndex']);
-  const currentSignal = get(['debugger', 'signals', currentSignalIndex]);
+import computed from 'cerebral-computed'
 
-  return currentSignal ? get(['debugger', 'currentApp', 'signals'].concat(currentSignal.path)) : null;
+function currentSignal({currentSignalIndex, signals, currentAppSignals}) {
+  const currentSignal = signals[currentSignalIndex];
+  return currentSignal ? currentSignal.path.reduce((currentPath, key) => currentPath[key], currentAppSignals) : null;
 }
 
-export default currentSignal;
+export default computed({
+  signals: 'debugger.signals',
+  currentSignalIndex: 'debugger.currentSignalIndex',
+  currentAppSignals: 'debugger.currentApp.signals'
+}, currentSignal);

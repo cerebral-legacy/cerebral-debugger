@@ -78,6 +78,7 @@ class Signal extends React.Component {
     if (!this.props.signal) {
       return <span>No signal yet...</span>;
     }
+
     return (
       <div className={styles.signal}>
         <h3 className={styles.title}>{this.props.signal.name}</h3>

@@ -2,7 +2,7 @@ import Prism from 'common/prism';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {onChange} from 'connector';
-import Controller from 'cerebral';
+import {Controller} from 'cerebral';
 import Model from 'cerebral-model-immutable';
 import {Container} from 'cerebral-view-react';
 import UserAgent from 'cerebral-module-useragent';

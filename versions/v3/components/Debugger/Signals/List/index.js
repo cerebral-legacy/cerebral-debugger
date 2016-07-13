@@ -1,11 +1,11 @@
 import React from 'react';
-import {Decorator as Cerebral} from 'cerebral-view-react';
+import {connect} from 'cerebral-view-react';
 import styles from './styles.css';
 import {intToRGB, hashCode, nameToColors} from 'common/utils';
 import classnames from 'classnames';
 import connector from 'connector';
 
-@Cerebral({
+@connect({
   debugger: ['debugger']
 })
 class SignalsList extends React.Component {

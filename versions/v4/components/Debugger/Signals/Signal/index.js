@@ -1,5 +1,5 @@
 import React from 'react';
-import {Decorator as Cerebral} from 'cerebral-view-react';
+import {connect} from 'cerebral-view-react';
 import styles from './styles.css';
 import icons from 'common/icons.css';
 import connector from 'connector';
@@ -8,11 +8,11 @@ import currentSignal from 'common/computed/currentSignal';
 
 import Action from './Action';
 
-@Cerebral({
-  currentPage: ['debugger', 'currentPage'],
-  media: ['useragent', 'media'],
-  app: ['debugger', 'currentApp'],
-  signal: currentSignal
+@connect({
+  currentPage: 'debugger.currentPage',
+  media: 'useragent.media',
+  app: 'debugger.currentApp',
+  signal: currentSignal()
 })
 class Signal extends React.Component {
   constructor(props) {

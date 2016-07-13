@@ -1,5 +1,5 @@
 import React from 'react';
-import {Decorator as Cerebral} from 'cerebral-view-react';
+import {connect} from 'cerebral-view-react';
 import styles from './styles.css';
 
 import Toolbar from './Toolbar';
@@ -7,9 +7,9 @@ import Signals from './Signals';
 import Components from './Components';
 import Model from './Model';
 
-@Cerebral({
-  currentPage: ['debugger', 'currentPage'],
-  currentApp: ['debugger', 'currentApp']
+@connect({
+  currentPage: 'debugger.currentPage',
+  currentApp: 'debugger.currentApp'
 })
 class Debugger extends React.Component {
   render() {

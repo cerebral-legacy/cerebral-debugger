@@ -1,5 +1,5 @@
 import React from 'react';
-import {Decorator as Cerebral} from 'cerebral-view-react';
+import {connect} from 'cerebral-view-react';
 import styles from './styles.css';
 import {
   isObject,
@@ -238,7 +238,7 @@ class ArrayValue extends React.Component {
   }
 }
 
-@Cerebral()
+@connect()
 class Value extends React.Component {
   static contextTypes = {
     options: React.PropTypes.object.isRequired

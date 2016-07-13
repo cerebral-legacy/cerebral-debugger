@@ -1,5 +1,5 @@
 import React from 'react';
-import {Decorator as Cerebral} from 'cerebral-view-react';
+import {connect} from 'cerebral-view-react';
 import styles from './styles.css';
 
 function getTime(date) {
@@ -23,11 +23,11 @@ function extractPaths(paths) {
     });
   }
   traverse(paths, []);
-  console.log(allPaths);
+
   return allPaths;
 }
 
-@Cerebral()
+@connect()
 class Renders extends React.Component {
   render() {
     return (

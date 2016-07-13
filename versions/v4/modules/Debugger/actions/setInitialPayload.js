@@ -1,6 +1,6 @@
 function setInitialPayload({input, state}) {
   const debuggerState = state.select('debugger');
-  debuggerState.set(['currentApp'], {
+  debuggerState.set('currentApp', {
     initialModel: input.data.initialModel,
     model: input.data.initialModel,
     signals: input.data.signals,

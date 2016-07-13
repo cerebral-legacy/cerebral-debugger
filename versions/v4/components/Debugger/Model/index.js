@@ -1,15 +1,15 @@
 import React from 'react';
 import classNames from 'classnames';
-import {Decorator as Cerebral} from 'cerebral-view-react';
+import {connect} from 'cerebral-view-react';
 import styles from './styles.css';
 
 import Inspector from '../Inspector';
 
-@Cerebral({
-  currentPage: ['debugger', 'currentPage'],
-  media: ['useragent', 'media'],
-  currentApp: ['debugger', 'currentApp'],
-  path: ['debugger', 'currentMutationPath']
+@connect({
+  currentPage: 'debugger.currentPage',
+  media: 'useragent.media',
+  currentApp: 'debugger.currentApp',
+  path: 'debugger.currentMutationPath'
 })
 class Model extends React.Component {
   shouldComponentUpdate(nextProps) {

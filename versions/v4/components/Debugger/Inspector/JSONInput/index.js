@@ -1,14 +1,14 @@
 import React from 'react';
 import styles from './styles.css';
-import {Decorator as Cerebral} from 'cerebral-view-react';
+import {connect} from 'cerebral-view-react';
 import {
   isObject,
   isArray
 } from 'common/utils';
 
-@Cerebral({
-  isExecutingAsync: ['debugger', 'currentApp', 'isExecutingAsync'],
-  currentSignalIndex: ['debugger', 'currentSignalIndex']
+@connect({
+  isExecutingAsync: 'debugger.currentApp.isExecutingAsync',
+  currentSignalIndex: 'debugger.currentSignalIndex'
 })
 class JSONInput extends React.Component {
   constructor(props) {

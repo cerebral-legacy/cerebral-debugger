@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './styles.css';
-import {Decorator as Cerebral} from 'cerebral-view-react';
+import {connect} from 'cerebral-view-react';
 import {
   isObject,
   isArray
 } from 'common/utils';
 
-@Cerebral({
+@connect({
   isExecutingAsync: ['debugger', 'currentApp', 'isExecutingAsync'],
   currentSignalIndex: ['debugger', 'currentSignalIndex']
 })

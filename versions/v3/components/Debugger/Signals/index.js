@@ -1,13 +1,13 @@
 import React from 'react';
 import classNames from 'classnames';
-import {Decorator as Cerebral} from 'cerebral-view-react';
+import {connect} from 'cerebral-view-react';
 import styles from './styles.css';
 import connector from 'connector';
 
 import List from './List';
 import Signal from './Signal';
 
-@Cerebral({
+@connect({
   currentPage: ['debugger', 'currentPage'],
   media: ['useragent', 'media'],
   currentSignalIndex: ['debugger', 'currentSignalIndex'],

@@ -1,9 +1,9 @@
 import React from 'react';
-import {Decorator as Cerebral} from 'cerebral-view-react';
+import {connect} from 'cerebral-view-react';
 import styles from './styles.css';
 import connector from 'connector';
 
-@Cerebral()
+@connect()
 class StatePaths extends React.Component {
   componentMapPathClick(path) {
     connector.sendEvent('componentMapPath', path);

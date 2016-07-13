@@ -1,2246 +1,1332 @@
 export default [
   {
-    "name": "app.appMounted",
-    "start": 1458907331613,
-    "isRouted": false,
+    "name": "app.feedRouted",
+    "start": 1468226312630,
+    "isSync": true,
     "isExecuting": false,
     "isPrevented": false,
-    "isRecorded": false,
     "branches": [
-      [
-        {
-          "name": "loadForClient",
-          "input": {},
-          "output": {
-            "result": {
-              "client": {
-                "name": "Test Customer",
-                "favicon": "http://testhost.se/media?id=435123&conversation=5eaf61aec2b76bf4fb6a08b222b167ee",
-                "url": "localhost:3000"
-              }
-            }
-          },
-          "duration": 0,
-          "mutations": [],
-          "serviceCalls": [
-            {
-              "name": "Http",
-              "method": "post",
-              "args": [
-                "/api/load"
-              ]
-            }
-          ],
-          "isAsync": true,
-          "outputPath": "success",
-          "isExecuting": false,
-          "hasExecuted": true,
-          "path": [
-            0,
-            0
-          ],
-          "outputs": {
-            "success": [
-              {
-                "name": "setTitle",
-                "input": {
-                  "result": {
-                    "client": {
-                      "name": "Test Customer",
-                      "favicon": "http://testhost.se/media?id=435123&conversation=5eaf61aec2b76bf4fb6a08b222b167ee",
-                      "url": "localhost:3000"
-                    }
-                  }
-                },
-                "output": {},
-                "duration": 0,
-                "mutations": [],
-                "serviceCalls": [],
-                "isAsync": false,
-                "outputPath": null,
-                "isExecuting": false,
-                "hasExecuted": true,
-                "path": [
-                  0,
-                  0,
-                  "outputs",
-                  "success",
-                  0
-                ],
-                "outputs": null,
-                "actionIndex": 1
-              },
-              {
-                "name": "setFavicon",
-                "input": {
-                  "result": {
-                    "client": {
-                      "name": "Test Customer",
-                      "favicon": "http://testhost.se/media?id=435123&conversation=5eaf61aec2b76bf4fb6a08b222b167ee",
-                      "url": "localhost:3000"
-                    }
-                  }
-                },
-                "output": {},
-                "duration": 0,
-                "mutations": [],
-                "serviceCalls": [],
-                "isAsync": false,
-                "outputPath": null,
-                "isExecuting": false,
-                "hasExecuted": true,
-                "path": [
-                  0,
-                  0,
-                  "outputs",
-                  "success",
-                  1
-                ],
-                "outputs": null,
-                "actionIndex": 2
-              },
-              {
-                "name": "getPredefinedData",
-                "input": {
-                  "result": {
-                    "client": {
-                      "name": "Test Customer",
-                      "favicon": "http://testhost.se/media?id=435123&conversation=5eaf61aec2b76bf4fb6a08b222b167ee",
-                      "url": "localhost:3000"
-                    }
-                  }
-                },
-                "output": {},
-                "duration": 0,
-                "mutations": [
-                  {
-                    "name": "set",
-                    "path": [
-                      "client",
-                      "busPredefined",
-                      "normal",
-                      "username"
-                    ],
-                    "args": [
-                      {
-                        "type": "normal",
-                        "field": "username",
-                        "hidden": false,
-                        "value": "Test Customer"
-                      }
-                    ]
-                  },
-                  {
-                    "name": "set",
-                    "path": [
-                      "client",
-                      "busPredefined",
-                      "aggregations",
-                      "Customtype"
-                    ],
-                    "args": [
-                      {
-                        "type": "aggregations",
-                        "key": "Customtype",
-                        "hidden": false,
-                        "condition": "1"
-                      }
-                    ]
-                  },
-                  {
-                    "name": "set",
-                    "path": [
-                      "client",
-                      "busPredefined",
-                      "aggregations",
-                      "Country"
-                    ],
-                    "args": [
-                      {
-                        "type": "aggregations",
-                        "key": "Country",
-                        "hidden": false,
-                        "value": "NO"
-                      }
-                    ]
-                  }
-                ],
-                "serviceCalls": [],
-                "isAsync": false,
-                "outputPath": null,
-                "isExecuting": false,
-                "hasExecuted": true,
-                "path": [
-                  0,
-                  0,
-                  "outputs",
-                  "success",
-                  2
-                ],
-                "outputs": null,
-                "actionIndex": 3
-              },
-              {
-                "name": "prepareRegistrationForms",
-                "input": {
-                  "result": {
-                    "client": {
-                      "name": "Test Customer",
-                      "favicon": "http://testhost.se/media?id=435123&conversation=5eaf61aec2b76bf4fb6a08b222b167ee",
-                      "url": "localhost:3000"
-                    }
-                  }
-                },
-                "output": {},
-                "duration": 0,
-                "mutations": [
-                  {
-                    "name": "set",
-                    "path": [
-                      "client",
-                      "registrating",
-                      "current"
-                    ],
-                    "args": [
-                      {
-                        "login": {
-                          "username": {
-                            "value": "wicket.programmer@gmail.com",
-                            "isRequired": true,
-                            "defaultValue": "wicket.programmer@gmail.com",
-                            "validations": null,
-                            "isValid": true,
-                            "errorMessages": [],
-                            "errorMessage": null,
-                            "isValue": [
-                              "isValue"
-                            ],
-                            "hasValue": true,
-                            "isTouched": true
-                          },
-                          "password": {
-                            "value": "cedarpoint",
-                            "isRequired": true,
-                            "type": "password",
-                            "defaultValue": "cedarpoint",
-                            "validations": null,
-                            "isValid": true,
-                            "errorMessages": [],
-                            "errorMessage": null,
-                            "isValue": [
-                              "isValue"
-                            ],
-                            "hasValue": true,
-                            "isTouched": true
-                          }
-                        },
-                        "common": {
-                          "locale": {
-                            "value": [
-                              {
-                                "key": "sv",
-                                "value": "sv",
-                                "index": 0
-                              }
-                            ],
-                            "isRequired": true,
-                            "options": [
-                              {
-                                "key": "sv",
-                                "value": "sv",
-                                "index": 0,
-                                "selected": true
-                              },
-                              {
-                                "key": "en",
-                                "value": "en",
-                                "index": 1,
-                                "selected": false
-                              }
-                            ],
-                            "hidden": false,
-                            "filteredOptions": null,
-                            "localeAware": true,
-                            "defaultValue": [
-                              {
-                                "key": "sv",
-                                "value": "sv",
-                                "index": 0
-                              }
-                            ],
-                            "validations": null,
-                            "isValid": true,
-                            "errorMessages": [],
-                            "errorMessage": null,
-                            "isValue": [
-                              "isValue"
-                            ],
-                            "hasValue": true,
-                            "isTouched": true
-                          },
-                          "email": {
-                            "value": "",
-                            "isRequired": true,
-                            "validations": [
-                              "isEmail"
-                            ],
-                            "errorMessages": [
-                              {
-                                "key": "errors.email"
-                              }
-                            ],
-                            "defaultValue": "",
-                            "isValid": true,
-                            "errorMessage": null,
-                            "isValue": [
-                              "isValue"
-                            ],
-                            "hasValue": false,
-                            "isTouched": false
-                          },
-                          "username": {
-                            "value": "Test Customer",
-                            "isRequired": true,
-                            "defaultValue": "Test Customer",
-                            "validations": null,
-                            "isValid": true,
-                            "errorMessages": [],
-                            "errorMessage": null,
-                            "isValue": [
-                              "isValue"
-                            ],
-                            "hasValue": true,
-                            "isTouched": true
-                          },
-                          "password": {
-                            "value": "",
-                            "isRequired": true,
-                            "type": "password",
-                            "hidden": false,
-                            "defaultValue": "",
-                            "validations": null,
-                            "isValid": true,
-                            "errorMessages": [],
-                            "errorMessage": null,
-                            "isValue": [
-                              "isValue"
-                            ],
-                            "hasValue": false,
-                            "isTouched": false
-                          },
-                          "firstname": {
-                            "value": "",
-                            "isRequired": true,
-                            "defaultValue": "",
-                            "validations": null,
-                            "isValid": true,
-                            "errorMessages": [],
-                            "errorMessage": null,
-                            "isValue": [
-                              "isValue"
-                            ],
-                            "hasValue": false,
-                            "isTouched": false
-                          },
-                          "lastname": {
-                            "value": "",
-                            "isRequired": true,
-                            "defaultValue": "",
-                            "validations": null,
-                            "isValid": true,
-                            "errorMessages": [],
-                            "errorMessage": null,
-                            "isValue": [
-                              "isValue"
-                            ],
-                            "hasValue": false,
-                            "isTouched": false
-                          }
-                        },
-                        "invoice": {
-                          "company": {
-                            "value": "",
-                            "identifier": "company",
-                            "isMultiple": false,
-                            "options": null,
-                            "validations": [
-                              "minLength:1"
-                            ],
-                            "errorMessages": [],
-                            "isRequired": true,
-                            "hidden": false,
-                            "viesValidation": false,
-                            "validateAgainst": null,
-                            "defaultValue": "",
-                            "isValid": true,
-                            "errorMessage": null,
-                            "isValue": [
-                              "isValue"
-                            ],
-                            "hasValue": false,
-                            "isTouched": false
-                          },
-                          "address": {
-                            "value": "",
-                            "identifier": "address",
-                            "isMultiple": false,
-                            "options": null,
-                            "validations": [
-                              "minLength:1"
-                            ],
-                            "errorMessages": [],
-                            "isRequired": true,
-                            "hidden": false,
-                            "viesValidation": false,
-                            "validateAgainst": null,
-                            "defaultValue": "",
-                            "isValid": true,
-                            "errorMessage": null,
-                            "isValue": [
-                              "isValue"
-                            ],
-                            "hasValue": false,
-                            "isTouched": false
-                          },
-                          "zip": {
-                            "value": "",
-                            "identifier": "zip",
-                            "isMultiple": false,
-                            "options": null,
-                            "validations": [
-                              "minLength:1"
-                            ],
-                            "errorMessages": [],
-                            "isRequired": true,
-                            "hidden": false,
-                            "viesValidation": false,
-                            "validateAgainst": null,
-                            "defaultValue": "",
-                            "isValid": true,
-                            "errorMessage": null,
-                            "isValue": [
-                              "isValue"
-                            ],
-                            "hasValue": false,
-                            "isTouched": false
-                          },
-                          "country": {
-                            "value": "",
-                            "identifier": "country",
-                            "isMultiple": false,
-                            "options": null,
-                            "validations": [
-                              "minLength:0"
-                            ],
-                            "errorMessages": [],
-                            "isRequired": false,
-                            "hidden": false,
-                            "viesValidation": false,
-                            "validateAgainst": null,
-                            "dependents": [
-                              [
-                                "..",
-                                "vat"
-                              ]
-                            ],
-                            "defaultValue": "",
-                            "isValid": true,
-                            "errorMessage": null,
-                            "isValue": [
-                              "isValue"
-                            ],
-                            "hasValue": false,
-                            "isTouched": false
-                          },
-                          "city": {
-                            "value": "",
-                            "identifier": "city",
-                            "isMultiple": false,
-                            "options": null,
-                            "validations": [
-                              "minLength:1"
-                            ],
-                            "errorMessages": [],
-                            "isRequired": true,
-                            "hidden": false,
-                            "viesValidation": false,
-                            "validateAgainst": null,
-                            "defaultValue": "",
-                            "isValid": true,
-                            "errorMessage": null,
-                            "isValue": [
-                              "isValue"
-                            ],
-                            "hasValue": false,
-                            "isTouched": false
-                          },
-                          "phone": {
-                            "value": "",
-                            "identifier": "phone",
-                            "isMultiple": false,
-                            "options": null,
-                            "validations": [
-                              "minLength:1"
-                            ],
-                            "errorMessages": [],
-                            "isRequired": true,
-                            "hidden": false,
-                            "viesValidation": false,
-                            "validateAgainst": null,
-                            "defaultValue": "",
-                            "isValid": true,
-                            "errorMessage": null,
-                            "isValue": [
-                              "isValue"
-                            ],
-                            "hasValue": false,
-                            "isTouched": false
-                          },
-                          "vat": {
-                            "value": "",
-                            "identifier": "vat",
-                            "isMultiple": false,
-                            "options": null,
-                            "validations": [
-                              "minLength:0",
-                              "noWhitespace"
-                            ],
-                            "errorMessages": [
-                              {
-                                "key": ""
-                              },
-                              {
-                                "key": "errors.whitespace"
-                              }
-                            ],
-                            "isRequired": false,
-                            "hidden": false,
-                            "viesValidation": true,
-                            "validateAgainst": "country",
-                            "defaultValue": "",
-                            "isValid": true,
-                            "errorMessage": null,
-                            "isValue": [
-                              "isValue"
-                            ],
-                            "hasValue": false,
-                            "isTouched": false
-                          },
-                          "branch": {
-                            "value": [],
-                            "identifier": "branch",
-                            "isMultiple": false,
-                            "options": [
-                              {
-                                "key": "Shop-in-shop",
-                                "value": "Shop-in-shop",
-                                "index": 0,
-                                "selected": false
-                              },
-                              {
-                                "key": "Agent",
-                                "value": "Agent",
-                                "index": 1,
-                                "selected": false
-                              },
-                              {
-                                "key": "Supplier",
-                                "value": "Supplier",
-                                "index": 2,
-                                "selected": false
-                              },
-                              {
-                                "key": "Ad Agency",
-                                "value": "Ad Agency",
-                                "index": 3,
-                                "selected": false
-                              },
-                              {
-                                "key": "Other",
-                                "value": "Other",
-                                "index": 4,
-                                "selected": false
-                              }
-                            ],
-                            "validations": [
-                              "minLength:1"
-                            ],
-                            "errorMessages": [],
-                            "isRequired": true,
-                            "hidden": false,
-                            "viesValidation": false,
-                            "validateAgainst": null,
-                            "defaultValue": [],
-                            "isValid": false,
-                            "isValue": [
-                              "isValue"
-                            ],
-                            "hasValue": false,
-                            "isTouched": false
-                          }
-                        },
-                        "delivery": {
-                          "company": {
-                            "value": "",
-                            "identifier": "company",
-                            "isMultiple": false,
-                            "options": null,
-                            "validations": [
-                              "minLength:1"
-                            ],
-                            "errorMessages": [],
-                            "isRequired": true,
-                            "hidden": false,
-                            "viesValidation": false,
-                            "validateAgainst": null,
-                            "defaultValue": "",
-                            "isValid": true,
-                            "errorMessage": null,
-                            "isValue": [
-                              "isValue"
-                            ],
-                            "hasValue": false,
-                            "isTouched": false
-                          },
-                          "address": {
-                            "value": "",
-                            "identifier": "address",
-                            "isMultiple": false,
-                            "options": null,
-                            "validations": [
-                              "minLength:1"
-                            ],
-                            "errorMessages": [],
-                            "isRequired": true,
-                            "hidden": false,
-                            "viesValidation": false,
-                            "validateAgainst": null,
-                            "defaultValue": "",
-                            "isValid": true,
-                            "errorMessage": null,
-                            "isValue": [
-                              "isValue"
-                            ],
-                            "hasValue": false,
-                            "isTouched": false
-                          },
-                          "zip": {
-                            "value": "",
-                            "identifier": "zip",
-                            "isMultiple": false,
-                            "options": null,
-                            "validations": [
-                              "minLength:1"
-                            ],
-                            "errorMessages": [],
-                            "isRequired": true,
-                            "hidden": false,
-                            "viesValidation": false,
-                            "validateAgainst": null,
-                            "defaultValue": "",
-                            "isValid": true,
-                            "errorMessage": null,
-                            "isValue": [
-                              "isValue"
-                            ],
-                            "hasValue": false,
-                            "isTouched": false
-                          },
-                          "country": {
-                            "value": "",
-                            "identifier": "country",
-                            "isMultiple": false,
-                            "options": null,
-                            "validations": [
-                              "minLength:0"
-                            ],
-                            "errorMessages": [],
-                            "isRequired": false,
-                            "hidden": false,
-                            "viesValidation": false,
-                            "validateAgainst": null,
-                            "dependents": [
-                              [
-                                "..",
-                                "vat"
-                              ]
-                            ],
-                            "defaultValue": "",
-                            "isValid": true,
-                            "errorMessage": null,
-                            "isValue": [
-                              "isValue"
-                            ],
-                            "hasValue": false,
-                            "isTouched": false
-                          },
-                          "city": {
-                            "value": "",
-                            "identifier": "city",
-                            "isMultiple": false,
-                            "options": null,
-                            "validations": [
-                              "minLength:1"
-                            ],
-                            "errorMessages": [],
-                            "isRequired": true,
-                            "hidden": false,
-                            "viesValidation": false,
-                            "validateAgainst": null,
-                            "defaultValue": "",
-                            "isValid": true,
-                            "errorMessage": null,
-                            "isValue": [
-                              "isValue"
-                            ],
-                            "hasValue": false,
-                            "isTouched": false
-                          },
-                          "phone": {
-                            "value": "",
-                            "identifier": "phone",
-                            "isMultiple": false,
-                            "options": null,
-                            "validations": [
-                              "minLength:1"
-                            ],
-                            "errorMessages": [],
-                            "isRequired": true,
-                            "hidden": false,
-                            "viesValidation": false,
-                            "validateAgainst": null,
-                            "defaultValue": "",
-                            "isValid": true,
-                            "errorMessage": null,
-                            "isValue": [
-                              "isValue"
-                            ],
-                            "hasValue": false,
-                            "isTouched": false
-                          },
-                          "vat": {
-                            "value": "",
-                            "identifier": "vat",
-                            "isMultiple": false,
-                            "options": null,
-                            "validations": [
-                              "minLength:0",
-                              "noWhitespace"
-                            ],
-                            "errorMessages": [
-                              {
-                                "key": ""
-                              },
-                              {
-                                "key": "errors.whitespace"
-                              }
-                            ],
-                            "isRequired": false,
-                            "hidden": false,
-                            "viesValidation": true,
-                            "validateAgainst": "country",
-                            "defaultValue": "",
-                            "isValid": true,
-                            "errorMessage": null,
-                            "isValue": [
-                              "isValue"
-                            ],
-                            "hasValue": false,
-                            "isTouched": false
-                          },
-                          "branch": {
-                            "value": [],
-                            "identifier": "branch",
-                            "isMultiple": false,
-                            "options": [
-                              {
-                                "key": "Shop-in-shop",
-                                "value": "Shop-in-shop",
-                                "index": 0,
-                                "selected": false
-                              },
-                              {
-                                "key": "Agent",
-                                "value": "Agent",
-                                "index": 1,
-                                "selected": false
-                              },
-                              {
-                                "key": "Supplier",
-                                "value": "Supplier",
-                                "index": 2,
-                                "selected": false
-                              },
-                              {
-                                "key": "Ad Agency",
-                                "value": "Ad Agency",
-                                "index": 3,
-                                "selected": false
-                              },
-                              {
-                                "key": "Other",
-                                "value": "Other",
-                                "index": 4,
-                                "selected": false
-                              }
-                            ],
-                            "validations": [
-                              "minLength:1"
-                            ],
-                            "errorMessages": [],
-                            "isRequired": true,
-                            "hidden": false,
-                            "viesValidation": false,
-                            "validateAgainst": null,
-                            "defaultValue": [],
-                            "isValid": false,
-                            "isValue": [
-                              "isValue"
-                            ],
-                            "hasValue": false,
-                            "isTouched": false
-                          }
-                        }
-                      }
-                    ]
-                  }
-                ],
-                "serviceCalls": [],
-                "isAsync": false,
-                "outputPath": null,
-                "isExecuting": false,
-                "hasExecuted": true,
-                "path": [
-                  0,
-                  0,
-                  "outputs",
-                  "success",
-                  3
-                ],
-                "outputs": null,
-                "actionIndex": 4
-              },
-              {
-                "name": "setLocale",
-                "input": {
-                  "result": {
-                    "client": {
-                      "name": "Test Customer",
-                      "favicon": "http://testhost.se/media?id=435123&conversation=5eaf61aec2b76bf4fb6a08b222b167ee",
-                      "url": "localhost:3000"
-                    }
-                  }
-                },
-                "output": {},
-                "duration": 24,
-                "mutations": [],
-                "serviceCalls": [],
-                "isAsync": false,
-                "outputPath": null,
-                "isExecuting": false,
-                "hasExecuted": true,
-                "path": [
-                  0,
-                  0,
-                  "outputs",
-                  "success",
-                  4
-                ],
-                "outputs": null,
-                "actionIndex": 5
-              }
-            ]
-          },
-          "actionIndex": 0,
-          "signals": [
-            {
-              "name": "login.setLogin",
-              "start": 1458907331693,
-              "isSync": true,
-              "isRouted": true,
-              "isExecuting": false,
-              "isPrevented": false,
-              "isRecorded": false,
-              "branches": [
-                {
-                  "name": "addons.set(\"state:/client.currentPage\", \"login\")",
-                  "input": {},
-                  "output": {},
-                  "duration": 5,
-                  "mutations": [
-                    {
-                      "name": "set",
-                      "path": [
-                        "client",
-                        "currentPage"
-                      ],
-                      "args": [
-                        "login"
-                      ]
-                    }
-                  ],
-                  "serviceCalls": [],
-                  "isAsync": false,
-                  "outputPath": null,
-                  "isExecuting": false,
-                  "hasExecuted": true,
-                  "path": [
-                    0
-                  ],
-                  "outputs": null,
-                  "actionIndex": 0
-                }
-              ],
-              "options": {
-                "isRouted": true
-              },
-              "duration": 0,
-              "input": {}
-            }
+      {
+        "name": "addons.when(\"state:/app.user\")",
+        "options": {
+          "outputs": [
+            "true",
+            "false"
           ]
-        }
-      ],
-      {
-        "name": "addons.set(\"state:/app.loaded\", true)",
-        "input": {
-          "result": {
-            "client": {
-              "name": "Test Customer",
-              "favicon": "http://testhost.se/media?id=435123&conversation=5eaf61aec2b76bf4fb6a08b222b167ee",
-              "url": "localhost:3000"
-            }
-          }
         },
-        "output": {},
-        "duration": 1,
-        "mutations": [
-          {
-            "name": "set",
-            "path": [
-              "app",
-              "loaded"
-            ],
-            "args": [
-              true
-            ]
-          }
-        ],
-        "serviceCalls": [],
+        "duration": 0,
         "isAsync": false,
-        "outputPath": null,
-        "isExecuting": false,
-        "hasExecuted": true,
-        "path": [
-          1
-        ],
-        "outputs": null,
-        "actionIndex": 6
-      }
-    ],
-    "options": {},
-    "duration": 0
-  },
-  {
-    "name": "client.focusField",
-    "start": 1458907357990,
-    "isRouted": false,
-    "isExecuting": false,
-    "isPrevented": false,
-    "isRecorded": false,
-    "branches": [
-      {
-        "name": "focusField",
-        "input": {
-          "path": [
-            "client",
-            "registrating",
-            "current",
-            "login",
-            "password"
-          ],
-          "focus": true,
-          "shouldBlur": false
-        },
-        "output": {},
-        "duration": 4,
-        "mutations": [
-          {
-            "name": "merge",
-            "path": [
-              "client",
-              "registrating",
-              "current",
-              "login",
-              "username"
-            ],
-            "args": [
-              {
-                "hasFocus": false
-              }
-            ]
-          },
-          {
-            "name": "merge",
-            "path": [
-              "client",
-              "registrating",
-              "current",
-              "login",
-              "password"
-            ],
-            "args": [
-              {
-                "hasFocus": false
-              }
-            ]
-          },
-          {
-            "name": "merge",
-            "path": [
-              "client",
-              "registrating",
-              "current",
-              "login",
-              "password"
-            ],
-            "args": [
-              {
-                "hasFocus": true
-              }
-            ]
-          }
-        ],
-        "serviceCalls": [],
-        "isAsync": false,
-        "outputPath": null,
         "isExecuting": false,
         "hasExecuted": true,
         "path": [
           0
-        ],
-        "outputs": null,
-        "actionIndex": 0
-      }
-    ],
-    "options": {},
-    "duration": 0,
-    "input": {
-      "path": [
-        "client",
-        "registrating",
-        "current",
-        "login",
-        "password"
-      ],
-      "focus": true,
-      "shouldBlur": false
-    }
-  },
-  {
-    "name": "forms.fieldChanged",
-    "start": 1458907359621,
-    "isSync": true,
-    "isRouted": false,
-    "isExecuting": false,
-    "isPrevented": false,
-    "isRecorded": false,
-    "branches": [
-      {
-        "name": "touchField",
-        "input": {
-          "field": [
-            "client",
-            "registrating",
-            "current",
-            "login",
-            "password"
-          ],
-          "value": "t",
-          "touched": true
-        },
-        "output": {},
-        "duration": 0,
-        "mutations": [
-          {
-            "name": "set",
-            "path": [
-              "client",
-              "registrating",
-              "current",
-              "login",
-              "password",
-              "isTouched"
-            ],
-            "args": [
-              true
-            ]
-          }
-        ],
-        "serviceCalls": [],
-        "isAsync": false,
-        "outputPath": null,
-        "isExecuting": false,
-        "hasExecuted": true,
-        "path": [
-          0
-        ],
-        "outputs": null,
-        "actionIndex": 0
-      },
-      {
-        "name": "updateValue",
-        "input": {
-          "field": [
-            "client",
-            "registrating",
-            "current",
-            "login",
-            "password"
-          ],
-          "value": "t",
-          "touched": true
-        },
-        "output": {},
-        "duration": 0,
-        "mutations": [
-          {
-            "name": "set",
-            "path": [
-              "client",
-              "registrating",
-              "current",
-              "login",
-              "password",
-              "value"
-            ],
-            "args": [
-              "t"
-            ]
-          }
-        ],
-        "serviceCalls": [],
-        "isAsync": false,
-        "outputPath": null,
-        "isExecuting": false,
-        "hasExecuted": true,
-        "path": [
-          1
-        ],
-        "outputs": null,
-        "actionIndex": 1
-      },
-      {
-        "name": "hasValue",
-        "input": {
-          "field": [
-            "client",
-            "registrating",
-            "current",
-            "login",
-            "password"
-          ],
-          "value": "t",
-          "touched": true
-        },
-        "output": {},
-        "duration": 0,
-        "mutations": [
-          {
-            "name": "set",
-            "path": [
-              "client",
-              "registrating",
-              "current",
-              "login",
-              "password",
-              "hasValue"
-            ],
-            "args": [
-              true
-            ]
-          }
-        ],
-        "serviceCalls": [],
-        "isAsync": false,
-        "outputPath": null,
-        "isExecuting": false,
-        "hasExecuted": true,
-        "path": [
-          2
-        ],
-        "outputs": null,
-        "actionIndex": 2
-      },
-      {
-        "name": "validateRequired",
-        "input": {
-          "field": [
-            "client",
-            "registrating",
-            "current",
-            "login",
-            "password"
-          ],
-          "value": "t",
-          "touched": true
-        },
-        "output": {},
-        "duration": 0,
-        "mutations": [
-          {
-            "name": "merge",
-            "path": [
-              "client",
-              "registrating",
-              "current",
-              "login",
-              "password"
-            ],
-            "args": [
-              {
-                "isValid": true,
-                "errorMessage": null
-              }
-            ]
-          }
-        ],
-        "serviceCalls": [],
-        "isAsync": false,
-        "outputPath": null,
-        "isExecuting": false,
-        "hasExecuted": true,
-        "path": [
-          3
-        ],
-        "outputs": null,
-        "actionIndex": 3
-      },
-      {
-        "name": "shouldValidate",
-        "input": {
-          "field": [
-            "client",
-            "registrating",
-            "current",
-            "login",
-            "password"
-          ],
-          "value": "t",
-          "touched": true
-        },
-        "output": {},
-        "duration": 5,
-        "mutations": [],
-        "serviceCalls": [],
-        "isAsync": false,
-        "outputPath": "no",
-        "isExecuting": false,
-        "hasExecuted": true,
-        "path": [
-          4
         ],
         "outputs": {
-          "yes": [
+          "true": [
             {
-              "name": "validate",
-              "input": {},
-              "output": null,
+              "name": "addons.set(\"state:/app.currentPage\", \"inspirasjon\")",
+              "options": {},
               "duration": 0,
-              "mutations": [],
-              "serviceCalls": [],
               "isAsync": false,
-              "outputPath": null,
               "isExecuting": false,
               "hasExecuted": false,
               "path": [
-                4,
+                0,
                 "outputs",
-                "yes",
+                "true",
                 0
               ],
               "outputs": null,
-              "actionIndex": 5
-            }
-          ],
-          "no": []
-        },
-        "actionIndex": 4
-      }
-    ],
-    "options": {},
-    "duration": 0,
-    "input": {
-      "field": [
-        "client",
-        "registrating",
-        "current",
-        "login",
-        "password"
-      ],
-      "value": "t",
-      "touched": true
-    }
-  },
-  {
-    "name": "forms.fieldChanged",
-    "start": 1458907359811,
-    "isSync": true,
-    "isRouted": false,
-    "isExecuting": false,
-    "isPrevented": false,
-    "isRecorded": false,
-    "branches": [
-      {
-        "name": "touchField",
-        "input": {
-          "field": [
-            "client",
-            "registrating",
-            "current",
-            "login",
-            "password"
-          ],
-          "value": "te",
-          "touched": true
-        },
-        "output": {},
-        "duration": 0,
-        "mutations": [
-          {
-            "name": "set",
-            "path": [
-              "client",
-              "registrating",
-              "current",
-              "login",
-              "password",
-              "isTouched"
-            ],
-            "args": [
-              true
-            ]
-          }
-        ],
-        "serviceCalls": [],
-        "isAsync": false,
-        "outputPath": null,
-        "isExecuting": false,
-        "hasExecuted": true,
-        "path": [
-          0
-        ],
-        "outputs": null,
-        "actionIndex": 0
-      },
-      {
-        "name": "updateValue",
-        "input": {
-          "field": [
-            "client",
-            "registrating",
-            "current",
-            "login",
-            "password"
-          ],
-          "value": "te",
-          "touched": true
-        },
-        "output": {},
-        "duration": 0,
-        "mutations": [
-          {
-            "name": "set",
-            "path": [
-              "client",
-              "registrating",
-              "current",
-              "login",
-              "password",
-              "value"
-            ],
-            "args": [
-              "te"
-            ]
-          }
-        ],
-        "serviceCalls": [],
-        "isAsync": false,
-        "outputPath": null,
-        "isExecuting": false,
-        "hasExecuted": true,
-        "path": [
-          1
-        ],
-        "outputs": null,
-        "actionIndex": 1
-      },
-      {
-        "name": "hasValue",
-        "input": {
-          "field": [
-            "client",
-            "registrating",
-            "current",
-            "login",
-            "password"
-          ],
-          "value": "te",
-          "touched": true
-        },
-        "output": {},
-        "duration": 0,
-        "mutations": [
-          {
-            "name": "set",
-            "path": [
-              "client",
-              "registrating",
-              "current",
-              "login",
-              "password",
-              "hasValue"
-            ],
-            "args": [
-              true
-            ]
-          }
-        ],
-        "serviceCalls": [],
-        "isAsync": false,
-        "outputPath": null,
-        "isExecuting": false,
-        "hasExecuted": true,
-        "path": [
-          2
-        ],
-        "outputs": null,
-        "actionIndex": 2
-      },
-      {
-        "name": "validateRequired",
-        "input": {
-          "field": [
-            "client",
-            "registrating",
-            "current",
-            "login",
-            "password"
-          ],
-          "value": "te",
-          "touched": true
-        },
-        "output": {},
-        "duration": 0,
-        "mutations": [
-          {
-            "name": "merge",
-            "path": [
-              "client",
-              "registrating",
-              "current",
-              "login",
-              "password"
-            ],
-            "args": [
-              {
-                "isValid": true,
-                "errorMessage": null
-              }
-            ]
-          }
-        ],
-        "serviceCalls": [],
-        "isAsync": false,
-        "outputPath": null,
-        "isExecuting": false,
-        "hasExecuted": true,
-        "path": [
-          3
-        ],
-        "outputs": null,
-        "actionIndex": 3
-      },
-      {
-        "name": "shouldValidate",
-        "input": {
-          "field": [
-            "client",
-            "registrating",
-            "current",
-            "login",
-            "password"
-          ],
-          "value": "te",
-          "touched": true
-        },
-        "output": {},
-        "duration": 7,
-        "mutations": [],
-        "serviceCalls": [],
-        "isAsync": false,
-        "outputPath": "no",
-        "isExecuting": false,
-        "hasExecuted": true,
-        "path": [
-          4
-        ],
-        "outputs": {
-          "yes": [
+              "actionIndex": 1
+            },
             {
-              "name": "validate",
-              "input": {},
-              "output": null,
+              "name": "addons.set(\"state:/header.isNotificationLoading\", true)",
+              "options": {},
               "duration": 0,
-              "mutations": [],
-              "serviceCalls": [],
               "isAsync": false,
-              "outputPath": null,
               "isExecuting": false,
               "hasExecuted": false,
               "path": [
-                4,
+                0,
                 "outputs",
-                "yes",
-                0
+                "true",
+                1
               ],
               "outputs": null,
-              "actionIndex": 5
-            }
-          ],
-          "no": []
-        },
-        "actionIndex": 4
-      }
-    ],
-    "options": {},
-    "duration": 0,
-    "input": {
-      "field": [
-        "client",
-        "registrating",
-        "current",
-        "login",
-        "password"
-      ],
-      "value": "te",
-      "touched": true
-    }
-  },
-  {
-    "name": "forms.fieldChanged",
-    "start": 1458907360018,
-    "isSync": true,
-    "isRouted": false,
-    "isExecuting": false,
-    "isPrevented": false,
-    "isRecorded": false,
-    "branches": [
-      {
-        "name": "touchField",
-        "input": {
-          "field": [
-            "client",
-            "registrating",
-            "current",
-            "login",
-            "password"
-          ],
-          "value": "tes",
-          "touched": true
-        },
-        "output": {},
-        "duration": 0,
-        "mutations": [
-          {
-            "name": "set",
-            "path": [
-              "client",
-              "registrating",
-              "current",
-              "login",
-              "password",
-              "isTouched"
-            ],
-            "args": [
-              true
-            ]
-          }
-        ],
-        "serviceCalls": [],
-        "isAsync": false,
-        "outputPath": null,
-        "isExecuting": false,
-        "hasExecuted": true,
-        "path": [
-          0
-        ],
-        "outputs": null,
-        "actionIndex": 0
-      },
-      {
-        "name": "updateValue",
-        "input": {
-          "field": [
-            "client",
-            "registrating",
-            "current",
-            "login",
-            "password"
-          ],
-          "value": "tes",
-          "touched": true
-        },
-        "output": {},
-        "duration": 0,
-        "mutations": [
-          {
-            "name": "set",
-            "path": [
-              "client",
-              "registrating",
-              "current",
-              "login",
-              "password",
-              "value"
-            ],
-            "args": [
-              "tes"
-            ]
-          }
-        ],
-        "serviceCalls": [],
-        "isAsync": false,
-        "outputPath": null,
-        "isExecuting": false,
-        "hasExecuted": true,
-        "path": [
-          1
-        ],
-        "outputs": null,
-        "actionIndex": 1
-      },
-      {
-        "name": "hasValue",
-        "input": {
-          "field": [
-            "client",
-            "registrating",
-            "current",
-            "login",
-            "password"
-          ],
-          "value": "tes",
-          "touched": true
-        },
-        "output": {},
-        "duration": 0,
-        "mutations": [
-          {
-            "name": "set",
-            "path": [
-              "client",
-              "registrating",
-              "current",
-              "login",
-              "password",
-              "hasValue"
-            ],
-            "args": [
-              true
-            ]
-          }
-        ],
-        "serviceCalls": [],
-        "isAsync": false,
-        "outputPath": null,
-        "isExecuting": false,
-        "hasExecuted": true,
-        "path": [
-          2
-        ],
-        "outputs": null,
-        "actionIndex": 2
-      },
-      {
-        "name": "validateRequired",
-        "input": {
-          "field": [
-            "client",
-            "registrating",
-            "current",
-            "login",
-            "password"
-          ],
-          "value": "tes",
-          "touched": true
-        },
-        "output": {},
-        "duration": 0,
-        "mutations": [
-          {
-            "name": "merge",
-            "path": [
-              "client",
-              "registrating",
-              "current",
-              "login",
-              "password"
-            ],
-            "args": [
+              "actionIndex": 2
+            },
+            [
               {
-                "isValid": true,
-                "errorMessage": null
-              }
-            ]
-          }
-        ],
-        "serviceCalls": [],
-        "isAsync": false,
-        "outputPath": null,
-        "isExecuting": false,
-        "hasExecuted": true,
-        "path": [
-          3
-        ],
-        "outputs": null,
-        "actionIndex": 3
-      },
-      {
-        "name": "shouldValidate",
-        "input": {
-          "field": [
-            "client",
-            "registrating",
-            "current",
-            "login",
-            "password"
-          ],
-          "value": "tes",
-          "touched": true
-        },
-        "output": {},
-        "duration": 8,
-        "mutations": [],
-        "serviceCalls": [],
-        "isAsync": false,
-        "outputPath": "no",
-        "isExecuting": false,
-        "hasExecuted": true,
-        "path": [
-          4
-        ],
-        "outputs": {
-          "yes": [
-            {
-              "name": "validate",
-              "input": {},
-              "output": null,
-              "duration": 0,
-              "mutations": [],
-              "serviceCalls": [],
-              "isAsync": false,
-              "outputPath": null,
-              "isExecuting": false,
-              "hasExecuted": false,
-              "path": [
-                4,
-                "outputs",
-                "yes",
-                0
-              ],
-              "outputs": null,
-              "actionIndex": 5
-            }
-          ],
-          "no": []
-        },
-        "actionIndex": 4
-      }
-    ],
-    "options": {},
-    "duration": 0,
-    "input": {
-      "field": [
-        "client",
-        "registrating",
-        "current",
-        "login",
-        "password"
-      ],
-      "value": "tes",
-      "touched": true
-    }
-  },
-  {
-    "name": "forms.fieldChanged",
-    "start": 1458907360204,
-    "isSync": true,
-    "isRouted": false,
-    "isExecuting": false,
-    "isPrevented": false,
-    "isRecorded": false,
-    "branches": [
-      {
-        "name": "touchField",
-        "input": {
-          "field": [
-            "client",
-            "registrating",
-            "current",
-            "login",
-            "password"
-          ],
-          "value": "test",
-          "touched": true
-        },
-        "output": {},
-        "duration": 0,
-        "mutations": [
-          {
-            "name": "set",
-            "path": [
-              "client",
-              "registrating",
-              "current",
-              "login",
-              "password",
-              "isTouched"
-            ],
-            "args": [
-              true
-            ]
-          }
-        ],
-        "serviceCalls": [],
-        "isAsync": false,
-        "outputPath": null,
-        "isExecuting": false,
-        "hasExecuted": true,
-        "path": [
-          0
-        ],
-        "outputs": null,
-        "actionIndex": 0
-      },
-      {
-        "name": "updateValue",
-        "input": {
-          "field": [
-            "client",
-            "registrating",
-            "current",
-            "login",
-            "password"
-          ],
-          "value": "test",
-          "touched": true
-        },
-        "output": {},
-        "duration": 0,
-        "mutations": [
-          {
-            "name": "set",
-            "path": [
-              "client",
-              "registrating",
-              "current",
-              "login",
-              "password",
-              "value"
-            ],
-            "args": [
-              "test"
-            ]
-          }
-        ],
-        "serviceCalls": [],
-        "isAsync": false,
-        "outputPath": null,
-        "isExecuting": false,
-        "hasExecuted": true,
-        "path": [
-          1
-        ],
-        "outputs": null,
-        "actionIndex": 1
-      },
-      {
-        "name": "hasValue",
-        "input": {
-          "field": [
-            "client",
-            "registrating",
-            "current",
-            "login",
-            "password"
-          ],
-          "value": "test",
-          "touched": true
-        },
-        "output": {},
-        "duration": 0,
-        "mutations": [
-          {
-            "name": "set",
-            "path": [
-              "client",
-              "registrating",
-              "current",
-              "login",
-              "password",
-              "hasValue"
-            ],
-            "args": [
-              true
-            ]
-          }
-        ],
-        "serviceCalls": [],
-        "isAsync": false,
-        "outputPath": null,
-        "isExecuting": false,
-        "hasExecuted": true,
-        "path": [
-          2
-        ],
-        "outputs": null,
-        "actionIndex": 2
-      },
-      {
-        "name": "validateRequired",
-        "input": {
-          "field": [
-            "client",
-            "registrating",
-            "current",
-            "login",
-            "password"
-          ],
-          "value": "test",
-          "touched": true
-        },
-        "output": {},
-        "duration": 0,
-        "mutations": [
-          {
-            "name": "merge",
-            "path": [
-              "client",
-              "registrating",
-              "current",
-              "login",
-              "password"
-            ],
-            "args": [
-              {
-                "isValid": true,
-                "errorMessage": null
-              }
-            ]
-          }
-        ],
-        "serviceCalls": [],
-        "isAsync": false,
-        "outputPath": null,
-        "isExecuting": false,
-        "hasExecuted": true,
-        "path": [
-          3
-        ],
-        "outputs": null,
-        "actionIndex": 3
-      },
-      {
-        "name": "shouldValidate",
-        "input": {
-          "field": [
-            "client",
-            "registrating",
-            "current",
-            "login",
-            "password"
-          ],
-          "value": "test",
-          "touched": true
-        },
-        "output": {},
-        "duration": 6,
-        "mutations": [],
-        "serviceCalls": [],
-        "isAsync": false,
-        "outputPath": "no",
-        "isExecuting": false,
-        "hasExecuted": true,
-        "path": [
-          4
-        ],
-        "outputs": {
-          "yes": [
-            {
-              "name": "validate",
-              "input": {},
-              "output": null,
-              "duration": 0,
-              "mutations": [],
-              "serviceCalls": [],
-              "isAsync": false,
-              "outputPath": null,
-              "isExecuting": false,
-              "hasExecuted": false,
-              "path": [
-                4,
-                "outputs",
-                "yes",
-                0
-              ],
-              "outputs": null,
-              "actionIndex": 5
-            }
-          ],
-          "no": []
-        },
-        "actionIndex": 4
-      }
-    ],
-    "options": {},
-    "duration": 0,
-    "input": {
-      "field": [
-        "client",
-        "registrating",
-        "current",
-        "login",
-        "password"
-      ],
-      "value": "test",
-      "touched": true
-    }
-  },
-  {
-    "name": "client.focusField",
-    "start": 1458907361225,
-    "isRouted": false,
-    "isExecuting": false,
-    "isPrevented": false,
-    "isRecorded": false,
-    "branches": [
-      {
-        "name": "focusField",
-        "input": {
-          "focus": false
-        },
-        "output": {},
-        "duration": 2,
-        "mutations": [
-          {
-            "name": "merge",
-            "path": [
-              "client",
-              "registrating",
-              "current",
-              "login",
-              "username"
-            ],
-            "args": [
-              {
-                "hasFocus": false
-              }
-            ]
-          },
-          {
-            "name": "merge",
-            "path": [
-              "client",
-              "registrating",
-              "current",
-              "login",
-              "password"
-            ],
-            "args": [
-              {
-                "hasFocus": false
-              }
-            ]
-          }
-        ],
-        "serviceCalls": [],
-        "isAsync": false,
-        "outputPath": null,
-        "isExecuting": false,
-        "hasExecuted": true,
-        "path": [
-          0
-        ],
-        "outputs": null,
-        "actionIndex": 0
-      }
-    ],
-    "options": {},
-    "duration": 0,
-    "input": {
-      "focus": false
-    }
-  },
-  {
-    "name": "login.onSignIn",
-    "start": 1458907361300,
-    "isRouted": false,
-    "isExecuting": false,
-    "isPrevented": false,
-    "isRecorded": false,
-    "branches": [
-      [
-        {
-          "name": "sendSignInInfo",
-          "input": {},
-          "output": {
-            "result": {
-              "firstname": "Mathias",
-              "lastname": "Nilsson",
-              "email": "wicket.programmer@gmail.com"
-            }
-          },
-          "duration": 0,
-          "mutations": [],
-          "serviceCalls": [
-            {
-              "name": "Http",
-              "method": "post",
-              "args": [
-                "/api/signin",
-                {
-                  "username": "wicket.programmer@gmail.com",
-                  "password": "test"
-                }
-              ]
-            }
-          ],
-          "isAsync": true,
-          "outputPath": "success",
-          "isExecuting": false,
-          "hasExecuted": true,
-          "path": [
-            0,
-            0
-          ],
-          "outputs": {
-            "error": [],
-            "success": [
-              {
-                "name": "",
-                "input": {
-                  "result": {
-                    "firstname": "Mathias",
-                    "lastname": "Nilsson",
-                    "email": "wicket.programmer@gmail.com"
-                  }
+                "name": "http.get (/notifications)",
+                "options": {},
+                "duration": 0,
+                "isAsync": true,
+                "isExecuting": false,
+                "hasExecuted": false,
+                "path": [
+                  0,
+                  "outputs",
+                  "true",
+                  2,
+                  0
+                ],
+                "outputs": {
+                  "success": [
+                    {
+                      "name": "setNotifications",
+                      "options": {},
+                      "duration": 0,
+                      "isAsync": false,
+                      "isExecuting": false,
+                      "hasExecuted": false,
+                      "path": [
+                        0,
+                        "outputs",
+                        "true",
+                        2,
+                        0,
+                        "outputs",
+                        "success",
+                        0
+                      ],
+                      "outputs": null,
+                      "actionIndex": 4
+                    }
+                  ],
+                  "error": [
+                    {
+                      "name": "addons.copy(\"input:/result\", \"state:/header.notificationError\")",
+                      "options": {},
+                      "duration": 0,
+                      "isAsync": false,
+                      "isExecuting": false,
+                      "hasExecuted": false,
+                      "path": [
+                        0,
+                        "outputs",
+                        "true",
+                        2,
+                        0,
+                        "outputs",
+                        "error",
+                        0
+                      ],
+                      "outputs": null,
+                      "actionIndex": 5
+                    }
+                  ]
                 },
-                "output": {},
-                "duration": 4,
-                "mutations": [
+                "actionIndex": 3
+              }
+            ],
+            {
+              "name": "addons.set(\"state:/header.isNotificationLoading\", false)",
+              "options": {},
+              "duration": 0,
+              "isAsync": false,
+              "isExecuting": false,
+              "hasExecuted": false,
+              "path": [
+                0,
+                "outputs",
+                "true",
+                3
+              ],
+              "outputs": null,
+              "actionIndex": 6
+            },
+            {
+              "name": "whenMobile",
+              "options": {
+                "outputs": [
+                  "true",
+                  "false"
+                ]
+              },
+              "duration": 0,
+              "isAsync": false,
+              "isExecuting": false,
+              "hasExecuted": false,
+              "path": [
+                0,
+                "outputs",
+                "true",
+                4
+              ],
+              "outputs": {
+                "true": [
                   {
-                    "name": "set",
+                    "name": "addons.set(\"state:/header.showMainMenu\", false)",
+                    "options": {},
+                    "duration": 0,
+                    "isAsync": false,
+                    "isExecuting": false,
+                    "hasExecuted": false,
                     "path": [
-                      "user"
+                      0,
+                      "outputs",
+                      "true",
+                      4,
+                      "outputs",
+                      "true",
+                      0
                     ],
-                    "args": [
-                      {
-                        "firstname": "Mathias",
-                        "lastname": "Nilsson",
-                        "email": "wicket.programmer@gmail.com"
-                      }
-                    ]
+                    "outputs": null,
+                    "actionIndex": 8
                   }
                 ],
-                "serviceCalls": [],
-                "isAsync": false,
-                "outputPath": null,
+                "false": []
+              },
+              "actionIndex": 7
+            }
+          ],
+          "false": [
+            [
+              {
+                "name": "signIn",
+                "options": {},
+                "duration": 0,
+                "isAsync": true,
                 "isExecuting": false,
                 "hasExecuted": true,
                 "path": [
                   0,
-                  0,
                   "outputs",
-                  "success",
+                  "false",
+                  0,
                   0
                 ],
-                "outputs": null,
-                "actionIndex": 1
-              }
-            ]
-          },
-          "actionIndex": 0,
-          "signals": [
-            {
-              "name": "client.focusField",
-              "start": 1458907361304,
-              "isRouted": false,
-              "isExecuting": false,
-              "isPrevented": false,
-              "isRecorded": false,
-              "branches": [
-                {
-                  "name": "focusField",
-                  "input": {
-                    "focus": false
-                  },
-                  "output": {},
-                  "duration": 2,
-                  "mutations": [
+                "outputs": {
+                  "success": [
                     {
-                      "name": "merge",
+                      "name": "setUser",
+                      "options": {},
+                      "duration": 0,
+                      "isAsync": false,
+                      "isExecuting": false,
+                      "hasExecuted": true,
                       "path": [
-                        "client",
-                        "registrating",
-                        "current",
-                        "login",
-                        "username"
+                        0,
+                        "outputs",
+                        "false",
+                        0,
+                        0,
+                        "outputs",
+                        "success",
+                        0
                       ],
-                      "args": [
+                      "outputs": null,
+                      "actionIndex": 10,
+                      "serviceCalls": [],
+                      "input": {
+                        "user": {
+                          "uid": "C2DnzNJrJRbXYd8dJLCawlr2e4h1",
+                          "isAnonymous": true,
+                          "providerData": [],
+                          "displayName": null,
+                          "email": null,
+                          "emailVerified": false,
+                          "photoURL": null
+                        }
+                      },
+                      "mutations": [
                         {
-                          "hasFocus": false
+                          "name": "set",
+                          "path": [
+                            "app",
+                            "user"
+                          ],
+                          "args": [
+                            {
+                              "uid": "C2DnzNJrJRbXYd8dJLCawlr2e4h1",
+                              "isAnonymous": true,
+                              "providerData": [],
+                              "displayName": null,
+                              "email": null,
+                              "emailVerified": false,
+                              "photoURL": null
+                            }
+                          ]
                         }
                       ]
                     },
                     {
-                      "name": "merge",
+                      "name": "addons.set(\"state:/app.isAuthenticating\", false)",
+                      "options": {},
+                      "duration": 0,
+                      "isAsync": false,
+                      "isExecuting": false,
+                      "hasExecuted": true,
                       "path": [
-                        "client",
-                        "registrating",
-                        "current",
-                        "login",
-                        "password"
+                        0,
+                        "outputs",
+                        "false",
+                        0,
+                        0,
+                        "outputs",
+                        "success",
+                        1
                       ],
-                      "args": [
+                      "outputs": null,
+                      "actionIndex": 11,
+                      "serviceCalls": [],
+                      "input": {
+                        "user": {
+                          "uid": "C2DnzNJrJRbXYd8dJLCawlr2e4h1",
+                          "isAnonymous": true,
+                          "providerData": [],
+                          "displayName": null,
+                          "email": null,
+                          "emailVerified": false,
+                          "photoURL": null
+                        }
+                      },
+                      "mutations": [
                         {
-                          "hasFocus": false
+                          "name": "set",
+                          "path": [
+                            "app",
+                            "isAuthenticating"
+                          ],
+                          "args": [
+                            false
+                          ]
                         }
                       ]
+                    },
+                    {
+                      "name": "addons.set(\"state:/app.currentPage\", \"inspirasjon\")",
+                      "options": {},
+                      "duration": 0,
+                      "isAsync": false,
+                      "isExecuting": false,
+                      "hasExecuted": true,
+                      "path": [
+                        0,
+                        "outputs",
+                        "false",
+                        0,
+                        0,
+                        "outputs",
+                        "success",
+                        2
+                      ],
+                      "outputs": null,
+                      "actionIndex": 1,
+                      "serviceCalls": [],
+                      "input": {
+                        "user": {
+                          "uid": "C2DnzNJrJRbXYd8dJLCawlr2e4h1",
+                          "isAnonymous": true,
+                          "providerData": [],
+                          "displayName": null,
+                          "email": null,
+                          "emailVerified": false,
+                          "photoURL": null
+                        }
+                      },
+                      "mutations": [
+                        {
+                          "name": "set",
+                          "path": [
+                            "app",
+                            "currentPage"
+                          ],
+                          "args": [
+                            "inspirasjon"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "addons.set(\"state:/header.isNotificationLoading\", true)",
+                      "options": {},
+                      "duration": 3,
+                      "isAsync": false,
+                      "isExecuting": false,
+                      "hasExecuted": true,
+                      "path": [
+                        0,
+                        "outputs",
+                        "false",
+                        0,
+                        0,
+                        "outputs",
+                        "success",
+                        3
+                      ],
+                      "outputs": null,
+                      "actionIndex": 2,
+                      "serviceCalls": [],
+                      "input": {
+                        "user": {
+                          "uid": "C2DnzNJrJRbXYd8dJLCawlr2e4h1",
+                          "isAnonymous": true,
+                          "providerData": [],
+                          "displayName": null,
+                          "email": null,
+                          "emailVerified": false,
+                          "photoURL": null
+                        }
+                      },
+                      "mutations": [
+                        {
+                          "name": "set",
+                          "path": [
+                            "header",
+                            "isNotificationLoading"
+                          ],
+                          "args": [
+                            true
+                          ]
+                        }
+                      ]
+                    },
+                    [
+                      {
+                        "name": "http.get (/notifications)",
+                        "options": {},
+                        "duration": 0,
+                        "isAsync": true,
+                        "isExecuting": false,
+                        "hasExecuted": true,
+                        "path": [
+                          0,
+                          "outputs",
+                          "false",
+                          0,
+                          0,
+                          "outputs",
+                          "success",
+                          4,
+                          0
+                        ],
+                        "outputs": {
+                          "success": [
+                            {
+                              "name": "setNotifications",
+                              "options": {},
+                              "duration": 0,
+                              "isAsync": false,
+                              "isExecuting": false,
+                              "hasExecuted": false,
+                              "path": [
+                                0,
+                                "outputs",
+                                "false",
+                                0,
+                                0,
+                                "outputs",
+                                "success",
+                                4,
+                                0,
+                                "outputs",
+                                "success",
+                                0
+                              ],
+                              "outputs": null,
+                              "actionIndex": 4
+                            }
+                          ],
+                          "error": [
+                            {
+                              "name": "addons.copy(\"input:/result\", \"state:/header.notificationError\")",
+                              "options": {},
+                              "duration": 3,
+                              "isAsync": false,
+                              "isExecuting": false,
+                              "hasExecuted": true,
+                              "path": [
+                                0,
+                                "outputs",
+                                "false",
+                                0,
+                                0,
+                                "outputs",
+                                "success",
+                                4,
+                                0,
+                                "outputs",
+                                "error",
+                                0
+                              ],
+                              "outputs": null,
+                              "actionIndex": 5,
+                              "serviceCalls": [],
+                              "input": {
+                                "user": {
+                                  "uid": "C2DnzNJrJRbXYd8dJLCawlr2e4h1",
+                                  "isAnonymous": true,
+                                  "providerData": [],
+                                  "displayName": null,
+                                  "email": null,
+                                  "emailVerified": false,
+                                  "photoURL": null
+                                },
+                                "status": 404,
+                                "result": "Cannot GET /api/notifications\n"
+                              },
+                              "mutations": [
+                                {
+                                  "name": "set",
+                                  "path": [
+                                    "header",
+                                    "notificationError"
+                                  ],
+                                  "args": [
+                                    "Cannot GET /api/notifications\n"
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        "actionIndex": 3,
+                        "serviceCalls": [
+                          {
+                            "name": "http",
+                            "method": "get",
+                            "args": [
+                              "/notifications"
+                            ]
+                          }
+                        ],
+                        "input": {
+                          "user": {
+                            "uid": "C2DnzNJrJRbXYd8dJLCawlr2e4h1",
+                            "isAnonymous": true,
+                            "providerData": [],
+                            "displayName": null,
+                            "email": null,
+                            "emailVerified": false,
+                            "photoURL": null
+                          }
+                        },
+                        "mutations": [],
+                        "signals": [
+                          {
+                            "name": "app.userLoggedIn",
+                            "start": 1468226313073,
+                            "isExecuting": false,
+                            "isPrevented": false,
+                            "branches": [
+                              {
+                                "name": "addons.set(\"state:/header.showMainMenu\", true)",
+                                "options": {},
+                                "duration": 0,
+                                "isAsync": false,
+                                "isExecuting": false,
+                                "hasExecuted": true,
+                                "path": [
+                                  0
+                                ],
+                                "outputs": null,
+                                "actionIndex": 0,
+                                "serviceCalls": [],
+                                "mutations": [
+                                  {
+                                    "name": "set",
+                                    "path": [
+                                      "header",
+                                      "showMainMenu"
+                                    ],
+                                    "args": [
+                                      true
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "shouldShowInternetExplorerModal",
+                                "options": {
+                                  "outputs": [
+                                    "true",
+                                    "false"
+                                  ]
+                                },
+                                "duration": 2,
+                                "isAsync": false,
+                                "isExecuting": false,
+                                "hasExecuted": true,
+                                "path": [
+                                  1
+                                ],
+                                "outputs": {
+                                  "true": [
+                                    {
+                                      "name": "addons.set(\"state:/app.showInternetExplorerModal\", true)",
+                                      "options": {},
+                                      "duration": 0,
+                                      "isAsync": false,
+                                      "isExecuting": false,
+                                      "hasExecuted": false,
+                                      "path": [
+                                        1,
+                                        "outputs",
+                                        "true",
+                                        0
+                                      ],
+                                      "outputs": null,
+                                      "actionIndex": 2
+                                    }
+                                  ],
+                                  "false": [
+                                    {
+                                      "name": "addons.set(\"state:/app.showInternetExplorerModal\", false)",
+                                      "options": {},
+                                      "duration": 2,
+                                      "isAsync": false,
+                                      "isExecuting": false,
+                                      "hasExecuted": true,
+                                      "path": [
+                                        1,
+                                        "outputs",
+                                        "false",
+                                        0
+                                      ],
+                                      "outputs": null,
+                                      "actionIndex": 3,
+                                      "serviceCalls": [],
+                                      "input": {},
+                                      "mutations": [
+                                        {
+                                          "name": "set",
+                                          "path": [
+                                            "app",
+                                            "showInternetExplorerModal"
+                                          ],
+                                          "args": [
+                                            false
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "actionIndex": 1,
+                                "serviceCalls": [],
+                                "input": {},
+                                "mutations": [],
+                                "output": {},
+                                "outputPath": "false"
+                              }
+                            ],
+                            "duration": 0,
+                            "signalStoreRef": "0e749985-73a8-4537-8250-ea9222aca59f",
+                            "payload": {}
+                          }
+                        ],
+                        "output": {
+                          "status": 404,
+                          "result": "Cannot GET /api/notifications\n"
+                        },
+                        "outputPath": "error"
+                      }
+                    ],
+                    {
+                      "name": "addons.set(\"state:/header.isNotificationLoading\", false)",
+                      "options": {},
+                      "duration": 0,
+                      "isAsync": false,
+                      "isExecuting": false,
+                      "hasExecuted": true,
+                      "path": [
+                        0,
+                        "outputs",
+                        "false",
+                        0,
+                        0,
+                        "outputs",
+                        "success",
+                        5
+                      ],
+                      "outputs": null,
+                      "actionIndex": 6,
+                      "serviceCalls": [],
+                      "input": {
+                        "user": {
+                          "uid": "C2DnzNJrJRbXYd8dJLCawlr2e4h1",
+                          "isAnonymous": true,
+                          "providerData": [],
+                          "displayName": null,
+                          "email": null,
+                          "emailVerified": false,
+                          "photoURL": null
+                        },
+                        "status": 404,
+                        "result": "Cannot GET /api/notifications\n"
+                      },
+                      "mutations": [
+                        {
+                          "name": "set",
+                          "path": [
+                            "header",
+                            "isNotificationLoading"
+                          ],
+                          "args": [
+                            false
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "whenMobile",
+                      "options": {
+                        "outputs": [
+                          "true",
+                          "false"
+                        ]
+                      },
+                      "duration": 1,
+                      "isAsync": false,
+                      "isExecuting": false,
+                      "hasExecuted": true,
+                      "path": [
+                        0,
+                        "outputs",
+                        "false",
+                        0,
+                        0,
+                        "outputs",
+                        "success",
+                        6
+                      ],
+                      "outputs": {
+                        "true": [
+                          {
+                            "name": "addons.set(\"state:/header.showMainMenu\", false)",
+                            "options": {},
+                            "duration": 0,
+                            "isAsync": false,
+                            "isExecuting": false,
+                            "hasExecuted": false,
+                            "path": [
+                              0,
+                              "outputs",
+                              "false",
+                              0,
+                              0,
+                              "outputs",
+                              "success",
+                              6,
+                              "outputs",
+                              "true",
+                              0
+                            ],
+                            "outputs": null,
+                            "actionIndex": 8
+                          }
+                        ],
+                        "false": []
+                      },
+                      "actionIndex": 7,
+                      "serviceCalls": [],
+                      "input": {
+                        "user": {
+                          "uid": "C2DnzNJrJRbXYd8dJLCawlr2e4h1",
+                          "isAnonymous": true,
+                          "providerData": [],
+                          "displayName": null,
+                          "email": null,
+                          "emailVerified": false,
+                          "photoURL": null
+                        },
+                        "status": 404,
+                        "result": "Cannot GET /api/notifications\n"
+                      },
+                      "mutations": [],
+                      "output": {},
+                      "outputPath": "false"
                     }
                   ],
-                  "serviceCalls": [],
-                  "isAsync": false,
-                  "outputPath": null,
-                  "isExecuting": false,
-                  "hasExecuted": true,
-                  "path": [
-                    0
-                  ],
-                  "outputs": null,
-                  "actionIndex": 0
-                }
-              ],
-              "options": {},
-              "duration": 0,
-              "input": {
-                "focus": false
+                  "error": [
+                    {
+                      "name": "addons.set(\"state:/app.isAuthenticating\", false)",
+                      "options": {},
+                      "duration": 0,
+                      "isAsync": false,
+                      "isExecuting": false,
+                      "hasExecuted": false,
+                      "path": [
+                        0,
+                        "outputs",
+                        "false",
+                        0,
+                        0,
+                        "outputs",
+                        "error",
+                        0
+                      ],
+                      "outputs": null,
+                      "actionIndex": 12
+                    }
+                  ]
+                },
+                "actionIndex": 9,
+                "serviceCalls": [
+                  {
+                    "name": "firebase",
+                    "method": "signInAnonymously",
+                    "args": []
+                  }
+                ],
+                "input": {},
+                "mutations": [],
+                "signals": [
+                  {
+                    "name": "useragent.moduleRegistered",
+                    "start": 1468226312702,
+                    "isExecuting": false,
+                    "isPrevented": false,
+                    "branches": [
+                      {
+                        "name": "detectFeatures",
+                        "options": {},
+                        "duration": 0,
+                        "isAsync": false,
+                        "isExecuting": false,
+                        "hasExecuted": true,
+                        "path": [
+                          0
+                        ],
+                        "outputs": null,
+                        "actionIndex": 0,
+                        "serviceCalls": [],
+                        "mutations": [
+                          {
+                            "name": "set",
+                            "path": [
+                              "useragent",
+                              "feature"
+                            ],
+                            "args": [
+                              {
+                                "isMobile": false
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "parseUserAgent",
+                        "options": {},
+                        "duration": 0,
+                        "isAsync": false,
+                        "isExecuting": false,
+                        "hasExecuted": true,
+                        "path": [
+                          1
+                        ],
+                        "outputs": null,
+                        "actionIndex": 1,
+                        "serviceCalls": [],
+                        "input": {},
+                        "mutations": [
+                          {
+                            "name": "set",
+                            "path": [
+                              "useragent",
+                              "browser"
+                            ],
+                            "args": [
+                              {
+                                "name": "Chrome",
+                                "version": "51.0.2704.103",
+                                "major": "51"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "set",
+                            "path": [
+                              "useragent",
+                              "device"
+                            ],
+                            "args": [
+                              {}
+                            ]
+                          },
+                          {
+                            "name": "set",
+                            "path": [
+                              "useragent",
+                              "os"
+                            ],
+                            "args": [
+                              {
+                                "name": "Mac OS",
+                                "version": "10.11.5"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "setMedia",
+                        "options": {},
+                        "duration": 0,
+                        "isAsync": false,
+                        "isExecuting": false,
+                        "hasExecuted": true,
+                        "path": [
+                          2
+                        ],
+                        "outputs": null,
+                        "actionIndex": 2,
+                        "serviceCalls": [],
+                        "input": {},
+                        "mutations": [
+                          {
+                            "name": "set",
+                            "path": [
+                              "useragent",
+                              "media"
+                            ],
+                            "args": [
+                              {}
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "setWindow",
+                        "options": {},
+                        "duration": 11,
+                        "isAsync": false,
+                        "isExecuting": false,
+                        "hasExecuted": true,
+                        "path": [
+                          3
+                        ],
+                        "outputs": null,
+                        "actionIndex": 3,
+                        "serviceCalls": [],
+                        "input": {},
+                        "mutations": [
+                          {
+                            "name": "set",
+                            "path": [
+                              "useragent",
+                              "window"
+                            ],
+                            "args": [
+                              {
+                                "orientation": "landscape",
+                                "height": 537,
+                                "width": 1440
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "duration": 0,
+                    "signalStoreRef": "7f86948c-dd4e-4c3f-8bc1-9e06de9d26aa",
+                    "payload": {}
+                  }
+                ],
+                "output": {
+                  "user": {
+                    "uid": "C2DnzNJrJRbXYd8dJLCawlr2e4h1",
+                    "isAnonymous": true,
+                    "providerData": [],
+                    "displayName": null,
+                    "email": null,
+                    "emailVerified": false,
+                    "photoURL": null
+                  }
+                },
+                "outputPath": "success"
               }
-            }
+            ]
           ]
-        }
-      ]
+        },
+        "actionIndex": 0,
+        "serviceCalls": [],
+        "input": {},
+        "mutations": [],
+        "output": {},
+        "outputPath": "false"
+      }
     ],
-    "options": {},
-    "duration": 0
+    "duration": 0,
+    "signalStoreRef": "325b749e-6221-433a-b782-f79b7abd4fd3",
+    "isRouted": true,
+    "payload": {
+      "user": {
+        "uid": "C2DnzNJrJRbXYd8dJLCawlr2e4h1",
+        "isAnonymous": true,
+        "providerData": [],
+        "displayName": null,
+        "email": null,
+        "emailVerified": false,
+        "photoURL": null
+      },
+      "status": 404,
+      "result": "Cannot GET /api/notifications\n"
+    }
+  },
+  {
+    "name": "newsFeed.mounted",
+    "start": 1468226313315,
+    "isExecuting": false,
+    "isPrevented": false,
+    "branches": [
+      {
+        "name": "listenForPosts",
+        "options": {},
+        "duration": 11,
+        "isAsync": false,
+        "isExecuting": false,
+        "hasExecuted": true,
+        "path": [
+          0
+        ],
+        "outputs": null,
+        "actionIndex": 0,
+        "serviceCalls": [
+          {
+            "name": "firebase",
+            "method": "onChildAdded",
+            "args": [
+              "posts",
+              "newsFeed.newPostAdded",
+              {
+                "limitToFirst": 10,
+                "orderByChild": "datetime"
+              }
+            ]
+          }
+        ],
+        "mutations": []
+      }
+    ],
+    "duration": 0,
+    "signalStoreRef": "d298d35b-058e-43ee-aa3d-225651e209f0"
+  },
+  {
+    "name": "newsFeed.postCommentTimedOut",
+    "start": 1468226318319,
+    "isExecuting": false,
+    "isPrevented": false,
+    "branches": [
+      {
+        "name": "rotatePostComments",
+        "options": {},
+        "duration": 1,
+        "isAsync": false,
+        "isExecuting": false,
+        "hasExecuted": true,
+        "path": [
+          0
+        ],
+        "outputs": null,
+        "actionIndex": 0,
+        "serviceCalls": [],
+        "mutations": []
+      }
+    ],
+    "duration": 0,
+    "signalStoreRef": "0b7d9dd5-6db2-4ce9-81ea-5a9d7683a560"
+  },
+  {
+    "name": "newsFeed.postCommentTimedOut",
+    "start": 1468226323319,
+    "isExecuting": false,
+    "isPrevented": false,
+    "branches": [
+      {
+        "name": "rotatePostComments",
+        "options": {},
+        "duration": 1,
+        "isAsync": false,
+        "isExecuting": false,
+        "hasExecuted": true,
+        "path": [
+          0
+        ],
+        "outputs": null,
+        "actionIndex": 0,
+        "serviceCalls": [],
+        "mutations": []
+      }
+    ],
+    "duration": 0,
+    "signalStoreRef": "e797f6e2-3b89-49ea-b58e-aec7fec46f63"
+  },
+  {
+    "name": "newsFeed.postCommentTimedOut",
+    "start": 1468226328319,
+    "isExecuting": false,
+    "isPrevented": false,
+    "branches": [
+      {
+        "name": "rotatePostComments",
+        "options": {},
+        "duration": 0,
+        "isAsync": false,
+        "isExecuting": false,
+        "hasExecuted": true,
+        "path": [
+          0
+        ],
+        "outputs": null,
+        "actionIndex": 0,
+        "serviceCalls": [],
+        "mutations": []
+      }
+    ],
+    "duration": 0,
+    "signalStoreRef": "71f23187-fddb-4b6a-92d4-284b63af5583"
+  },
+  {
+    "name": "newsFeed.postCommentTimedOut",
+    "start": 1468226333316,
+    "isExecuting": false,
+    "isPrevented": false,
+    "branches": [
+      {
+        "name": "rotatePostComments",
+        "options": {},
+        "duration": 1,
+        "isAsync": false,
+        "isExecuting": false,
+        "hasExecuted": true,
+        "path": [
+          0
+        ],
+        "outputs": null,
+        "actionIndex": 0,
+        "serviceCalls": [],
+        "mutations": []
+      }
+    ],
+    "duration": 0,
+    "signalStoreRef": "94fe787f-57ce-4cbe-8b76-12f1dbae49b1"
+  },
+  {
+    "name": "newsFeed.postCommentTimedOut",
+    "start": 1468226338318,
+    "isExecuting": false,
+    "isPrevented": false,
+    "branches": [
+      {
+        "name": "rotatePostComments",
+        "options": {},
+        "duration": 1,
+        "isAsync": false,
+        "isExecuting": false,
+        "hasExecuted": true,
+        "path": [
+          0
+        ],
+        "outputs": null,
+        "actionIndex": 0,
+        "serviceCalls": [],
+        "mutations": []
+      }
+    ],
+    "duration": 0,
+    "signalStoreRef": "921dfcc3-972c-4df4-afe2-42506ff7e7ae"
+  },
+  {
+    "name": "newsFeed.postCommentTimedOut",
+    "start": 1468226343317,
+    "isExecuting": false,
+    "isPrevented": false,
+    "branches": [
+      {
+        "name": "rotatePostComments",
+        "options": {},
+        "duration": 1,
+        "isAsync": false,
+        "isExecuting": false,
+        "hasExecuted": true,
+        "path": [
+          0
+        ],
+        "outputs": null,
+        "actionIndex": 0,
+        "serviceCalls": [],
+        "mutations": []
+      }
+    ],
+    "duration": 0,
+    "signalStoreRef": "ee947173-5802-4334-953b-91d2668b1b40"
+  },
+  {
+    "name": "newsFeed.postCommentTimedOut",
+    "start": 1468226348317,
+    "isExecuting": false,
+    "isPrevented": false,
+    "branches": [
+      {
+        "name": "rotatePostComments",
+        "options": {},
+        "duration": 0,
+        "isAsync": false,
+        "isExecuting": false,
+        "hasExecuted": true,
+        "path": [
+          0
+        ],
+        "outputs": null,
+        "actionIndex": 0,
+        "serviceCalls": [],
+        "mutations": []
+      }
+    ],
+    "duration": 0,
+    "signalStoreRef": "46182408-26b9-4f3a-93ab-ee988362de62"
+  },
+  {
+    "name": "newsFeed.postCommentTimedOut",
+    "start": 1468226353314,
+    "isExecuting": false,
+    "isPrevented": false,
+    "branches": [
+      {
+        "name": "rotatePostComments",
+        "options": {},
+        "duration": 0,
+        "isAsync": false,
+        "isExecuting": false,
+        "hasExecuted": true,
+        "path": [
+          0
+        ],
+        "outputs": null,
+        "actionIndex": 0,
+        "serviceCalls": [],
+        "mutations": []
+      }
+    ],
+    "duration": 0,
+    "signalStoreRef": "3d311763-9c92-45bb-8909-8e474f7d97c0"
+  },
+  {
+    "name": "newsFeed.postCommentTimedOut",
+    "start": 1468226358318,
+    "isExecuting": false,
+    "isPrevented": false,
+    "branches": [
+      {
+        "name": "rotatePostComments",
+        "options": {},
+        "duration": 0,
+        "isAsync": false,
+        "isExecuting": false,
+        "hasExecuted": true,
+        "path": [
+          0
+        ],
+        "outputs": null,
+        "actionIndex": 0,
+        "serviceCalls": [],
+        "mutations": []
+      }
+    ],
+    "duration": 0,
+    "signalStoreRef": "6e052e1f-d853-40cd-ba3f-8cabb99a950d"
+  },
+  {
+    "name": "newsFeed.postCommentTimedOut",
+    "start": 1468226363315,
+    "isExecuting": false,
+    "isPrevented": false,
+    "branches": [
+      {
+        "name": "rotatePostComments",
+        "options": {},
+        "duration": 0,
+        "isAsync": false,
+        "isExecuting": false,
+        "hasExecuted": true,
+        "path": [
+          0
+        ],
+        "outputs": null,
+        "actionIndex": 0,
+        "serviceCalls": [],
+        "mutations": []
+      }
+    ],
+    "duration": 0,
+    "signalStoreRef": "e0d16c02-3263-486d-8e1d-4acb044749f4"
+  },
+  {
+    "name": "newsFeed.postCommentTimedOut",
+    "start": 1468226368316,
+    "isExecuting": false,
+    "isPrevented": false,
+    "branches": [
+      {
+        "name": "rotatePostComments",
+        "options": {},
+        "duration": 3,
+        "isAsync": false,
+        "isExecuting": false,
+        "hasExecuted": true,
+        "path": [
+          0
+        ],
+        "outputs": null,
+        "actionIndex": 0,
+        "serviceCalls": [],
+        "mutations": []
+      }
+    ],
+    "duration": 0,
+    "signalStoreRef": "a1af9140-1d32-41f2-822f-e7cd50d26f0f"
+  },
+  {
+    "name": "newsFeed.postCommentTimedOut",
+    "start": 1468226373317,
+    "isExecuting": false,
+    "isPrevented": false,
+    "branches": [
+      {
+        "name": "rotatePostComments",
+        "options": {},
+        "duration": 1,
+        "isAsync": false,
+        "isExecuting": false,
+        "hasExecuted": true,
+        "path": [
+          0
+        ],
+        "outputs": null,
+        "actionIndex": 0,
+        "serviceCalls": [],
+        "mutations": []
+      }
+    ],
+    "duration": 0,
+    "signalStoreRef": "b1ac8996-b810-488a-8d52-5c8d4fb2baed"
+  },
+  {
+    "name": "newsFeed.postCommentTimedOut",
+    "start": 1468226378315,
+    "isExecuting": false,
+    "isPrevented": false,
+    "branches": [
+      {
+        "name": "rotatePostComments",
+        "options": {},
+        "duration": 1,
+        "isAsync": false,
+        "isExecuting": false,
+        "hasExecuted": true,
+        "path": [
+          0
+        ],
+        "outputs": null,
+        "actionIndex": 0,
+        "serviceCalls": [],
+        "mutations": []
+      }
+    ],
+    "duration": 0,
+    "signalStoreRef": "190e3340-299e-4616-9dbc-9b525a4b7b2a"
   }
 ]

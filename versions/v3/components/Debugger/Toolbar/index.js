@@ -1,11 +1,11 @@
 import React from 'react';
 import classNames from 'classnames';
-import {Decorator as Cerebral} from 'cerebral-view-react';
+import {connect} from 'cerebral-view-react';
 import styles from './styles.css';
 import icons from 'common/icons.css';
 import connector from 'connector';
 
-@Cerebral({
+@connect({
   currentPage: ['debugger', 'currentPage'],
   currentApp: ['debugger', 'currentApp']
 })

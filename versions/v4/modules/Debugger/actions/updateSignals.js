@@ -4,6 +4,12 @@ function updateSignals({input, state}) {
   const debuggerState = state.select('debugger');
   const app = debuggerState.get(['currentApp']);
   const existingSignals = app.signals;
+  const isExecutingAsync = input.data.signals.reduce(function (isExecuting, signal) {
+    if (isExecuting) {
+      return isExecuting;
+    }
+    return signal.isExecuting;
+  }, false);
 
   function getSignalIndex(signal) {
     for (var x = input.data.signals.length - 1; x >= 0; x--) {
@@ -37,6 +43,7 @@ function updateSignals({input, state}) {
   }
 
   debuggerState.set(['currentApp', 'signals'], newSignals);
+  debuggerState.set(['currentApp', 'isExecutingAsync'], isExecutingAsync);
 
   const currentSignalIndex = debuggerState.get(['currentSignalIndex']);
   if (currentSignalIndex !== 0) {

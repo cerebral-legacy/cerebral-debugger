@@ -1,27 +1,12 @@
 import {onChange} from 'connector';
 import React from 'react';
 import Controller from 'cerebral';
-import Model from 'cerebral-model-immutable';
+import Model from 'cerebral/models/immutable';
 import {Container} from 'cerebral-view-react';
 import UserAgent from 'cerebral-module-useragent';
 import Devtools from 'cerebral-module-devtools';
 import DebuggerModule from './modules/Debugger';
 import Debugger from './components/Debugger';
-
-/*
-const controller =
-
-controller.addModules({
-  debugger: DebuggerModule,
-
-  devtools: process.env.NODE_ENV === 'production' ? function () {} : Devtools(),
-  useragent: UserAgent({
-    media: {
-      small: '(max-width: 1270px)'
-    }
-  })
-});
-*/
 
 class DebuggerController extends React.Component {
   constructor(props) {

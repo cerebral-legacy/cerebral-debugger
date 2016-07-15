@@ -11,6 +11,7 @@ function clearSignals({state, output}) {
   const rawClearedSignals = rawSignals.slice(0, clearFromIndex + 1);
   const clearedSignals = createSignalsStructure(rawClearedSignals);
 
+  console.log('cleared signals', rawClearedSignals);
   const currentRememberedSignalPath = [rawClearedSignals.length];
   debuggerState.set(['currentApp', 'signals'], rawClearedSignals);
   debuggerState.merge({

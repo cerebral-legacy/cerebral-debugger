@@ -1,16 +1,16 @@
-.string span:nth-of-type(2) {
+.string span:nth-of-type(1) {
   color: #dc6428;
 }
 
-.number span:nth-of-type(2) {
+.number span:nth-of-type(1) {
   color: #1e78c3;
 }
 
-.boolean span:nth-of-type(2) {
+.boolean span:nth-of-type(1) {
   color: #1e78c3;
 }
 
-.null span:nth-of-type(2) {
+.null span:nth-of-type(1) {
   color: #1e78c3;
 }
 

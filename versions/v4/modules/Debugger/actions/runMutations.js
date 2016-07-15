@@ -3,17 +3,18 @@ import extractMutations from '../helpers/extractMutations';
 function runMutations({input, state}) {
   const debuggerState = state.select('debugger');
   const currentSignals = debuggerState.get(['currentApp', 'signals']);
-  const mutations = extractMutations(currentSignals);
-  const currentMutationsLength = mutations.length;
-  const lastMutationsLength = debuggerState.get(['lastMutationCount']);
+  const currentMutations = debuggerState.get(['currentApp', 'mutations']);
+  currentSignals.forEach(function (signal, index) {
+    const mutations = extractMutations([signal]);
+    const currentMutationsRun = currentMutations[index] || 0
 
-  mutations.slice(lastMutationsLength).forEach((mutation) => {
-    const path = ['currentApp', 'model'].concat(mutation.path);
-    debuggerState[mutation.name].apply(null, [path, ...mutation.args]);
+    mutations.slice(currentMutationsRun).forEach((mutation) => {
+      const path = ['currentApp', 'model'].concat(mutation.path);
+      debuggerState[mutation.name].apply(null, [path, ...mutation.args]);
+    });
+
+    debuggerState.set(['currentApp', 'mutations', index], currentMutationsRun);
   });
-
-  debuggerState.set(['lastMutationCount'], currentMutationsLength);
-
 }
 
 export default runMutations;

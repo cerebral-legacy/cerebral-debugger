@@ -4,10 +4,11 @@ function setInitialPayload({input, state}) {
     initialModel: input.data.initialModel,
     model: input.data.initialModel,
     signals: input.data.signals,
-    mutations: [],
+    mutationCounts: [],
     currentSignalIndex: 0
   });
   debuggerState.set('lastMutationCount', 0);
+  debuggerState.set('mutationsError', false);
 }
 
 export default setInitialPayload;

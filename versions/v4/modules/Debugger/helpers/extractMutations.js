@@ -24,6 +24,7 @@ function extractMutations(signals) {
     if (action.signals) {
       mutations = mutations.concat(traverseSignals(action.signals));
     }
+
     return mutations;
   }
 

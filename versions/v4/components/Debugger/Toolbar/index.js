@@ -42,12 +42,12 @@ class Toolbar extends React.Component {
             <li
               className={classNames(styles.tab, {[styles.activeTab]: this.props.currentPage === 'signals'})}
               onClick={() => this.props.signals.debugger.pageChanged({page: 'signals'})}>
-              <i className={icons.signals}/> SIGNALS
+              <i className={icons.signals}/> CONTROLLER
             </li>
             <li
               className={classNames(styles.tab, {[styles.activeTab]: this.props.currentPage === 'components'})}
               onClick={() => this.props.signals.debugger.pageChanged({page: 'components'})}>
-              <i className={icons.components}/> COMPONENTS
+              <i className={icons.components}/> VIEW
             </li>
             <li
               className={classNames(styles.tabOnSmall, styles.tab, {[styles.activeTab]: this.props.currentPage === 'model'})}
@@ -60,9 +60,9 @@ class Toolbar extends React.Component {
                 disabled={currentApp.isExecutingAsync}>{currentApp.disableDebugger ? 'enable' : 'disable'}</button>
             </li>
             <li className={styles.rightItem}>
-              <button
-                onClick={() => this.onCopySignalsClick()}
-                disabled={currentApp.isExecutingAsync}>copy signals</button>
+              <button onClick={() => this.onCopySignalsClick()}>
+                copy signals
+              </button>
             </li>
           </ul>
         </li>

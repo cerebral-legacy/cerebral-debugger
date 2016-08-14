@@ -59,3 +59,7 @@
 .componentsList, .pathsList {
   padding: 15px;
 }
+
+.path {
+  margin-bottom: 5px;
+}

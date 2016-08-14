@@ -6,20 +6,22 @@ module.exports = {
     "disableDebugger": false,
     "isExecutingAsync": false,
     "initialModel": {
-      version: 'APP 1'
+      version: 'APP 1',
+      items: [],
+      newItemTitle: ''
     },
     "signals":[
   {
-    "name": "app.footer.filterClicked",
-    "start": 1468582961565,
+    "name": "newItemTitleChanged",
+    "start": 1468662315903,
     "isSync": true,
     "isExecuting": false,
     "isPrevented": false,
     "branches": [
       {
-        "name": "setFilter",
+        "name": "operators.copy(\"input:title\", \"state:newItemTitle\")",
         "options": {},
-        "duration": 3,
+        "duration": 4,
         "isAsync": false,
         "isExecuting": false,
         "hasExecuted": true,
@@ -28,125 +30,39 @@ module.exports = {
         ],
         "outputs": null,
         "actionIndex": 0,
-        "mutations": [
-          {
-            "name": "set",
-            "path": [
-              "app",
-              "footer",
-              "filter"
-            ],
-            "args": [
-              "all"
-            ]
-          }
-        ],
         "serviceCalls": [],
-        "input": {}
-      }
-    ],
-    "duration": 0,
-    "signalStoreRef": "f90b4f1a-5fa2-4092-a775-bf8a4d752a55",
-    "payload": {},
-    "isRouted": true
-  },
-  {
-    "name": "app.new.titleChanged",
-    "start": 1468582963934,
-    "isSync": true,
-    "isExecuting": false,
-    "isPrevented": false,
-    "branches": [
-      {
-        "name": "setTitle",
-        "options": {},
-        "duration": 1,
-        "isAsync": false,
-        "isExecuting": false,
-        "hasExecuted": true,
-        "path": [
-          0
-        ],
-        "outputs": null,
-        "actionIndex": 0,
+        "input": {
+          "title": "h"
+        },
         "mutations": [
           {
+            "datetime": 1468662315907,
             "name": "set",
             "path": [
-              "app",
-              "new",
-              "title"
+              "newItemTitle"
             ],
             "args": [
               "h"
             ]
           }
-        ],
-        "serviceCalls": [],
-        "input": {
-          "title": "h"
-        }
+        ]
       }
     ],
     "duration": 0,
-    "signalStoreRef": "7d916566-4188-4c9e-8378-b2db588b14f5",
+    "signalStoreRef": "e73a1d8b-0f9d-4145-a0d8-7776b0a185c4",
     "payload": {
       "title": "h"
     }
   },
   {
-    "name": "app.new.titleChanged",
-    "start": 1468582964134,
+    "name": "newItemTitleChanged",
+    "start": 1468662316820,
     "isSync": true,
     "isExecuting": false,
     "isPrevented": false,
     "branches": [
       {
-        "name": "setTitle",
-        "options": {},
-        "duration": 1,
-        "isAsync": false,
-        "isExecuting": false,
-        "hasExecuted": true,
-        "path": [
-          0
-        ],
-        "outputs": null,
-        "actionIndex": 0,
-        "mutations": [
-          {
-            "name": "set",
-            "path": [
-              "app",
-              "new",
-              "title"
-            ],
-            "args": [
-              "he"
-            ]
-          }
-        ],
-        "serviceCalls": [],
-        "input": {
-          "title": "he"
-        }
-      }
-    ],
-    "duration": 0,
-    "signalStoreRef": "4f007adf-4eb4-42d0-be0e-3a8c6a613954",
-    "payload": {
-      "title": "he"
-    }
-  },
-  {
-    "name": "app.new.titleChanged",
-    "start": 1468582964181,
-    "isSync": true,
-    "isExecuting": false,
-    "isPrevented": false,
-    "branches": [
-      {
-        "name": "setTitle",
+        "name": "operators.copy(\"input:title\", \"state:newItemTitle\")",
         "options": {},
         "duration": 0,
         "isAsync": false,
@@ -157,41 +73,41 @@ module.exports = {
         ],
         "outputs": null,
         "actionIndex": 0,
-        "mutations": [
-          {
-            "name": "set",
-            "path": [
-              "app",
-              "new",
-              "title"
-            ],
-            "args": [
-              "hey"
-            ]
-          }
-        ],
         "serviceCalls": [],
         "input": {
-          "title": "hey"
-        }
+          "title": "he"
+        },
+        "mutations": [
+          {
+            "datetime": 1468662316820,
+            "name": "set",
+            "path": [
+              "newItemTitle"
+            ],
+            "args": [
+              "he"
+            ]
+          }
+        ]
       }
     ],
     "duration": 0,
-    "signalStoreRef": "2a17455c-553e-4c58-96be-94270141fc07",
+    "signalStoreRef": "8ef12b70-4212-4d53-b8b0-9cc8013c73b3",
     "payload": {
-      "title": "hey"
+      "title": "he"
     }
   },
   {
-    "name": "app.new.submitted",
-    "start": 1468582964238,
+    "name": "newItemTitleChanged",
+    "start": 1468662316885,
+    "isSync": true,
     "isExecuting": false,
     "isPrevented": false,
     "branches": [
       {
-        "name": "addTodo",
+        "name": "operators.copy(\"input:title\", \"state:newItemTitle\")",
         "options": {},
-        "duration": 2,
+        "duration": 0,
         "isAsync": false,
         "isExecuting": false,
         "hasExecuted": true,
@@ -200,578 +116,222 @@ module.exports = {
         ],
         "outputs": null,
         "actionIndex": 0,
+        "serviceCalls": [],
+        "input": {
+          "title": "hey"
+        },
         "mutations": [
           {
+            "datetime": 1468662316885,
             "name": "set",
             "path": [
-              "refs",
-              "nextRef"
+              "newItemTitle"
             ],
             "args": [
-              1
+              "hey"
             ]
-          },
+          }
+        ]
+      }
+    ],
+    "duration": 0,
+    "signalStoreRef": "bf847ee6-a937-467d-8b09-4213c96b1e89",
+    "payload": {
+      "title": "hey"
+    }
+  },
+  {
+    "name": "newItemTitleSubmitted",
+    "start": 1468662316980,
+    "isExecuting": false,
+    "isPrevented": false,
+    "branches": [
+      {
+        "name": "addItem",
+        "options": {},
+        "duration": 0,
+        "isAsync": false,
+        "isExecuting": false,
+        "hasExecuted": true,
+        "path": [
+          0
+        ],
+        "outputs": null,
+        "actionIndex": 0,
+        "serviceCalls": [],
+        "mutations": [
           {
-            "name": "set",
+            "datetime": 1468662316981,
+            "name": "unshift",
             "path": [
-              "app",
-              "list",
-              "todos",
-              "0"
+              "items"
             ],
             "args": [
-              {
-                "$ref": 0,
-                "$isSaving": true,
-                "title": "hey",
-                "completed": false
-              }
+              "hey"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "name": "operators.set(\"state:newItemTitle\", \"\")",
+        "options": {},
+        "duration": 1,
+        "isAsync": false,
+        "isExecuting": false,
+        "hasExecuted": true,
+        "path": [
+          1
+        ],
+        "outputs": null,
+        "actionIndex": 1,
+        "serviceCalls": [],
+        "input": {},
+        "mutations": [
           {
+            "datetime": 1468662316981,
             "name": "set",
             "path": [
-              "app",
-              "new",
-              "title"
+              "newItemTitle"
             ],
             "args": [
               ""
             ]
           }
-        ],
-        "serviceCalls": [
-          {
-            "name": "refs",
-            "method": "next",
-            "args": [
-              {
-                "app": {
-                  "new": {
-                    "title": ""
-                  },
-                  "list": {
-                    "todos": {
-                      "0": {
-                        "$ref": 0,
-                        "$isSaving": false,
-                        "title": "hey",
-                        "completed": false,
-                        "id": 1468582966669
-                      },
-                      "1": {
-                        "$ref": 1,
-                        "$isSaving": false,
-                        "title": "hopp",
-                        "completed": false,
-                        "id": 1468582967177
-                      }
-                    },
-                    "isAllChecked": false,
-                    "editedTodo": null,
-                    "showCompleted": true,
-                    "showNotCompleted": true
-                  },
-                  "footer": {
-                    "filter": "all"
-                  }
-                },
-                "refs": {
-                  "nextRef": 2
-                },
-                "recorder": {
-                  "isRecording": false,
-                  "isPlaying": false,
-                  "isPaused": false,
-                  "hasRecorded": false,
-                  "preventSignals": false
-                }
-              }
-            ]
-          }
-        ],
-        "output": {
-          "ref": 0
-        }
-      },
-      [
-        {
-          "name": "saveTodo",
-          "options": {},
-          "duration": 0,
-          "isAsync": true,
-          "isExecuting": false,
-          "hasExecuted": true,
-          "path": [
-            1,
-            0
-          ],
-          "outputs": {
-            "success": [
-              {
-                "name": "updateTodo",
-                "options": {},
-                "duration": 1,
-                "isAsync": false,
-                "isExecuting": false,
-                "hasExecuted": true,
-                "path": [
-                  1,
-                  0,
-                  "outputs",
-                  "success",
-                  0
-                ],
-                "outputs": null,
-                "actionIndex": 2,
-                "mutations": [
-                  {
-                    "name": "merge",
-                    "path": [
-                      "app",
-                      "list",
-                      "todos",
-                      "0"
-                    ],
-                    "args": [
-                      {
-                        "id": 1468582966669,
-                        "$isSaving": false
-                      }
-                    ]
-                  }
-                ],
-                "serviceCalls": [],
-                "input": {
-                  "ref": 0,
-                  "id": 1468582966669
-                }
-              }
-            ],
-            "error": [
-              {
-                "name": "setError",
-                "options": {},
-                "duration": 0,
-                "isAsync": false,
-                "isExecuting": false,
-                "hasExecuted": false,
-                "path": [
-                  1,
-                  0,
-                  "outputs",
-                  "error",
-                  0
-                ],
-                "outputs": null,
-                "actionIndex": 3
-              }
-            ]
-          },
-          "actionIndex": 1,
-          "mutations": [],
-          "serviceCalls": [],
-          "input": {
-            "ref": 0
-          },
-          "signals": [
-            {
-              "name": "app.new.titleChanged",
-              "start": 1468582964486,
-              "isSync": true,
-              "isExecuting": false,
-              "isPrevented": false,
-              "branches": [
-                {
-                  "name": "setTitle",
-                  "options": {},
-                  "duration": 1,
-                  "isAsync": false,
-                  "isExecuting": false,
-                  "hasExecuted": true,
-                  "path": [
-                    0
-                  ],
-                  "outputs": null,
-                  "actionIndex": 0,
-                  "mutations": [
-                    {
-                      "name": "set",
-                      "path": [
-                        "app",
-                        "new",
-                        "title"
-                      ],
-                      "args": [
-                        "h"
-                      ]
-                    }
-                  ],
-                  "serviceCalls": [],
-                  "input": {
-                    "title": "h"
-                  }
-                }
-              ],
-              "duration": 0,
-              "signalStoreRef": "a7a08e0d-7479-4e50-91ba-f5b9ba239b1c",
-              "payload": {
-                "title": "h"
-              }
-            },
-            {
-              "name": "app.new.titleChanged",
-              "start": 1468582964589,
-              "isSync": true,
-              "isExecuting": false,
-              "isPrevented": false,
-              "branches": [
-                {
-                  "name": "setTitle",
-                  "options": {},
-                  "duration": 1,
-                  "isAsync": false,
-                  "isExecuting": false,
-                  "hasExecuted": true,
-                  "path": [
-                    0
-                  ],
-                  "outputs": null,
-                  "actionIndex": 0,
-                  "mutations": [
-                    {
-                      "name": "set",
-                      "path": [
-                        "app",
-                        "new",
-                        "title"
-                      ],
-                      "args": [
-                        "ho"
-                      ]
-                    }
-                  ],
-                  "serviceCalls": [],
-                  "input": {
-                    "title": "ho"
-                  }
-                }
-              ],
-              "duration": 0,
-              "signalStoreRef": "80b75b27-11be-407a-b282-7816ffe3ecd2",
-              "payload": {
-                "title": "ho"
-              }
-            },
-            {
-              "name": "app.new.titleChanged",
-              "start": 1468582964646,
-              "isSync": true,
-              "isExecuting": false,
-              "isPrevented": false,
-              "branches": [
-                {
-                  "name": "setTitle",
-                  "options": {},
-                  "duration": 1,
-                  "isAsync": false,
-                  "isExecuting": false,
-                  "hasExecuted": true,
-                  "path": [
-                    0
-                  ],
-                  "outputs": null,
-                  "actionIndex": 0,
-                  "mutations": [
-                    {
-                      "name": "set",
-                      "path": [
-                        "app",
-                        "new",
-                        "title"
-                      ],
-                      "args": [
-                        "hop"
-                      ]
-                    }
-                  ],
-                  "serviceCalls": [],
-                  "input": {
-                    "title": "hop"
-                  }
-                }
-              ],
-              "duration": 0,
-              "signalStoreRef": "b2c61f17-cca1-45e9-ad80-ddbc24817cad",
-              "payload": {
-                "title": "hop"
-              }
-            },
-            {
-              "name": "app.new.titleChanged",
-              "start": 1468582964789,
-              "isSync": true,
-              "isExecuting": false,
-              "isPrevented": false,
-              "branches": [
-                {
-                  "name": "setTitle",
-                  "options": {},
-                  "duration": 1,
-                  "isAsync": false,
-                  "isExecuting": false,
-                  "hasExecuted": true,
-                  "path": [
-                    0
-                  ],
-                  "outputs": null,
-                  "actionIndex": 0,
-                  "mutations": [
-                    {
-                      "name": "set",
-                      "path": [
-                        "app",
-                        "new",
-                        "title"
-                      ],
-                      "args": [
-                        "hopp"
-                      ]
-                    }
-                  ],
-                  "serviceCalls": [],
-                  "input": {
-                    "title": "hopp"
-                  }
-                }
-              ],
-              "duration": 0,
-              "signalStoreRef": "92650831-b19d-4b73-8634-b8f91b8e04b0",
-              "payload": {
-                "title": "hopp"
-              }
-            },
-            {
-              "name": "app.new.submitted",
-              "start": 1468582964952,
-              "isExecuting": false,
-              "isPrevented": false,
-              "branches": [
-                {
-                  "name": "addTodo",
-                  "options": {},
-                  "duration": 1,
-                  "isAsync": false,
-                  "isExecuting": false,
-                  "hasExecuted": true,
-                  "path": [
-                    0
-                  ],
-                  "outputs": null,
-                  "actionIndex": 0,
-                  "mutations": [
-                    {
-                      "name": "set",
-                      "path": [
-                        "refs",
-                        "nextRef"
-                      ],
-                      "args": [
-                        2
-                      ]
-                    },
-                    {
-                      "name": "set",
-                      "path": [
-                        "app",
-                        "list",
-                        "todos",
-                        "1"
-                      ],
-                      "args": [
-                        {
-                          "$ref": 1,
-                          "$isSaving": true,
-                          "title": "hopp",
-                          "completed": false
-                        }
-                      ]
-                    },
-                    {
-                      "name": "set",
-                      "path": [
-                        "app",
-                        "new",
-                        "title"
-                      ],
-                      "args": [
-                        ""
-                      ]
-                    }
-                  ],
-                  "serviceCalls": [
-                    {
-                      "name": "refs",
-                      "method": "next",
-                      "args": [
-                        {
-                          "app": {
-                            "new": {
-                              "title": ""
-                            },
-                            "list": {
-                              "todos": {
-                                "0": {
-                                  "$ref": 0,
-                                  "$isSaving": false,
-                                  "title": "hey",
-                                  "completed": false,
-                                  "id": 1468582966669
-                                },
-                                "1": {
-                                  "$ref": 1,
-                                  "$isSaving": false,
-                                  "title": "hopp",
-                                  "completed": false,
-                                  "id": 1468582967177
-                                }
-                              },
-                              "isAllChecked": false,
-                              "editedTodo": null,
-                              "showCompleted": true,
-                              "showNotCompleted": true
-                            },
-                            "footer": {
-                              "filter": "all"
-                            }
-                          },
-                          "refs": {
-                            "nextRef": 2
-                          },
-                          "recorder": {
-                            "isRecording": false,
-                            "isPlaying": false,
-                            "isPaused": false,
-                            "hasRecorded": false,
-                            "preventSignals": false
-                          }
-                        }
-                      ]
-                    }
-                  ],
-                  "output": {
-                    "ref": 1
-                  }
-                },
-                [
-                  {
-                    "name": "saveTodo",
-                    "options": {},
-                    "duration": 0,
-                    "isAsync": true,
-                    "isExecuting": false,
-                    "hasExecuted": true,
-                    "path": [
-                      1,
-                      0
-                    ],
-                    "outputs": {
-                      "success": [
-                        {
-                          "name": "updateTodo",
-                          "options": {},
-                          "duration": 1,
-                          "isAsync": false,
-                          "isExecuting": false,
-                          "hasExecuted": true,
-                          "path": [
-                            1,
-                            0,
-                            "outputs",
-                            "success",
-                            0
-                          ],
-                          "outputs": null,
-                          "actionIndex": 2,
-                          "mutations": [
-                            {
-                              "name": "merge",
-                              "path": [
-                                "app",
-                                "list",
-                                "todos",
-                                "1"
-                              ],
-                              "args": [
-                                {
-                                  "id": 1468582967177,
-                                  "$isSaving": false
-                                }
-                              ]
-                            }
-                          ],
-                          "serviceCalls": [],
-                          "input": {
-                            "ref": 1,
-                            "id": 1468582967177
-                          }
-                        }
-                      ],
-                      "error": [
-                        {
-                          "name": "setError",
-                          "options": {},
-                          "duration": 0,
-                          "isAsync": false,
-                          "isExecuting": false,
-                          "hasExecuted": false,
-                          "path": [
-                            1,
-                            0,
-                            "outputs",
-                            "error",
-                            0
-                          ],
-                          "outputs": null,
-                          "actionIndex": 3
-                        }
-                      ]
-                    },
-                    "actionIndex": 1,
-                    "mutations": [],
-                    "serviceCalls": [],
-                    "input": {
-                      "ref": 1
-                    },
-                    "output": {
-                      "id": 1468582967177
-                    },
-                    "outputPath": "success"
-                  }
-                ]
-              ],
-              "duration": 0,
-              "signalStoreRef": "92032d72-b110-40e0-9cf9-1dd6d335223f",
-              "payload": {
-                "ref": 1,
-                "id": 1468582967177
-              }
-            }
-          ],
-          "output": {
-            "id": 1468582966669
-          },
-          "outputPath": "success"
-        }
-      ]
+        ]
+      }
     ],
     "duration": 0,
-    "signalStoreRef": "2da99395-e4c0-44aa-9083-e741557ce4c6",
+    "signalStoreRef": "603362c9-8076-4248-956a-9e94a259ce98",
+    "payload": {}
+  },
+  {
+    "name": "newItemTitleChanged",
+    "start": 1468662317524,
+    "isSync": true,
+    "isExecuting": false,
+    "isPrevented": false,
+    "branches": [
+      {
+        "name": "operators.copy(\"input:title\", \"state:newItemTitle\")",
+        "options": {},
+        "duration": 0,
+        "isAsync": false,
+        "isExecuting": false,
+        "hasExecuted": true,
+        "path": [
+          0
+        ],
+        "outputs": null,
+        "actionIndex": 0,
+        "serviceCalls": [],
+        "input": {
+          "title": "h"
+        },
+        "mutations": [
+          {
+            "datetime": 1468662317524,
+            "name": "set",
+            "path": [
+              "newItemTitle"
+            ],
+            "args": [
+              "h"
+            ]
+          }
+        ]
+      }
+    ],
+    "duration": 0,
+    "signalStoreRef": "10d16d5a-296a-40db-8104-2f856b83fd93",
     "payload": {
-      "ref": 0,
-      "id": 1468582966669
+      "title": "h"
+    }
+  },
+  {
+    "name": "newItemTitleChanged",
+    "start": 1468662317620,
+    "isSync": true,
+    "isExecuting": false,
+    "isPrevented": false,
+    "branches": [
+      {
+        "name": "operators.copy(\"input:title\", \"state:newItemTitle\")",
+        "options": {},
+        "duration": 0,
+        "isAsync": false,
+        "isExecuting": false,
+        "hasExecuted": true,
+        "path": [
+          0
+        ],
+        "outputs": null,
+        "actionIndex": 0,
+        "serviceCalls": [],
+        "input": {
+          "title": "ha"
+        },
+        "mutations": [
+          {
+            "datetime": 1468662317620,
+            "name": "set",
+            "path": [
+              "newItemTitle"
+            ],
+            "args": [
+              "ha"
+            ]
+          }
+        ]
+      }
+    ],
+    "duration": 0,
+    "signalStoreRef": "ff76c173-8156-4d24-8ca3-33e89aafa867",
+    "payload": {
+      "title": "ha"
+    }
+  },
+  {
+    "name": "newItemTitleChanged",
+    "start": 1468662317763,
+    "isSync": true,
+    "isExecuting": false,
+    "isPrevented": false,
+    "branches": [
+      {
+        "name": "operators.copy(\"input:title\", \"state:newItemTitle\")",
+        "options": {},
+        "duration": 1,
+        "isAsync": false,
+        "isExecuting": false,
+        "hasExecuted": true,
+        "path": [
+          0
+        ],
+        "outputs": null,
+        "actionIndex": 0,
+        "serviceCalls": [],
+        "input": {
+          "title": "hap"
+        },
+        "mutations": [
+          {
+            "datetime": 1468662317764,
+            "name": "set",
+            "path": [
+              "newItemTitle"
+            ],
+            "args": [
+              "hap"
+            ]
+          }
+        ]
+      }
+    ],
+    "duration": 0,
+    "signalStoreRef": "0a415a97-aefc-4fd8-9b90-2cc6152fcf07",
+    "payload": {
+      "title": "hap"
     }
   }
-]
-  }
+]  }
 }

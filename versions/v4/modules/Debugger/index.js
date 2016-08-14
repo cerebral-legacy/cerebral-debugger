@@ -6,6 +6,7 @@ import signalDoubleClicked from './signals/signalDoubleClicked';
 import rewriteClicked from './signals/rewriteClicked';
 import mutationClicked from './signals/mutationClicked';
 import resetClicked from './signals/resetClicked';
+import modelClicked from './signals/modelClicked';
 
 export default (module) => {
 
@@ -18,8 +19,9 @@ export default (module) => {
     signals: [],
     expandedSignalGroups: [],
     currentMutationPath: null,
-    componentsMap: {},
-    renders: []
+    componentsMap: JSON.parse('{"app.todos":[{"name":"App","renderCount":0}],"recorder":[{"name":"App","renderCount":0},{"name":"","renderCount":0}],"app.isSaving":[{"name":"App","renderCount":0}],"app.filter":[{"name":"App","renderCount":0}],"app.newTodoTitle":[{"name":"NewTodo","renderCount":0}]}'),
+    renders: [],
+    mutationsError: false
   });
 
   module.addSignals({
@@ -30,7 +32,8 @@ export default (module) => {
     signalDoubleClicked,
     rewriteClicked,
     mutationClicked,
-    resetClicked
+    resetClicked,
+    modelClicked
   });
 
 };

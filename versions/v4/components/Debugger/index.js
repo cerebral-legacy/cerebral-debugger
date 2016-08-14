@@ -9,7 +9,8 @@ import Model from './Model';
 
 @connect({
   currentPage: 'debugger.currentPage',
-  currentApp: 'debugger.currentApp'
+  currentApp: 'debugger.currentApp',
+  mutationsError: 'debugger.mutationsError'
 })
 class Debugger extends React.Component {
   render() {
@@ -36,12 +37,21 @@ class Debugger extends React.Component {
         </div>
       );
     }
+    const mutationsError = this.props.mutationsError;
 
     return (
       <div className={styles.debugger}>
-        <div className={styles.toolbar}>
-          <Toolbar />
-        </div>
+         {
+           mutationsError ?
+             <div className={styles.mutationsError}>
+               <h1>Ops!</h1>
+               <h4>Signal "{mutationsError.signalName}" causes an error doing <strong>{mutationsError.mutation.name}</strong>("{mutationsError.mutation.path.join('.')}", {JSON.stringify(mutationsError.mutation.args).replace(/^\[/, '').replace(/\]$/, '')})</h4>
+             </div>
+          :
+            <div className={styles.toolbar}>
+              <Toolbar />
+            </div>
+        }
         <div className={styles.content}>
           {
             this.props.currentPage === 'signals' ?

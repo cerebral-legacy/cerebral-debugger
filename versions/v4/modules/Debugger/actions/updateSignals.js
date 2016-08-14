@@ -3,7 +3,7 @@ import createSignalsStructure from '../helpers/createSignalsStructure';
 function updateSignals({input, state}) {
   const debuggerState = state.select('debugger');
   const app = debuggerState.get(['currentApp']);
-  const existingSignals = app.signals;
+  const existingSignals = debuggerState.get('signals');
   const isExecutingAsync = input.data.signals.reduce(function (isExecuting, signal) {
     if (isExecuting) {
       return isExecuting;
@@ -45,16 +45,15 @@ function updateSignals({input, state}) {
   debuggerState.set(['currentApp', 'signals'], newSignals);
   debuggerState.set(['currentApp', 'isExecutingAsync'], isExecutingAsync);
 
-  const currentSignalIndex = debuggerState.get(['currentSignalIndex']);
-  if (currentSignalIndex !== 0) {
-    debuggerState.set(['currentSignalIndex'], currentSignalIndex + (newSignals.length - existingSignals.length));
-  }
-
   const debuggerSignals = createSignalsStructure(newSignals);
   debuggerState.set(['signals'], debuggerSignals);
 
-  debuggerState.set(['currentRememberedSignalPath'], debuggerSignals[currentSignalIndex] ? debuggerSignals[currentSignalIndex].path : [0]);
+  const currentSignalIndex = debuggerState.get(['currentSignalIndex']);
 
+  if (currentSignalIndex !== 0) {
+    debuggerState.set(['currentSignalIndex'], currentSignalIndex + (debuggerSignals.length - existingSignals.length));
+  }
+  debuggerState.set(['currentRememberedSignalPath'], debuggerSignals[currentSignalIndex] ? debuggerSignals[currentSignalIndex].path : [0]);
 }
 
 export default updateSignals;

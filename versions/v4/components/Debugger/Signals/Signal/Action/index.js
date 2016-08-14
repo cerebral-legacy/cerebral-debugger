@@ -29,7 +29,7 @@ function Action({action, children, onMutationClick, onActionClick}) {
   }
 
   function getLineNumber() {
-    const variable = action.error.name === 'TypeError' ? action.error.message.match( /'(.*?)'/ )[1] : action.error.message.split(' ')[0];
+    const variable = action.error.name === 'TypeError' && action.error.message.match( /'(.*?)'/ ) ? action.error.message.match( /'(.*?)'/ )[1] : action.error.message.split(' ')[0];
     const lines = action.error.stack.split('\n');
     return lines.reduce((lineNumber, line, index) => {
       if (lineNumber === -1 && line.indexOf(variable) >= 0) {

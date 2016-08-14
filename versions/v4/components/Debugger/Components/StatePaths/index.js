@@ -40,7 +40,16 @@ class StatePaths extends React.Component {
               >
                 <div className={styles.pathName}>{key}</div>
                 <div className={styles.components}>
-                  {this.props.map[key].join(', ')}
+                  {this.props.map[key].map((component) => {
+                    if (component.renderCount) {
+                      return (
+                        <div className={styles.componentName}>
+                          {component.name} <small>({component.renderCount})</small>
+                        </div>
+                      )
+                    }
+                    return <div className={styles.componentName}>{component}</div>;
+                  })}
                 </div>
               </div>
             );

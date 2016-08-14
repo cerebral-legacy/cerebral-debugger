@@ -20,7 +20,8 @@ export default connect({
       return (
         this.props.currentPage !== nextProps.currentPage ||
         this.props.media.small !== nextProps.media.small ||
-        this.props.currentSignalIndex !== nextProps.currentSignalIndex
+        this.props.currentSignalIndex !== nextProps.currentSignalIndex ||
+        this.props.mutationsError !== nextProps.mutationsError
       );
     }
     onRewriteClick() {

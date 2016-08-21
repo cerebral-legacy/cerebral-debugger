@@ -49,7 +49,6 @@ const connector = {
     });
   },
   connect(initCallback, reset) {
-    console.log('Connecting');
     currentInitCallback = initCallback;
     const port = chrome.extension.connect({
         name: "Cerebral"
@@ -97,6 +96,7 @@ const connector = {
       }
     });
 
+    connector.sendEvent('debuggerPing');
   }
 };
 

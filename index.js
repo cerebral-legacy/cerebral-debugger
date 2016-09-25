@@ -1,7 +1,6 @@
 import {connect} from 'connector';
 
-connect((version) => {
-  version = version || 'v1';
+connect((version, done) => {
   require.ensure([], function () {
     try {
       require.resolve('./versions/' + version + '/index.js');
@@ -16,15 +15,6 @@ connect((version) => {
     document.querySelector('#root').style.visibility = 'visible';
     document.querySelector('#error').style.display = 'none';
     debug.render();
-
+    done()
   });
-}, (showDebugger) => {
-  if (showDebugger) {
-    document.querySelector('#root').style.visibility = 'visible';
-    document.querySelector('#error').style.display = 'none';
-  } else {
-    document.querySelector('#root').style.visibility = 'hidden';
-    document.querySelector('#error').style.display = 'block';
-    document.querySelector('#error').innerHTML = '<h1>You changed to a different APP, please refresh the app to continue...</h1><img src="logo.png" width="200"/>';
-  }
 });

@@ -24,11 +24,10 @@
     "build": "rimraf build && NODE_ENV=production webpack --config ./webpack.production.config.js --progress --colors"
   },
   "dependencies": {
-    "cerebral": "^0.35.1",
-    "cerebral-addons": "^0.4.x",
-    "cerebral-module-devtools": "^0.7.0",
-    "cerebral-module-useragent": "^0.10.18",
-    "cerebral-view-react": "^0.12.0",
+    "cerebral": "^1.0.1",
+    "cerebral-module-devtools": "^0.7.2",
+    "cerebral-module-useragent": "^0.10.20",
+    "cerebral-view-react": "^0.12.12",
     "classnames": "^2.2.3",
     "file-loader": "^0.8.5",
     "react": "^15.2.0",

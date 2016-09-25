@@ -20,23 +20,23 @@ const connector = window.CONNECTOR = {
   receiveEvents(path) {
     require.ensure([], () => {
       const signals = require('./mocks/' + path);
-      const start = signals[0].start;
+      const start = signals[0].datetime;
       signals.forEach(function (signal) {
         setTimeout(function () {
           onChangeCallback({
-            type: 'signals',
+            type: 'execution',
             app: '1234',
-            "version": "v2",
+            "version": "v1",
             data: {
-              signals: [signal]
+              executions: [signal]
             }
           });
-        }, signal.start - start);
+        }, signal.datetime - start);
       })
     });
   },
   connect(initCallback) {
-    initCallback(VERSION);
+    initCallback(VERSION, () => {});
   }
 };
 
